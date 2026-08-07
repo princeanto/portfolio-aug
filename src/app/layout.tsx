@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import { ThemeProvider } from "@/components/theme-provider";
+import { SiteHeader } from "@/components/site-header";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -28,6 +29,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
     >
       <body className="flex min-h-full flex-col">
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
+          <SiteHeader />
           {children}
         </ThemeProvider>
       </body>
