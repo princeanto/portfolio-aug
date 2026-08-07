@@ -1,9 +1,10 @@
 import { Reveal } from "@/components/reveal";
 import { SectionEyebrow } from "@/components/section-heading";
 
-// TODO: replace with real values before merging.
-const CONTACT_EMAIL = "hello@example.com";
-const SOCIAL_LINKS: { label: string; href: string }[] = [];
+const CONTACT_EMAIL = "princeladislas@gmail.com";
+const SOCIAL_LINKS: { label: string; href: string }[] = [
+  { label: "LinkedIn", href: "https://www.linkedin.com/in/prince-ladislas/" },
+];
 
 export function Contact() {
   return (
