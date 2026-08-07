@@ -10,7 +10,7 @@ type EvolutionNode = {
   roleList?: string[];
   challenges?: string[];
   contribution?: string[];
-  impactStat?: { before: string; after: string; label: string; note: string };
+  impactStat?: { stat: string; label: string; note: string };
   callout?: string;
 };
 
@@ -43,9 +43,8 @@ const NODES: EvolutionNode[] = [
     roleIntro:
       "I continued owning product design through several platform versions, working closely with leadership, product managers, and solution engineering.",
     impactStat: {
-      before: "~30 days",
-      after: "~2 days",
-      label: "Typical workflow implementation time",
+      stat: "75%",
+      label: "Reduction in go-live time",
       note: "That wasn't a UI win. It changed how implementation teams actually worked.",
     },
   },
@@ -165,36 +164,8 @@ export function PlatformEvolution() {
                   {node.impactStat ? (
                     <Reveal delay={0.18}>
                       <div className="mt-8 flex max-w-2xl flex-col gap-6 rounded-2xl border border-border bg-surface p-6 sm:flex-row sm:items-center sm:p-8">
-                        <div className="flex items-center gap-5">
-                          <div>
-                            <div className="text-2xl font-medium text-foreground sm:text-3xl">
-                              {node.impactStat.before}
-                            </div>
-                            <div className="mt-1 text-xs text-muted-foreground">
-                              Before
-                            </div>
-                          </div>
-                          <svg
-                            width="20"
-                            height="20"
-                            viewBox="0 0 24 24"
-                            fill="none"
-                            stroke="currentColor"
-                            strokeWidth="2"
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            className="flex-none text-muted-foreground"
-                          >
-                            <path d="M5 12h14m0 0-5-5m5 5-5 5" />
-                          </svg>
-                          <div>
-                            <div className="text-2xl font-medium text-[var(--accent-a)] sm:text-3xl">
-                              {node.impactStat.after}
-                            </div>
-                            <div className="mt-1 text-xs text-muted-foreground">
-                              After
-                            </div>
-                          </div>
+                        <div className="text-4xl font-medium text-[var(--accent-a)] sm:text-5xl">
+                          {node.impactStat.stat}
                         </div>
                         <div className="border-border sm:border-l sm:pl-6">
                           <p className="text-sm font-medium text-foreground">
