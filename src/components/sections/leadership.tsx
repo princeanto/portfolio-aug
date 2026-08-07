@@ -16,7 +16,7 @@ const PILLARS = [
   },
   {
     title: "Community — Madrasters",
-    body: "Outside work, I organize with Madrasters: generative AI workshops, UI/UX community sessions, and product and design events. Learning shouldn't be locked inside one company, so I spend time building it in the open.",
+    body: "I've been part of Madrasters for 3+ years and serve as an ambassador for the community. I've organized 15+ events — generative AI workshops, UI/UX sessions, product and design meetups. Learning shouldn't be locked inside one company, so I spend time building it in the open.",
   },
 ];
 
