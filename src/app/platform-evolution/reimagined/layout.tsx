@@ -1,12 +1,13 @@
 import type { Metadata } from "next";
-import { Instrument_Serif, JetBrains_Mono } from "next/font/google";
+import { Fraunces, JetBrains_Mono } from "next/font/google";
 import "./reimagined.css";
 
-const instrumentSerif = Instrument_Serif({
+const fraunces = Fraunces({
   variable: "--font-display",
-  weight: ["400"],
+  weight: "variable",
   style: ["normal", "italic"],
   subsets: ["latin"],
+  axes: ["opsz", "SOFT", "WONK"],
 });
 
 const jetbrainsMono = JetBrains_Mono({
@@ -27,7 +28,7 @@ export default function ReimaginedLayout({
   children: React.ReactNode;
 }) {
   return (
-    <div className={`${instrumentSerif.variable} ${jetbrainsMono.variable} reimagined-scope`}>
+    <div className={`${fraunces.variable} ${jetbrainsMono.variable} reimagined-scope`}>
       {children}
     </div>
   );

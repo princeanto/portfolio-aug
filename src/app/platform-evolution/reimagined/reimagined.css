@@ -6,9 +6,9 @@
   --ink-faint: #565b64;
   --line: #1c2027;
   --line-strong: #2c313b;
-  --signal: #c8ff4d;
-  --signal-dim: #85a94a;
-  --signal-glow: rgba(200, 255, 77, 0.16);
+  --signal: #ffb020;
+  --signal-dim: #b8801a;
+  --signal-glow: rgba(255, 176, 32, 0.16);
 
   background: var(--bg);
   color: var(--ink);
@@ -20,6 +20,9 @@
 
 .reimagined-scope .font-display {
   font-family: var(--font-display), Georgia, serif;
+  font-weight: 560;
+  font-optical-sizing: auto;
+  font-style: normal;
 }
 
 .reimagined-scope .font-mono {

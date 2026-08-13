@@ -115,7 +115,7 @@ export function NodeNetwork({
       }
 
       if (!collapsedNow) {
-        ctx.strokeStyle = "rgba(200, 255, 77, 0.08)";
+        ctx.strokeStyle = "rgba(255, 176, 32, 0.08)";
         ctx.lineWidth = 1;
         for (let i = 0; i < nodes.length; i++) {
           for (let j = i + 1; j < nodes.length; j++) {
@@ -139,8 +139,8 @@ export function NodeNetwork({
       for (const n of nodes) {
         ctx.beginPath();
         if (n.signal) {
-          ctx.fillStyle = "#c8ff4d";
-          ctx.shadowColor = "#c8ff4d";
+          ctx.fillStyle = "#ffb020";
+          ctx.shadowColor = "#ffb020";
           ctx.shadowBlur = collapsedNow ? 14 : 6;
         } else {
           ctx.fillStyle = "rgba(239, 238, 228, 0.35)";
@@ -156,8 +156,8 @@ export function NodeNetwork({
         const cy = h / 2;
         const pulse = 18 + Math.sin(now / 420) * 5;
         const grad = ctx.createRadialGradient(cx, cy, 0, cx, cy, pulse);
-        grad.addColorStop(0, "rgba(200, 255, 77, 0.35)");
-        grad.addColorStop(1, "rgba(200, 255, 77, 0)");
+        grad.addColorStop(0, "rgba(255, 176, 32, 0.35)");
+        grad.addColorStop(1, "rgba(255, 176, 32, 0)");
         ctx.fillStyle = grad;
         ctx.beginPath();
         ctx.arc(cx, cy, pulse, 0, Math.PI * 2);
