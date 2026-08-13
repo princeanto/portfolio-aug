@@ -1,0 +1,49 @@
+.reimagined-scope {
+  --bg: #07080b;
+  --bg-elevated: #0e1015;
+  --ink: #efeee4;
+  --ink-dim: #8b8f97;
+  --ink-faint: #565b64;
+  --line: #1c2027;
+  --line-strong: #2c313b;
+  --signal: #c8ff4d;
+  --signal-dim: #85a94a;
+  --signal-glow: rgba(200, 255, 77, 0.16);
+
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--font-mono-tech), ui-monospace, monospace;
+  position: relative;
+  isolation: isolate;
+  cursor: none;
+}
+
+.reimagined-scope .font-display {
+  font-family: var(--font-display), Georgia, serif;
+}
+
+.reimagined-scope .font-mono {
+  font-family: var(--font-mono-tech), ui-monospace, monospace;
+}
+
+.reimagined-scope::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: 200;
+  pointer-events: none;
+  opacity: 0.05;
+  mix-blend-mode: overlay;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+
+.reimagined-scope ::selection {
+  background: var(--signal);
+  color: #06070a;
+}
+
+@media (pointer: coarse) {
+  .reimagined-scope {
+    cursor: auto;
+  }
+}
