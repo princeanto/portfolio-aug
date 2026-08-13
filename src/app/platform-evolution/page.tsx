@@ -8,6 +8,8 @@ import { ScopingRoom } from "./_components/scoping-room";
 import { DecisionList } from "./_components/decision-list";
 import { WhereItBroke } from "./_components/where-it-broke";
 import { ImpactMetrics } from "./_components/impact-metrics";
+import { NumberedEyebrow } from "./_components/numbered-eyebrow";
+import { ImagePlaceholder } from "./_components/image-placeholder";
 import { RESEARCH_METHODS, RESEARCH_CATEGORIES, WHATS_NEXT } from "./_components/data";
 
 export const metadata: Metadata = {
@@ -63,12 +65,20 @@ export default function PlatformEvolutionPage() {
             </a>
           </Reveal>
         </div>
+        <div className="relative z-10 mx-auto w-full max-w-6xl px-6 pb-24 sm:px-8 sm:pb-28 lg:px-10 lg:pb-32">
+          <ImagePlaceholder
+            aspect="21/9"
+            label="Product screenshot"
+            note="The composition layer — services on the left, flow on the canvas, configuration on the right."
+            delay={0.28}
+          />
+        </div>
       </section>
 
       {/* 2. My Role */}
       <section className="border-b border-border bg-background">
         <div className="mx-auto w-full max-w-6xl px-6 py-20 sm:px-8 lg:px-10">
-          <SectionEyebrow>My Role</SectionEyebrow>
+          <NumberedEyebrow number="01">My Role</NumberedEyebrow>
           <Reveal delay={0.05}>
             <h2 className="max-w-2xl text-balance text-3xl font-medium leading-[1.15] tracking-tight text-foreground sm:text-4xl">
               Senior Lead Product Designer, all three generations.
@@ -87,7 +97,7 @@ export default function PlatformEvolutionPage() {
             </p>
           </Reveal>
           <Reveal delay={0.14}>
-            <div className="mt-8 max-w-2xl rounded-2xl border border-border bg-surface p-6">
+            <div className="mt-8 max-w-2xl rounded-2xl border border-border bg-surface p-6 transition-colors duration-300 hover:border-border-strong">
               <span className="text-[12px] font-medium uppercase tracking-[0.12em] text-muted-foreground">
                 Collaboration
               </span>
@@ -103,7 +113,7 @@ export default function PlatformEvolutionPage() {
       {/* 3. The Situation */}
       <section className="border-b border-border bg-surface">
         <div className="mx-auto w-full max-w-6xl px-6 py-20 sm:px-8 lg:px-10">
-          <SectionEyebrow>The Situation</SectionEyebrow>
+          <NumberedEyebrow number="02">The Situation</NumberedEyebrow>
           <Reveal delay={0.05}>
             <h2 className="max-w-2xl text-balance text-3xl font-medium leading-[1.15] tracking-tight text-foreground sm:text-4xl">
               Every customer was a project.
@@ -153,7 +163,7 @@ export default function PlatformEvolutionPage() {
       {/* 4. The Spark */}
       <section className="border-b border-border bg-background">
         <div className="mx-auto w-full max-w-6xl px-6 py-20 sm:px-8 lg:px-10">
-          <SectionEyebrow>The Spark</SectionEyebrow>
+          <NumberedEyebrow number="03">The Spark</NumberedEyebrow>
           <Reveal delay={0.05}>
             <h2 className="max-w-2xl text-balance text-3xl font-medium leading-[1.15] tracking-tight text-foreground sm:text-4xl">
               A room, not a brief.
@@ -195,7 +205,7 @@ export default function PlatformEvolutionPage() {
       {/* 5. The First Correction */}
       <section className="border-b border-border bg-surface">
         <div className="mx-auto w-full max-w-6xl px-6 py-20 sm:px-8 lg:px-10">
-          <SectionEyebrow>The First Correction</SectionEyebrow>
+          <NumberedEyebrow number="04">The First Correction</NumberedEyebrow>
           <Reveal delay={0.05}>
             <h2 className="max-w-2xl text-balance text-3xl font-medium leading-[1.15] tracking-tight text-foreground sm:text-4xl">
               No-code was the wrong ambition.
@@ -227,7 +237,7 @@ export default function PlatformEvolutionPage() {
       {/* 6. The Change That Mattered */}
       <section className="border-b border-border bg-background">
         <div className="mx-auto w-full max-w-6xl px-6 py-20 sm:px-8 lg:px-10">
-          <SectionEyebrow>The Change That Mattered</SectionEyebrow>
+          <NumberedEyebrow number="05">The Change That Mattered</NumberedEyebrow>
           <Reveal delay={0.05}>
             <h2 className="max-w-2xl text-balance text-3xl font-medium leading-[1.15] tracking-tight text-foreground sm:text-4xl">
               A hundred calls became one.
@@ -258,7 +268,7 @@ export default function PlatformEvolutionPage() {
       {/* 7. Research */}
       <section className="border-b border-border bg-surface">
         <div className="mx-auto w-full max-w-6xl px-6 py-20 sm:px-8 lg:px-10">
-          <SectionEyebrow>Research</SectionEyebrow>
+          <NumberedEyebrow number="06">Research</NumberedEyebrow>
           <Reveal delay={0.05}>
             <h2 className="max-w-2xl text-balance text-3xl font-medium leading-[1.15] tracking-tight text-foreground sm:text-4xl">
               How the structure got decided.
@@ -293,7 +303,7 @@ export default function PlatformEvolutionPage() {
           <div className="mt-6 flex flex-wrap gap-2">
             {RESEARCH_CATEGORIES.map((cat, i) => (
               <Reveal key={cat} delay={0.2 + i * 0.02}>
-                <span className="inline-flex rounded-full border border-border-strong px-3.5 py-1.5 text-[13px] text-foreground/85">
+                <span className="inline-flex rounded-full border border-border-strong px-3.5 py-1.5 text-[13px] text-foreground/85 transition-colors duration-300 hover:border-[var(--accent-a)] hover:text-[var(--accent-a)]">
                   {cat}
                 </span>
               </Reveal>
@@ -307,26 +317,56 @@ export default function PlatformEvolutionPage() {
               that silence was the research paying for itself.
             </p>
           </Reveal>
+
+          <div className="mt-10 grid grid-cols-1 gap-4 sm:grid-cols-2">
+            <ImagePlaceholder
+              aspect="4/3"
+              label="Card sort"
+              note="Sort board or clustered results."
+              delay={0.34}
+            />
+            <ImagePlaceholder
+              aspect="4/3"
+              label="Node + config panel"
+              note="A node selected with the right-side panel open."
+              delay={0.38}
+            />
+          </div>
         </div>
       </section>
 
       {/* 8. Key Decisions */}
       <section className="border-b border-border bg-background">
         <div className="mx-auto w-full max-w-6xl px-6 py-20 sm:px-8 lg:px-10">
-          <SectionEyebrow>Key Decisions</SectionEyebrow>
+          <NumberedEyebrow number="07">Key Decisions</NumberedEyebrow>
           <Reveal delay={0.05}>
             <h2 className="max-w-2xl text-balance text-3xl font-medium leading-[1.15] tracking-tight text-foreground sm:text-4xl">
               Three calls that shaped the builder.
             </h2>
           </Reveal>
           <DecisionList />
+
+          <div className="mt-4 grid grid-cols-1 gap-4 sm:grid-cols-2">
+            <ImagePlaceholder
+              aspect="4/3"
+              label="Custom API node"
+              note="Code editor, frontend/backend toggle, variables."
+              delay={0.06}
+            />
+            <ImagePlaceholder
+              aspect="4/3"
+              label="Version history"
+              note="Published and draft tracks, with author and timestamp on every version."
+              delay={0.1}
+            />
+          </div>
         </div>
       </section>
 
       {/* 9. Where It Broke */}
       <section className="border-b border-border bg-surface">
         <div className="mx-auto w-full max-w-6xl px-6 py-20 sm:px-8 lg:px-10">
-          <SectionEyebrow>Where It Broke</SectionEyebrow>
+          <NumberedEyebrow number="08">Where It Broke</NumberedEyebrow>
           <Reveal delay={0.05}>
             <h2 className="max-w-2xl text-balance text-3xl font-medium leading-[1.15] tracking-tight text-foreground sm:text-4xl">
               We gave it to our own team, and watched.
@@ -341,13 +381,22 @@ export default function PlatformEvolutionPage() {
           </Reveal>
 
           <WhereItBroke />
+
+          <div className="mt-10">
+            <ImagePlaceholder
+              aspect="21/9"
+              label="Validation panel"
+              note="Error taxonomy, plain-English codes, failing node highlighted, re-validate."
+              delay={0.2}
+            />
+          </div>
         </div>
       </section>
 
       {/* 10. Business Impact */}
       <section id="impact" className="border-b border-border bg-background">
         <div className="mx-auto w-full max-w-6xl px-6 py-20 sm:px-8 lg:px-10">
-          <SectionEyebrow>Business Impact</SectionEyebrow>
+          <NumberedEyebrow number="09">Business Impact</NumberedEyebrow>
           <Reveal delay={0.05}>
             <h2 className="max-w-2xl text-balance text-3xl font-medium leading-[1.15] tracking-tight text-foreground sm:text-4xl">
               What actually changed, not just what shipped.
@@ -376,7 +425,7 @@ export default function PlatformEvolutionPage() {
       {/* 11. What Happened Next */}
       <section className="border-b border-border bg-surface">
         <div className="mx-auto w-full max-w-6xl px-6 py-20 sm:px-8 lg:px-10">
-          <SectionEyebrow>What Happened Next</SectionEyebrow>
+          <NumberedEyebrow number="10">What Happened Next</NumberedEyebrow>
           <Reveal delay={0.05}>
             <h2 className="max-w-2xl text-balance text-3xl font-medium leading-[1.15] tracking-tight text-foreground sm:text-4xl">
               The same habit, one layer down.
@@ -431,13 +480,34 @@ export default function PlatformEvolutionPage() {
               instance of it.
             </p>
           </Reveal>
+
+          <div className="mt-10 grid grid-cols-1 gap-4 sm:grid-cols-3">
+            <ImagePlaceholder
+              aspect="3/4"
+              label="Maker-checker"
+              note="Approve or reject with a stated reason."
+              delay={0.32}
+            />
+            <ImagePlaceholder
+              aspect="3/4"
+              label="Case management"
+              note="Applicant data against OCR, with match confidence."
+              delay={0.36}
+            />
+            <ImagePlaceholder
+              aspect="3/4"
+              label="Reporting"
+              note="The report a bank's own staff reads."
+              delay={0.4}
+            />
+          </div>
         </div>
       </section>
 
       {/* 12. Lessons Learned */}
       <section className="border-b border-border bg-background">
         <div className="mx-auto w-full max-w-6xl px-6 py-20 sm:px-8 lg:px-10">
-          <SectionEyebrow>Lessons Learned</SectionEyebrow>
+          <NumberedEyebrow number="11">Lessons Learned</NumberedEyebrow>
           <Reveal delay={0.05}>
             <h2 className="max-w-2xl text-balance text-3xl font-medium leading-[1.15] tracking-tight text-foreground sm:text-4xl">
               What I&apos;d do differently.
@@ -493,7 +563,7 @@ export default function PlatformEvolutionPage() {
       {/* 13. What's Next */}
       <section className="bg-surface">
         <div className="mx-auto w-full max-w-6xl px-6 py-20 sm:px-8 lg:px-10">
-          <SectionEyebrow>What&apos;s Next</SectionEyebrow>
+          <NumberedEyebrow number="12">What&apos;s Next</NumberedEyebrow>
           <Reveal delay={0.05}>
             <h2 className="max-w-2xl text-balance text-3xl font-medium leading-[1.15] tracking-tight text-foreground sm:text-4xl">
               Where the platform goes from here.
@@ -508,7 +578,7 @@ export default function PlatformEvolutionPage() {
           <ul className="mt-6 flex flex-wrap gap-3">
             {WHATS_NEXT.map((item, i) => (
               <Reveal key={item} delay={0.14 + i * 0.05}>
-                <li className="rounded-full border border-border px-4 py-2 text-[14px] font-medium text-foreground">
+                <li className="rounded-full border border-border px-4 py-2 text-[14px] font-medium text-foreground transition-colors duration-300 hover:border-[var(--accent-a)] hover:text-[var(--accent-a)]">
                   {item}
                 </li>
               </Reveal>

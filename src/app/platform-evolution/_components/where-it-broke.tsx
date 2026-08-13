@@ -7,7 +7,7 @@ export function WhereItBroke() {
       <div className="grid grid-cols-1 gap-6 sm:grid-cols-2">
         {WALLS.map((wall, i) => (
           <Reveal key={wall.tag} delay={i * 0.08}>
-            <div className="h-full rounded-2xl border border-border bg-surface p-6">
+            <div className="h-full rounded-2xl border border-border bg-surface p-6 transition-colors duration-300 hover:border-border-strong">
               <span className="text-[11px] font-medium uppercase tracking-[0.12em] text-muted-foreground">
                 {wall.tag}
               </span>
@@ -34,9 +34,9 @@ export function WhereItBroke() {
             {FIX_ITEMS.map((item) => (
               <li
                 key={item}
-                className="flex gap-3 text-[15px] leading-relaxed text-foreground/85"
+                className="group flex gap-3 text-[15px] leading-relaxed text-foreground/85"
               >
-                <span className="mt-2.5 h-1 w-1 flex-none rounded-full bg-muted-foreground" />
+                <span className="mt-2.5 h-1 w-1 flex-none rounded-full bg-muted-foreground transition-colors duration-300 group-hover:bg-[var(--accent-a)]" />
                 {item}
               </li>
             ))}

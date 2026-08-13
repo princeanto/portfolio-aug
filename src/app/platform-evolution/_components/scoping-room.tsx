@@ -9,10 +9,10 @@ export function ScopingRoom() {
         return (
           <Reveal key={seat} delay={i * 0.04}>
             <span
-              className={`inline-flex rounded-full border px-3.5 py-1.5 text-[13px] font-medium ${
+              className={`inline-flex rounded-full border px-3.5 py-1.5 text-[13px] font-medium transition-colors duration-300 ${
                 isMe
                   ? "border-[var(--accent-a)] bg-[var(--accent-a)]/10 text-[var(--accent-a)]"
-                  : "border-border text-muted-foreground"
+                  : "border-border text-muted-foreground hover:border-border-strong hover:text-foreground"
               }`}
             >
               {seat}

@@ -7,9 +7,9 @@ export function DecisionList() {
       {DECISIONS.map((decision, i) => (
         <Reveal key={decision.index} delay={i * 0.06}>
           <div
-            className={`flex gap-5 py-8 ${i > 0 ? "border-t border-border" : ""}`}
+            className={`group flex gap-5 rounded-xl px-3 py-8 -mx-3 transition-colors duration-300 hover:bg-surface ${i > 0 ? "border-t border-border" : ""}`}
           >
-            <span className="flex-none pt-1 text-[13px] font-medium tabular-nums text-muted-foreground">
+            <span className="flex-none pt-1 text-[13px] font-medium tabular-nums text-muted-foreground transition-colors duration-300 group-hover:text-[var(--accent-a)]">
               {decision.index}
             </span>
             <div>
