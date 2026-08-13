@@ -2,18 +2,19 @@ import type { Metadata } from "next";
 import { Reveal } from "@/components/reveal";
 import { SectionEyebrow } from "@/components/section-heading";
 import { GridBackground } from "@/components/grid-background";
-import { BusinessProblemDiagram } from "./_components/business-problem-diagram";
-import { EvolutionTimeline } from "./_components/evolution-timeline";
-import { DecisionCards } from "./_components/decision-cards";
+import { HeroChain } from "./_components/hero-chain";
+import { ChangeDiagram } from "./_components/change-diagram";
+import { ScopingRoom } from "./_components/scoping-room";
+import { DecisionList } from "./_components/decision-list";
+import { WhereItBroke } from "./_components/where-it-broke";
 import { ImpactMetrics } from "./_components/impact-metrics";
+import { RESEARCH_METHODS, RESEARCH_CATEGORIES, WHATS_NEXT } from "./_components/data";
 
 export const metadata: Metadata = {
   title: "Platform Evolution — Prince",
   description:
-    "How an identity verification product evolved into an enterprise workflow platform: IDFlow, M2P Connect, and Wand.",
+    "One API instead of a hundred: how an identity verification product evolved into an enterprise workflow platform. IDFlow, M2P Connect, and Wand.",
 };
-
-const WHATS_NEXT = ["Bring Your Own APIs", "Marketplace", "AI Workflow Assistant"];
 
 export default function PlatformEvolutionPage() {
   return (
@@ -22,49 +23,25 @@ export default function PlatformEvolutionPage() {
       <section className="relative isolate overflow-hidden border-b border-border bg-background">
         <GridBackground />
         <div className="relative z-10 mx-auto w-full max-w-6xl px-6 py-24 sm:px-8 sm:py-28 lg:px-10 lg:py-32">
-          <SectionEyebrow>Case Study</SectionEyebrow>
+          <SectionEyebrow>M2P Fintech · Enterprise Platform · 2021–2026</SectionEyebrow>
           <Reveal delay={0.05}>
             <h1 className="text-balance text-[2.75rem] font-medium leading-[1.08] tracking-tight text-foreground sm:text-6xl lg:text-[4rem]">
-              Platform Evolution.
+              One API instead of a hundred.
             </h1>
           </Reveal>
           <Reveal delay={0.1}>
             <p className="mt-6 max-w-2xl text-pretty text-lg leading-relaxed text-muted-foreground sm:text-xl">
-              How an identity verification product evolved into an enterprise
-              workflow platform.
+              Every bank wanted a different set of verification services in a
+              different order, so every bank got its own team and its own
+              build. I designed the platform that turned that into something
+              one person composes on a canvas — and returns through a single
+              API call.
             </p>
           </Reveal>
 
-          <Reveal delay={0.16}>
-            <dl className="mt-10 flex flex-wrap gap-x-10 gap-y-4 border-t border-border pt-8">
-              <div>
-                <dt className="text-[12px] font-medium uppercase tracking-[0.1em] text-muted-foreground">
-                  Role
-                </dt>
-                <dd className="mt-1 text-[15px] font-medium text-foreground">
-                  Senior Lead Product Designer
-                </dd>
-              </div>
-              <div>
-                <dt className="text-[12px] font-medium uppercase tracking-[0.1em] text-muted-foreground">
-                  Timeline
-                </dt>
-                <dd className="mt-1 text-[15px] font-medium text-foreground">
-                  2021 — Present
-                </dd>
-              </div>
-              <div>
-                <dt className="text-[12px] font-medium uppercase tracking-[0.1em] text-muted-foreground">
-                  Company
-                </dt>
-                <dd className="mt-1 text-[15px] font-medium text-foreground">
-                  M2P Fintech
-                </dd>
-              </div>
-            </dl>
-          </Reveal>
+          <HeroChain />
 
-          <Reveal delay={0.22}>
+          <Reveal delay={0.24}>
             <a
               href="#impact"
               className="group mt-10 inline-flex items-center gap-2 text-[14px] font-medium text-foreground transition-colors duration-300 hover:text-muted-foreground"
@@ -88,120 +65,28 @@ export default function PlatformEvolutionPage() {
         </div>
       </section>
 
-      {/* 2. The Spark */}
-      <section className="border-b border-border bg-background">
-        <div className="mx-auto w-full max-w-6xl px-6 py-20 sm:px-8 lg:px-10">
-          <SectionEyebrow>The Spark</SectionEyebrow>
-          <Reveal delay={0.05}>
-            <h2 className="max-w-2xl text-balance text-3xl font-medium leading-[1.15] tracking-tight text-foreground sm:text-4xl">
-              A pattern leadership couldn&apos;t ignore.
-            </h2>
-          </Reveal>
-          <Reveal delay={0.1}>
-            <p className="mt-5 max-w-2xl text-pretty text-lg leading-relaxed text-muted-foreground">
-              M2P&apos;s leadership had watched the same pattern repeat across
-              dozens of deals — a hundred-plus identity verification
-              microservices, and a bespoke integration hand-built for almost
-              every customer. That pattern was the opening. I joined at the
-              ideation stage and owned the design of what became IDFlow from
-              there.
-            </p>
-          </Reveal>
-        </div>
-      </section>
-
-      {/* 3. The Business Problem */}
-      <section className="border-b border-border bg-surface">
-        <div className="mx-auto w-full max-w-6xl px-6 py-20 sm:px-8 lg:px-10">
-          <SectionEyebrow>The Business Problem</SectionEyebrow>
-          <Reveal delay={0.05}>
-            <h2 className="max-w-2xl text-balance text-3xl font-medium leading-[1.15] tracking-tight text-foreground sm:text-4xl">
-              One hundred APIs. One custom workflow per deal, every time.
-            </h2>
-          </Reveal>
-
-          <div className="mt-6 max-w-2xl space-y-3">
-            <Reveal delay={0.1}>
-              <p className="text-[15px] leading-relaxed text-muted-foreground">
-                <span className="font-medium text-foreground">
-                  The process —{" "}
-                </span>
-                Every customer needed a different combination of PAN,
-                Aadhaar, OCR, face match, GST, and dozens of other identity
-                services. Implementation teams hand-built a new workflow for
-                almost every deal.
-              </p>
-            </Reveal>
-            <Reveal delay={0.14}>
-              <p className="text-[15px] leading-relaxed text-muted-foreground">
-                <span className="font-medium text-foreground">
-                  Why it was slow —{" "}
-                </span>
-                Nothing was reusable. Every integration started from a blank
-                page, regardless of how similar it was to the last one.
-              </p>
-            </Reveal>
-            <Reveal delay={0.18}>
-              <p className="text-[15px] leading-relaxed text-muted-foreground">
-                <span className="font-medium text-foreground">
-                  Why it didn&apos;t scale —{" "}
-                </span>
-                Engineering effort scaled linearly with deals, not with
-                product maturity — more customers meant more bespoke builds,
-                indefinitely.
-              </p>
-            </Reveal>
-            <Reveal delay={0.22}>
-              <p className="text-[15px] leading-relaxed text-muted-foreground">
-                <span className="font-medium text-foreground">
-                  Why small customers weren&apos;t profitable —{" "}
-                </span>
-                A smaller deal still needed the same hand-built integration
-                effort as a large one, so margins on smaller customers
-                didn&apos;t hold up.
-              </p>
-            </Reveal>
-          </div>
-
-          <BusinessProblemDiagram />
-        </div>
-      </section>
-
-      {/* 4. My Role */}
+      {/* 2. My Role */}
       <section className="border-b border-border bg-background">
         <div className="mx-auto w-full max-w-6xl px-6 py-20 sm:px-8 lg:px-10">
           <SectionEyebrow>My Role</SectionEyebrow>
           <Reveal delay={0.05}>
             <h2 className="max-w-2xl text-balance text-3xl font-medium leading-[1.15] tracking-tight text-foreground sm:text-4xl">
-              Ownership, not a responsibilities list.
+              Senior Lead Product Designer, all three generations.
             </h2>
           </Reveal>
-
           <Reveal delay={0.1}>
             <p className="mt-5 max-w-2xl text-[15px] leading-relaxed text-muted-foreground">
               <span className="font-medium text-foreground">
                 What I owned —{" "}
               </span>
-              Product design end to end, across all three stages: stakeholder
-              interviews, workflow mapping, information architecture,
+              Product design end to end, from the scoping workshop through a
+              shipped platform: research, information architecture,
               interaction design, the design system, and the shipped UI for
               IDFlow — then continued ownership through M2P Connect&apos;s
-              platform versions, and the design-system-unification call on
-              Wand.
+              platform versions and Wand.
             </p>
           </Reveal>
           <Reveal delay={0.14}>
-            <p className="mt-4 max-w-2xl text-[15px] leading-relaxed text-muted-foreground">
-              <span className="font-medium text-foreground">
-                Decisions I influenced —{" "}
-              </span>
-              Choosing a visual workflow builder over a better engineering
-              tool, generalising the platform beyond identity verification,
-              and unifying the design system across the whole platform.
-            </p>
-          </Reveal>
-
-          <Reveal delay={0.2}>
             <div className="mt-8 max-w-2xl rounded-2xl border border-border bg-surface p-6">
               <span className="text-[12px] font-medium uppercase tracking-[0.12em] text-muted-foreground">
                 Collaboration
@@ -215,33 +100,251 @@ export default function PlatformEvolutionPage() {
         </div>
       </section>
 
-      {/* 5. The Evolution */}
-      <section className="border-b border-border bg-background">
-        <div className="mx-auto w-full max-w-6xl px-6 py-20 sm:px-8 lg:px-10">
-          <SectionEyebrow>The Evolution</SectionEyebrow>
-          <Reveal delay={0.05}>
-            <h2 className="max-w-2xl text-balance text-3xl font-medium leading-[1.15] tracking-tight text-foreground sm:text-4xl">
-              IDFlow → M2P Connect → Wand.
-            </h2>
-          </Reveal>
-          <EvolutionTimeline />
-        </div>
-      </section>
-
-      {/* 6. Key Design Decisions */}
+      {/* 3. The Situation */}
       <section className="border-b border-border bg-surface">
         <div className="mx-auto w-full max-w-6xl px-6 py-20 sm:px-8 lg:px-10">
-          <SectionEyebrow>Key Design Decisions</SectionEyebrow>
+          <SectionEyebrow>The Situation</SectionEyebrow>
           <Reveal delay={0.05}>
             <h2 className="max-w-2xl text-balance text-3xl font-medium leading-[1.15] tracking-tight text-foreground sm:text-4xl">
-              Three decisions, and what each one cost.
+              Every customer was a project.
             </h2>
           </Reveal>
-          <DecisionCards />
+          <div className="mt-6 max-w-2xl space-y-4">
+            <Reveal delay={0.1}>
+              <p className="text-pretty text-lg leading-relaxed text-foreground/80">
+                M2P had built over a hundred verification microservices —
+                OTP, PAN, Aadhaar, OCR, face match, penny-drop bank checks,
+                dedupe. Banks and NBFCs used them to verify and onboard
+                customers.
+              </p>
+            </Reveal>
+            <Reveal delay={0.14}>
+              <p className="text-[15px] leading-relaxed text-muted-foreground">
+                The catch was that no two customers wanted the same ones, in
+                the same order. HDFC might want phone OTP, then PAN, then a
+                penny-drop check to confirm the bank account. The next client
+                would want a different set entirely, sequenced differently.
+              </p>
+            </Reveal>
+            <Reveal delay={0.18}>
+              <p className="text-[15px] leading-relaxed text-muted-foreground">
+                So every customer became a project. Assign a team. Integrate
+                one API call per microservice. Ship it. Do it again for the
+                next one.
+              </p>
+            </Reveal>
+            <Reveal delay={0.22}>
+              <p className="text-[15px] leading-relaxed text-muted-foreground">
+                That worked while the customers were large. It stopped
+                working as they got smaller — the cost of serving a client
+                barely moved, but the contract shrank.
+              </p>
+            </Reveal>
+          </div>
+          <Reveal delay={0.26}>
+            <p className="mt-8 max-w-2xl border-l-2 border-[var(--accent-a)] py-1 pl-6 text-xl font-medium leading-snug text-foreground sm:text-2xl">
+              Capacity, not demand, was setting how far down-market the
+              business could go.
+            </p>
+          </Reveal>
         </div>
       </section>
 
-      {/* 7. Business Impact */}
+      {/* 4. The Spark */}
+      <section className="border-b border-border bg-background">
+        <div className="mx-auto w-full max-w-6xl px-6 py-20 sm:px-8 lg:px-10">
+          <SectionEyebrow>The Spark</SectionEyebrow>
+          <Reveal delay={0.05}>
+            <h2 className="max-w-2xl text-balance text-3xl font-medium leading-[1.15] tracking-tight text-foreground sm:text-4xl">
+              A room, not a brief.
+            </h2>
+          </Reveal>
+          <Reveal delay={0.1}>
+            <p className="mt-5 max-w-2xl text-[15px] leading-relaxed text-muted-foreground">
+              My regional CEO turned it into a product question: what if the
+              flow could be composed in a portal instead of assembled by a
+              team? Scope wasn&apos;t handed down from there. It was set by a
+              recurring cross-functional group, plus a full-day workshop to
+              decide what was actually worth building.
+            </p>
+          </Reveal>
+
+          <ScopingRoom />
+
+          <Reveal delay={0.2}>
+            <p className="mt-6 max-w-2xl text-[15px] leading-relaxed text-muted-foreground">
+              My job in that room wasn&apos;t to take requirements. It was to
+              hear what each expert described and push it further than
+              they&apos;d framed it.
+            </p>
+          </Reveal>
+          <Reveal delay={0.24}>
+            <p className="mt-4 max-w-2xl text-[15px] leading-relaxed text-muted-foreground">
+              <span className="font-medium text-foreground">
+                Version history came out of that.
+              </span>{" "}
+              Nobody asked for it. In regulated finance, knowing who changed
+              what, when and why isn&apos;t a convenience — it&apos;s the
+              difference between a platform an auditor accepts and one they
+              don&apos;t.
+            </p>
+          </Reveal>
+        </div>
+      </section>
+
+      {/* 5. The First Correction */}
+      <section className="border-b border-border bg-surface">
+        <div className="mx-auto w-full max-w-6xl px-6 py-20 sm:px-8 lg:px-10">
+          <SectionEyebrow>The First Correction</SectionEyebrow>
+          <Reveal delay={0.05}>
+            <h2 className="max-w-2xl text-balance text-3xl font-medium leading-[1.15] tracking-tight text-foreground sm:text-4xl">
+              No-code was the wrong ambition.
+            </h2>
+          </Reveal>
+          <Reveal delay={0.1}>
+            <p className="mt-5 max-w-2xl text-[15px] leading-relaxed text-muted-foreground">
+              The original intent was customer self-service — banks would log
+              in and build their own verification flows. That died early, and
+              it died in the first stage rather than after launch. Composing
+              a KYC flow correctly means knowing what a dedupe check is, when
+              a penny drop is needed, and what happens when face match
+              returns a partial. That&apos;s M2P domain knowledge, not
+              customer knowledge.
+            </p>
+          </Reveal>
+          <Reveal delay={0.16}>
+            <p className="mt-4 max-w-2xl text-[15px] leading-relaxed text-muted-foreground">
+              So the product changed shape: not no-code for customers, but{" "}
+              <span className="font-medium text-foreground">
+                low-code for M2P&apos;s own implementation team.
+              </span>{" "}
+              Same architecture, honest about who could actually use it.
+            </p>
+          </Reveal>
+        </div>
+      </section>
+
+      {/* 6. The Change That Mattered */}
+      <section className="border-b border-border bg-background">
+        <div className="mx-auto w-full max-w-6xl px-6 py-20 sm:px-8 lg:px-10">
+          <SectionEyebrow>The Change That Mattered</SectionEyebrow>
+          <Reveal delay={0.05}>
+            <h2 className="max-w-2xl text-balance text-3xl font-medium leading-[1.15] tracking-tight text-foreground sm:text-4xl">
+              A hundred calls became one.
+            </h2>
+          </Reveal>
+          <Reveal delay={0.1}>
+            <p className="mt-5 max-w-2xl text-[15px] leading-relaxed text-muted-foreground">
+              Drag microservices onto a canvas. Connect them into a flow.
+              Publish. The change that mattered most sits underneath: the
+              composed flow returns through one API call.
+            </p>
+          </Reveal>
+          <Reveal delay={0.14}>
+            <p className="mt-4 max-w-2xl text-[15px] leading-relaxed text-muted-foreground">
+              Before, integrating a client meant hitting each microservice
+              separately and stitching the results. After, the whole
+              verification journey is a single endpoint. That&apos;s what
+              collapsed the work — and it made the product simpler on the
+              client&apos;s side too, which was never the stated goal but
+              turned out to matter in sales conversations.
+            </p>
+          </Reveal>
+
+          <ChangeDiagram />
+        </div>
+      </section>
+
+      {/* 7. Research */}
+      <section className="border-b border-border bg-surface">
+        <div className="mx-auto w-full max-w-6xl px-6 py-20 sm:px-8 lg:px-10">
+          <SectionEyebrow>Research</SectionEyebrow>
+          <Reveal delay={0.05}>
+            <h2 className="max-w-2xl text-balance text-3xl font-medium leading-[1.15] tracking-tight text-foreground sm:text-4xl">
+              How the structure got decided.
+            </h2>
+          </Reveal>
+
+          <Reveal delay={0.1}>
+            <dl className="mt-8 grid grid-cols-2 gap-x-6 gap-y-6 sm:grid-cols-4">
+              {RESEARCH_METHODS.map((method) => (
+                <div key={method.label}>
+                  <dt className="text-[11px] font-medium uppercase tracking-[0.1em] text-muted-foreground">
+                    {method.label}
+                  </dt>
+                  <dd className="mt-1.5 text-[15px] font-medium text-foreground">
+                    {method.value}
+                  </dd>
+                </div>
+              ))}
+            </dl>
+          </Reveal>
+
+          <Reveal delay={0.16}>
+            <p className="mt-8 max-w-2xl text-[15px] leading-relaxed text-muted-foreground">
+              A hundred services on one page is a list, not a system. Search
+              only helps people who already know what M2P calls the thing
+              they need — which excludes every new user. So I grouped
+              services by the job they do, then ran a card sort to test
+              whether that grouping matched how people actually think.
+            </p>
+          </Reveal>
+
+          <div className="mt-6 flex flex-wrap gap-2">
+            {RESEARCH_CATEGORIES.map((cat, i) => (
+              <Reveal key={cat} delay={0.2 + i * 0.02}>
+                <span className="inline-flex rounded-full border border-border-strong px-3.5 py-1.5 text-[13px] text-foreground/85">
+                  {cat}
+                </span>
+              </Reveal>
+            ))}
+          </div>
+
+          <Reveal delay={0.3}>
+            <p className="mt-6 max-w-2xl text-[15px] leading-relaxed text-muted-foreground">
+              Nobody disputed the taxonomy afterwards. In a company where
+              every service has an owner with a view on where it belongs,
+              that silence was the research paying for itself.
+            </p>
+          </Reveal>
+        </div>
+      </section>
+
+      {/* 8. Key Decisions */}
+      <section className="border-b border-border bg-background">
+        <div className="mx-auto w-full max-w-6xl px-6 py-20 sm:px-8 lg:px-10">
+          <SectionEyebrow>Key Decisions</SectionEyebrow>
+          <Reveal delay={0.05}>
+            <h2 className="max-w-2xl text-balance text-3xl font-medium leading-[1.15] tracking-tight text-foreground sm:text-4xl">
+              Three calls that shaped the builder.
+            </h2>
+          </Reveal>
+          <DecisionList />
+        </div>
+      </section>
+
+      {/* 9. Where It Broke */}
+      <section className="border-b border-border bg-surface">
+        <div className="mx-auto w-full max-w-6xl px-6 py-20 sm:px-8 lg:px-10">
+          <SectionEyebrow>Where It Broke</SectionEyebrow>
+          <Reveal delay={0.05}>
+            <h2 className="max-w-2xl text-balance text-3xl font-medium leading-[1.15] tracking-tight text-foreground sm:text-4xl">
+              We gave it to our own team, and watched.
+            </h2>
+          </Reveal>
+          <Reveal delay={0.1}>
+            <p className="mt-5 max-w-2xl text-[15px] leading-relaxed text-muted-foreground">
+              IDFlow shipped. We showed it to leadership and it landed well.
+              Then we gave it to our own implementation team and put them on
+              real work with smaller clients. They hit two walls.
+            </p>
+          </Reveal>
+
+          <WhereItBroke />
+        </div>
+      </section>
+
+      {/* 10. Business Impact */}
       <section id="impact" className="border-b border-border bg-background">
         <div className="mx-auto w-full max-w-6xl px-6 py-20 sm:px-8 lg:px-10">
           <SectionEyebrow>Business Impact</SectionEyebrow>
@@ -251,40 +354,144 @@ export default function PlatformEvolutionPage() {
             </h2>
           </Reveal>
           <ImpactMetrics />
-        </div>
-      </section>
-
-      {/* 8. Lessons Learned */}
-      <section className="border-b border-border bg-surface">
-        <div className="mx-auto w-full max-w-6xl px-6 py-20 sm:px-8 lg:px-10">
-          <SectionEyebrow>Lessons Learned</SectionEyebrow>
-          <Reveal delay={0.05}>
-            <h2 className="max-w-2xl text-balance text-3xl font-medium leading-[1.15] tracking-tight text-foreground sm:text-4xl">
-              What this changed about how I think.
-            </h2>
+          <Reveal delay={0.3}>
+            <p className="mt-10 max-w-2xl text-[15px] leading-relaxed text-muted-foreground">
+              Setting up a customer went from a full cross-functional team
+              over weeks to solution engineers owning the flow themselves.
+              For design that now means choosing type and colour on a layout
+              that&apos;s already fixed — the microservices are pre-built, so
+              the structure doesn&apos;t change per client.
+            </p>
           </Reveal>
-          <Reveal delay={0.1}>
-            <blockquote className="mt-8 max-w-2xl text-balance border-l-2 border-[var(--accent-a)] pl-6 text-2xl font-medium leading-snug tracking-tight text-foreground sm:text-3xl">
-              &ldquo;The pattern across all three decisions is the same one:
-              each stage traded something concrete — raw flexibility,
-              identity-specific shortcuts, control over what ships — for
-              reach.&rdquo;
-            </blockquote>
-          </Reveal>
-          <Reveal delay={0.16}>
-            <p className="mt-6 max-w-2xl text-[15px] leading-relaxed text-muted-foreground">
-              Scaling a platform is less about adding capability and more
-              about deciding, on purpose, what you&apos;re willing to give up
-              for it. The failure mode isn&apos;t making the wrong trade —
-              it&apos;s not naming the trade at all, and finding out later
-              what it actually cost.
+          <Reveal delay={0.35}>
+            <p className="mt-6 max-w-2xl border-l-2 border-[var(--accent-a)] py-1 pl-6 text-xl font-medium leading-snug text-foreground sm:text-2xl">
+              New products get adopted because they&apos;re new. Teams only
+              migrate flows that already work when the new thing is
+              genuinely better.
             </p>
           </Reveal>
         </div>
       </section>
 
-      {/* 9. What's Next */}
-      <section className="bg-background">
+      {/* 11. What Happened Next */}
+      <section className="border-b border-border bg-surface">
+        <div className="mx-auto w-full max-w-6xl px-6 py-20 sm:px-8 lg:px-10">
+          <SectionEyebrow>What Happened Next</SectionEyebrow>
+          <Reveal delay={0.05}>
+            <h2 className="max-w-2xl text-balance text-3xl font-medium leading-[1.15] tracking-tight text-foreground sm:text-4xl">
+              The same habit, one layer down.
+            </h2>
+          </Reveal>
+          <div className="mt-6 max-w-2xl space-y-4">
+            <Reveal delay={0.1}>
+              <p className="text-[15px] leading-relaxed text-muted-foreground">
+                Flows now ran, but they produced data with nowhere to look at
+                it. So M2P started doing the familiar thing: assign a team
+                per customer, build them a back-end portal. The exact pattern
+                the platform had just removed, returning at the next layer.
+              </p>
+            </Reveal>
+            <Reveal delay={0.14}>
+              <p className="text-[15px] leading-relaxed text-muted-foreground">
+                <span className="font-medium text-foreground">
+                  M2P Connect
+                </span>{" "}
+                generalised the engine beyond identity into a company-wide
+                capability, and added what a platform needs at scale —
+                maker-checker approval so the person who builds a flow
+                isn&apos;t the person who approves it, task assignment and
+                SLA configuration, version history, logs, post-API
+                verification. It also consolidated with a parallel low-code
+                product from Finflux, the lending startup M2P had acquired,
+                whose loan-origination builder was solving a version of the
+                same problem.
+              </p>
+            </Reveal>
+            <Reveal delay={0.18}>
+              <p className="text-[15px] leading-relaxed text-muted-foreground">
+                <span className="font-medium text-foreground">Wand</span>{" "}
+                closed the last gap. Connect emits a unique ID per journey;
+                Wand turns it into a report a bank&apos;s own staff can log
+                in and read. When a customer completes an onboarding journey
+                at HDFC, someone at HDFC can open Wand and see it — without
+                anyone at M2P building them a portal.
+              </p>
+            </Reveal>
+            <Reveal delay={0.22}>
+              <p className="text-[15px] leading-relaxed text-muted-foreground">
+                Each product contains the one before it. Wand has everything
+                IDFlow and Connect could do, plus case management on top.
+              </p>
+            </Reveal>
+          </div>
+          <Reveal delay={0.28}>
+            <p className="mt-8 max-w-2xl border-l-2 border-[var(--accent-a)] py-1 pl-6 text-xl font-medium leading-snug text-foreground sm:text-2xl">
+              The same reflex — assign a team, build it custom, per customer
+              — kept reappearing at each layer. Each product removed one more
+              instance of it.
+            </p>
+          </Reveal>
+        </div>
+      </section>
+
+      {/* 12. Lessons Learned */}
+      <section className="border-b border-border bg-background">
+        <div className="mx-auto w-full max-w-6xl px-6 py-20 sm:px-8 lg:px-10">
+          <SectionEyebrow>Lessons Learned</SectionEyebrow>
+          <Reveal delay={0.05}>
+            <h2 className="max-w-2xl text-balance text-3xl font-medium leading-[1.15] tracking-tight text-foreground sm:text-4xl">
+              What I&apos;d do differently.
+            </h2>
+          </Reveal>
+
+          <div className="mt-8 max-w-2xl divide-y divide-border">
+            <Reveal delay={0.1}>
+              <div className="py-6 first:pt-0">
+                <h3 className="text-[17px] font-medium text-foreground">
+                  The failure state should ship with the happy path
+                </h3>
+                <p className="mt-2.5 text-[15px] leading-relaxed text-muted-foreground">
+                  We found the debugging problem by watching implementation
+                  staff struggle with real client work. That&apos;s the right
+                  way to find it — but I&apos;d design the error experience
+                  alongside the success case next time, not after.
+                </p>
+              </div>
+            </Reveal>
+            <Reveal delay={0.16}>
+              <div className="py-6">
+                <h3 className="text-[17px] font-medium text-foreground">
+                  I&apos;d start where Wand ended
+                </h3>
+                <p className="mt-2.5 text-[15px] leading-relaxed text-muted-foreground">
+                  Extensibility, customer-owned APIs, treating the platform
+                  as something others build on — that thinking was available
+                  conceptually from the beginning. Approaching IDFlow that
+                  way would likely have produced a different architecture on
+                  day one rather than across three products.
+                </p>
+              </div>
+            </Reveal>
+            <Reveal delay={0.22}>
+              <div className="py-6 last:pb-0">
+                <h3 className="text-[17px] font-medium text-foreground">
+                  One concession I&apos;d make again
+                </h3>
+                <p className="mt-2.5 text-[15px] leading-relaxed text-muted-foreground">
+                  I proposed version history and designed it on Figma&apos;s
+                  model. Engineering built something structurally different
+                  based on how they understood the system, and I took theirs
+                  — their domain, easier for them to maintain, and mine
+                  wasn&apos;t better enough to spend the capital on.
+                </p>
+              </div>
+            </Reveal>
+          </div>
+        </div>
+      </section>
+
+      {/* 13. What's Next */}
+      <section className="bg-surface">
         <div className="mx-auto w-full max-w-6xl px-6 py-20 sm:px-8 lg:px-10">
           <SectionEyebrow>What&apos;s Next</SectionEyebrow>
           <Reveal delay={0.05}>
