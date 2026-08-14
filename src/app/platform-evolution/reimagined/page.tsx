@@ -124,7 +124,7 @@ export default function ReimaginedPage() {
               initial={{ opacity: 0, y: 16 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.2, duration: 0.7, ease: [0.16, 1, 0.3, 1] }}
-              className="font-display mt-4 max-w-4xl text-balance text-[12vw] leading-[1.02] text-[var(--ink)] sm:text-[5.5rem]"
+              className="font-display mt-4 text-balance text-[12vw] leading-[1.02] text-[var(--ink)] sm:text-[5.5rem]"
             >
               A hundred moving parts, one signal.
             </motion.h1>
@@ -132,7 +132,7 @@ export default function ReimaginedPage() {
               initial={{ opacity: 0, y: 10 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.4, duration: 0.6 }}
-              className="mt-6 max-w-lg font-mono text-[13px] leading-relaxed text-[var(--ink-dim)]"
+              className="mt-6 font-mono text-[13px] leading-relaxed text-[var(--ink-dim)]"
             >
               An alternate, experimental treatment of the Platform Evolution
               case study — built to demonstrate interface patterns for
@@ -160,12 +160,12 @@ export default function ReimaginedPage() {
         <div className="mx-auto w-full max-w-[1200px] px-6 py-20 sm:px-10 sm:py-28">
           <Eyebrow>01 — my role</Eyebrow>
           <Fade delay={0.05}>
-            <h2 className="font-display mt-4 max-w-2xl text-3xl text-[var(--ink)] sm:text-5xl">
+            <h2 className="font-display mt-4 text-3xl text-[var(--ink)] sm:text-5xl">
               Senior Lead Product Designer, all three generations.
             </h2>
           </Fade>
           <Fade delay={0.1}>
-            <p className="mt-6 max-w-xl font-mono text-[14px] leading-relaxed text-[var(--ink-dim)]">
+            <p className="mt-6 font-mono text-[14px] leading-relaxed text-[var(--ink-dim)]">
               <span className="text-[var(--ink)]">What I owned — </span>
               Product design end to end, from the scoping workshop through a
               shipped platform: research, information architecture,
@@ -175,7 +175,7 @@ export default function ReimaginedPage() {
             </p>
           </Fade>
           <Fade delay={0.15}>
-            <div className="mt-6 max-w-xl rounded-xl border border-[var(--line-strong)] bg-[var(--bg-elevated)] p-5">
+            <div className="mt-6 rounded-xl border border-[var(--line-strong)] bg-[var(--bg-elevated)] p-5">
               <span className="font-mono text-[11px] uppercase tracking-[0.12em] text-[var(--ink-faint)]">
                 Collaboration
               </span>
@@ -198,7 +198,7 @@ export default function ReimaginedPage() {
             text="Every bank wanted a different set of verification services, in a different order."
             className="font-display mt-4 text-3xl leading-[1.15] text-[var(--ink)] sm:text-5xl"
           />
-          <Fade delay={0.1} className="mt-8 max-w-xl space-y-4">
+          <Fade delay={0.1} className="mt-8 space-y-4">
             <p className="font-mono text-[14px] leading-relaxed text-[var(--ink-dim)]">
               M2P had built over a hundred verification microservices — OTP,
               PAN, Aadhaar, OCR, face match, penny-drop bank checks, dedupe.
@@ -222,7 +222,7 @@ export default function ReimaginedPage() {
             </p>
           </Fade>
           <Fade delay={0.2}>
-            <p className="mt-6 max-w-xl border-l-2 border-[var(--signal)] py-1 pl-5 font-mono text-[15px] leading-relaxed text-[var(--signal)]">
+            <p className="mt-6 border-l-2 border-[var(--signal)] py-1 pl-5 font-mono text-[15px] leading-relaxed text-[var(--signal)]">
               Capacity, not demand, was setting how far down-market the
               business could go.
             </p>
@@ -235,12 +235,12 @@ export default function ReimaginedPage() {
         <div className="mx-auto w-full max-w-[1200px] px-6 py-20 sm:px-10 sm:py-28">
           <Eyebrow>03 — the spark</Eyebrow>
           <Fade delay={0.05}>
-            <h2 className="font-display mt-4 max-w-2xl text-3xl text-[var(--ink)] sm:text-5xl">
+            <h2 className="font-display mt-4 text-3xl text-[var(--ink)] sm:text-5xl">
               A room, not a brief.
             </h2>
           </Fade>
           <Fade delay={0.1}>
-            <p className="mt-6 max-w-xl font-mono text-[14px] leading-relaxed text-[var(--ink-dim)]">
+            <p className="mt-6 font-mono text-[14px] leading-relaxed text-[var(--ink-dim)]">
               My regional CEO turned it into a product question: what if the
               flow could be composed in a portal instead of assembled by a
               team? Scope wasn&apos;t handed down from there. It was set by a
@@ -252,14 +252,14 @@ export default function ReimaginedPage() {
           <ScopingRoomDark />
 
           <Fade delay={0.2}>
-            <p className="mt-6 max-w-xl font-mono text-[14px] leading-relaxed text-[var(--ink-dim)]">
+            <p className="mt-6 font-mono text-[14px] leading-relaxed text-[var(--ink-dim)]">
               My job in that room wasn&apos;t to take requirements. It was to
               hear what each expert described and push it further than
               they&apos;d framed it.
             </p>
           </Fade>
           <Fade delay={0.25}>
-            <p className="mt-4 max-w-xl font-mono text-[14px] leading-relaxed text-[var(--ink-dim)]">
+            <p className="mt-4 font-mono text-[14px] leading-relaxed text-[var(--ink-dim)]">
               <span className="text-[var(--ink)]">
                 Version history came out of that.
               </span>{" "}
@@ -277,12 +277,12 @@ export default function ReimaginedPage() {
         <div className="mx-auto w-full max-w-[1200px] px-6 py-20 sm:px-10 sm:py-28">
           <Eyebrow>04 — the first correction</Eyebrow>
           <Fade delay={0.05}>
-            <h2 className="font-display mt-4 max-w-2xl text-3xl text-[var(--ink)] sm:text-5xl">
+            <h2 className="font-display mt-4 text-3xl text-[var(--ink)] sm:text-5xl">
               No-code was the wrong ambition.
             </h2>
           </Fade>
           <Fade delay={0.1}>
-            <p className="mt-6 max-w-xl font-mono text-[14px] leading-relaxed text-[var(--ink-dim)]">
+            <p className="mt-6 font-mono text-[14px] leading-relaxed text-[var(--ink-dim)]">
               The original intent was customer self-service — banks would log
               in and build their own verification flows. That died early,
               and it died in the first stage rather than after launch.
@@ -293,7 +293,7 @@ export default function ReimaginedPage() {
             </p>
           </Fade>
           <Fade delay={0.15}>
-            <p className="mt-4 max-w-xl font-mono text-[14px] leading-relaxed text-[var(--ink-dim)]">
+            <p className="mt-4 font-mono text-[14px] leading-relaxed text-[var(--ink-dim)]">
               So the product changed shape: not no-code for customers, but{" "}
               <span className="text-[var(--ink)]">
                 low-code for M2P&apos;s own implementation team.
@@ -309,12 +309,12 @@ export default function ReimaginedPage() {
         <div className="mx-auto w-full max-w-[1200px] px-6 pt-20 sm:px-10 sm:pt-28">
           <Eyebrow>05 — the change that mattered</Eyebrow>
           <Fade delay={0.05}>
-            <h2 className="font-display mt-4 max-w-2xl text-3xl text-[var(--ink)] sm:text-5xl">
+            <h2 className="font-display mt-4 text-3xl text-[var(--ink)] sm:text-5xl">
               A hundred calls became one.
             </h2>
           </Fade>
           <Fade delay={0.1}>
-            <p className="mt-6 max-w-xl font-mono text-[14px] leading-relaxed text-[var(--ink-dim)]">
+            <p className="mt-6 font-mono text-[14px] leading-relaxed text-[var(--ink-dim)]">
               Drag microservices onto a canvas. Connect them into a flow.
               Publish. The composed flow returns through a single API call —
               the sequence lives in the flow, not in the client&apos;s
@@ -331,7 +331,7 @@ export default function ReimaginedPage() {
         <div className="mx-auto w-full max-w-[1200px] px-6 py-20 sm:px-10 sm:py-28">
           <Eyebrow>06 — research</Eyebrow>
           <Fade delay={0.05}>
-            <h2 className="font-display mt-4 max-w-2xl text-3xl text-[var(--ink)] sm:text-5xl">
+            <h2 className="font-display mt-4 text-3xl text-[var(--ink)] sm:text-5xl">
               How the structure got decided.
             </h2>
           </Fade>
@@ -357,7 +357,7 @@ export default function ReimaginedPage() {
           </Fade>
 
           <Fade delay={0.15}>
-            <p className="mt-8 max-w-xl font-mono text-[14px] leading-relaxed text-[var(--ink-dim)]">
+            <p className="mt-8 font-mono text-[14px] leading-relaxed text-[var(--ink-dim)]">
               A hundred services on one page is a list, not a system. So I
               grouped services by the job they do, then ran a card sort to
               test whether that grouping matched how people actually think.
@@ -386,7 +386,7 @@ export default function ReimaginedPage() {
           </Fade>
 
           <Fade delay={0.25}>
-            <p className="mt-5 max-w-xl font-mono text-[14px] leading-relaxed text-[var(--ink-dim)]">
+            <p className="mt-5 font-mono text-[14px] leading-relaxed text-[var(--ink-dim)]">
               Nobody disputed the taxonomy afterwards. That silence was the
               research paying for itself.
             </p>
@@ -412,7 +412,7 @@ export default function ReimaginedPage() {
         <div className="mx-auto w-full max-w-[1200px] px-6 py-20 sm:px-10 sm:py-28">
           <Eyebrow>07 — decision log</Eyebrow>
           <Fade delay={0.05}>
-            <h2 className="font-display mt-4 max-w-2xl text-3xl text-[var(--ink)] sm:text-5xl">
+            <h2 className="font-display mt-4 text-3xl text-[var(--ink)] sm:text-5xl">
               Three calls that shaped the builder.
             </h2>
           </Fade>
@@ -439,12 +439,12 @@ export default function ReimaginedPage() {
         <div className="mx-auto w-full max-w-[1200px] px-6 py-20 sm:px-10 sm:py-28">
           <Eyebrow>08 — where it broke</Eyebrow>
           <Fade delay={0.05}>
-            <h2 className="font-display mt-4 max-w-2xl text-3xl text-[var(--ink)] sm:text-5xl">
+            <h2 className="font-display mt-4 text-3xl text-[var(--ink)] sm:text-5xl">
               We gave it to our own team, and watched.
             </h2>
           </Fade>
           <Fade delay={0.1}>
-            <p className="mt-6 max-w-xl font-mono text-[14px] leading-relaxed text-[var(--ink-dim)]">
+            <p className="mt-6 font-mono text-[14px] leading-relaxed text-[var(--ink-dim)]">
               IDFlow shipped. We showed it to leadership and it landed well.
               Then we gave it to our own implementation team and put them on
               real work with smaller clients. They hit two walls.
@@ -468,7 +468,7 @@ export default function ReimaginedPage() {
         <div className="mx-auto w-full max-w-[1200px] px-6 py-20 sm:px-10 sm:py-28">
           <Eyebrow>09 — business impact</Eyebrow>
           <Fade delay={0.05}>
-            <h2 className="font-display mt-4 max-w-2xl text-3xl text-[var(--ink)] sm:text-5xl">
+            <h2 className="font-display mt-4 text-3xl text-[var(--ink)] sm:text-5xl">
               What actually changed.
             </h2>
           </Fade>
@@ -495,7 +495,7 @@ export default function ReimaginedPage() {
             />
           </div>
           <Fade delay={0.1}>
-            <p className="mt-8 max-w-xl font-mono text-[14px] leading-relaxed text-[var(--ink-dim)]">
+            <p className="mt-8 font-mono text-[14px] leading-relaxed text-[var(--ink-dim)]">
               Setting up a customer went from a full cross-functional team
               over weeks to solution engineers owning the flow themselves.
               For design that now means choosing type and colour on a layout
@@ -504,7 +504,7 @@ export default function ReimaginedPage() {
             </p>
           </Fade>
           <Fade delay={0.15}>
-            <p className="mt-5 max-w-xl border-l-2 border-[var(--signal)] py-1 pl-5 font-mono text-[15px] leading-relaxed text-[var(--signal)]">
+            <p className="mt-5 border-l-2 border-[var(--signal)] py-1 pl-5 font-mono text-[15px] leading-relaxed text-[var(--signal)]">
               New products get adopted because they&apos;re new. Teams only
               migrate flows that already work when the new thing is
               genuinely better.
@@ -518,11 +518,11 @@ export default function ReimaginedPage() {
         <div className="mx-auto w-full max-w-[1200px] px-6 py-20 sm:px-10 sm:py-28">
           <Eyebrow>10 — what happened next</Eyebrow>
           <Fade delay={0.05}>
-            <h2 className="font-display mt-4 max-w-2xl text-3xl text-[var(--ink)] sm:text-5xl">
+            <h2 className="font-display mt-4 text-3xl text-[var(--ink)] sm:text-5xl">
               The same habit, one layer down.
             </h2>
           </Fade>
-          <Fade delay={0.1} className="mt-6 max-w-xl space-y-4">
+          <Fade delay={0.1} className="mt-6 space-y-4">
             <p className="font-mono text-[14px] leading-relaxed text-[var(--ink-dim)]">
               Flows now ran, but they produced data with nowhere to look at
               it. So M2P started doing the familiar thing: assign a team per
@@ -547,7 +547,7 @@ export default function ReimaginedPage() {
             </p>
           </Fade>
           <Fade delay={0.2}>
-            <p className="mt-6 max-w-xl border-l-2 border-[var(--signal)] py-1 pl-5 font-mono text-[15px] leading-relaxed text-[var(--signal)]">
+            <p className="mt-6 border-l-2 border-[var(--signal)] py-1 pl-5 font-mono text-[15px] leading-relaxed text-[var(--signal)]">
               The same reflex — assign a team, build it custom, per customer
               — kept reappearing at each layer. Each product removed one
               more instance of it.
@@ -579,12 +579,12 @@ export default function ReimaginedPage() {
         <div className="mx-auto w-full max-w-[1200px] px-6 py-20 sm:px-10 sm:py-28">
           <Eyebrow>11 — lessons learned</Eyebrow>
           <Fade delay={0.05}>
-            <h2 className="font-display mt-4 max-w-2xl text-3xl text-[var(--ink)] sm:text-5xl">
+            <h2 className="font-display mt-4 text-3xl text-[var(--ink)] sm:text-5xl">
               What I&apos;d do differently.
             </h2>
           </Fade>
 
-          <div className="mt-8 max-w-xl divide-y divide-[var(--line)]">
+          <div className="mt-8 divide-y divide-[var(--line)]">
             {[
               {
                 title: "The failure state should ship with the happy path",
@@ -619,12 +619,12 @@ export default function ReimaginedPage() {
         <div className="mx-auto w-full max-w-[1200px] px-6 py-20 sm:px-10 sm:py-28">
           <Eyebrow>12 — what&apos;s next</Eyebrow>
           <Fade delay={0.05}>
-            <h2 className="font-display mt-4 max-w-2xl text-3xl text-[var(--ink)] sm:text-5xl">
+            <h2 className="font-display mt-4 text-3xl text-[var(--ink)] sm:text-5xl">
               Try the next stage.
             </h2>
           </Fade>
           <Fade delay={0.1}>
-            <p className="mt-6 max-w-xl font-mono text-[14px] leading-relaxed text-[var(--ink-dim)]">
+            <p className="mt-6 font-mono text-[14px] leading-relaxed text-[var(--ink-dim)]">
               Wand&apos;s architecture was built to keep going — this is the
               natural next stage, not a shipped feature list:
             </p>
@@ -644,7 +644,7 @@ export default function ReimaginedPage() {
           </Fade>
 
           <Fade delay={0.2}>
-            <p className="mt-6 max-w-xl font-mono text-[14px] leading-relaxed text-[var(--ink-dim)]">
+            <p className="mt-6 font-mono text-[14px] leading-relaxed text-[var(--ink-dim)]">
               Describe what you want in plain language, get a drafted flow
               back, stay in control of what actually ships. Pick a prompt
               below.
@@ -663,7 +663,7 @@ export default function ReimaginedPage() {
           <p className="font-display text-2xl text-[var(--ink)] sm:text-3xl">
             Same story. Different instrument.
           </p>
-          <p className="mx-auto mt-4 max-w-md font-mono text-[13px] leading-relaxed text-[var(--ink-dim)]">
+          <p className="mx-auto mt-4 font-mono text-[13px] leading-relaxed text-[var(--ink-dim)]">
             This page exists to show range — the restrained version is the
             one built for recruiters to actually read.
           </p>
