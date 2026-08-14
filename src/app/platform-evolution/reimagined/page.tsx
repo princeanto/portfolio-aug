@@ -58,7 +58,13 @@ function CollapseMoment() {
 
   return (
     <div ref={ref} className="relative h-[70vh] min-h-[420px] w-full">
-      <NodeNetwork collapsed={collapsed} nodeCount={90} />
+      <motion.div
+        className="absolute inset-0"
+        animate={{ opacity: collapsed ? 0.12 : 1 }}
+        transition={{ delay: collapsed ? 1.0 : 0, duration: 0.9 }}
+      >
+        <NodeNetwork collapsed={collapsed} nodeCount={90} />
+      </motion.div>
       <div className="pointer-events-none absolute inset-0 flex flex-col items-center justify-center text-center">
         <motion.p
           initial={{ opacity: 0 }}
@@ -92,7 +98,7 @@ export default function ReimaginedPage() {
       {/* Hero */}
       <section className="relative h-[100svh] min-h-[720px] w-full overflow-hidden border-b border-[var(--line)]">
         <NodeNetwork collapsed={false} />
-        <div className="relative z-10 mx-auto flex h-full w-full max-w-6xl flex-col justify-between px-6 py-10 sm:px-10 sm:py-14">
+        <div className="relative z-10 mx-auto flex h-full w-full max-w-[1200px] flex-col justify-between px-6 py-10 sm:px-10 sm:py-14">
           <div className="flex items-center justify-between">
             <Link
               href="/platform-evolution"
@@ -151,7 +157,7 @@ export default function ReimaginedPage() {
 
       {/* 01 — My Role */}
       <section id="role" className="border-b border-[var(--line)]">
-        <div className="mx-auto w-full max-w-3xl px-6 py-20 sm:px-10 sm:py-28">
+        <div className="mx-auto w-full max-w-[1200px] px-6 py-20 sm:px-10 sm:py-28">
           <Eyebrow>01 — my role</Eyebrow>
           <Fade delay={0.05}>
             <h2 className="font-display mt-4 max-w-2xl text-3xl text-[var(--ink)] sm:text-5xl">
@@ -184,7 +190,7 @@ export default function ReimaginedPage() {
 
       {/* 02 — The Situation */}
       <section className="border-b border-[var(--line)]">
-        <div className="mx-auto w-full max-w-3xl px-6 py-20 sm:px-10 sm:py-28">
+        <div className="mx-auto w-full max-w-[1200px] px-6 py-20 sm:px-10 sm:py-28">
           <Eyebrow>02 — the situation</Eyebrow>
           <StreamingText
             as="h2"
@@ -226,7 +232,7 @@ export default function ReimaginedPage() {
 
       {/* 03 — The Spark */}
       <section className="border-b border-[var(--line)]">
-        <div className="mx-auto w-full max-w-3xl px-6 py-20 sm:px-10 sm:py-28">
+        <div className="mx-auto w-full max-w-[1200px] px-6 py-20 sm:px-10 sm:py-28">
           <Eyebrow>03 — the spark</Eyebrow>
           <Fade delay={0.05}>
             <h2 className="font-display mt-4 max-w-2xl text-3xl text-[var(--ink)] sm:text-5xl">
@@ -268,7 +274,7 @@ export default function ReimaginedPage() {
 
       {/* 04 — The First Correction */}
       <section className="border-b border-[var(--line)]">
-        <div className="mx-auto w-full max-w-3xl px-6 py-20 sm:px-10 sm:py-28">
+        <div className="mx-auto w-full max-w-[1200px] px-6 py-20 sm:px-10 sm:py-28">
           <Eyebrow>04 — the first correction</Eyebrow>
           <Fade delay={0.05}>
             <h2 className="font-display mt-4 max-w-2xl text-3xl text-[var(--ink)] sm:text-5xl">
@@ -300,7 +306,7 @@ export default function ReimaginedPage() {
 
       {/* 05 — The Change That Mattered */}
       <section className="border-b border-[var(--line)]">
-        <div className="mx-auto w-full max-w-6xl px-6 pt-20 sm:px-10 sm:pt-28">
+        <div className="mx-auto w-full max-w-[1200px] px-6 pt-20 sm:px-10 sm:pt-28">
           <Eyebrow>05 — the change that mattered</Eyebrow>
           <Fade delay={0.05}>
             <h2 className="font-display mt-4 max-w-2xl text-3xl text-[var(--ink)] sm:text-5xl">
@@ -322,7 +328,7 @@ export default function ReimaginedPage() {
 
       {/* 06 — Research */}
       <section className="border-b border-[var(--line)]">
-        <div className="mx-auto w-full max-w-3xl px-6 py-20 sm:px-10 sm:py-28">
+        <div className="mx-auto w-full max-w-[1200px] px-6 py-20 sm:px-10 sm:py-28">
           <Eyebrow>06 — research</Eyebrow>
           <Fade delay={0.05}>
             <h2 className="font-display mt-4 max-w-2xl text-3xl text-[var(--ink)] sm:text-5xl">
@@ -403,7 +409,7 @@ export default function ReimaginedPage() {
 
       {/* 07 — Key Decisions */}
       <section className="border-b border-[var(--line)]">
-        <div className="mx-auto w-full max-w-3xl px-6 py-20 sm:px-10 sm:py-28">
+        <div className="mx-auto w-full max-w-[1200px] px-6 py-20 sm:px-10 sm:py-28">
           <Eyebrow>07 — decision log</Eyebrow>
           <Fade delay={0.05}>
             <h2 className="font-display mt-4 max-w-2xl text-3xl text-[var(--ink)] sm:text-5xl">
@@ -430,7 +436,7 @@ export default function ReimaginedPage() {
 
       {/* 08 — Where It Broke */}
       <section className="border-b border-[var(--line)]">
-        <div className="mx-auto w-full max-w-3xl px-6 py-20 sm:px-10 sm:py-28">
+        <div className="mx-auto w-full max-w-[1200px] px-6 py-20 sm:px-10 sm:py-28">
           <Eyebrow>08 — where it broke</Eyebrow>
           <Fade delay={0.05}>
             <h2 className="font-display mt-4 max-w-2xl text-3xl text-[var(--ink)] sm:text-5xl">
@@ -459,7 +465,7 @@ export default function ReimaginedPage() {
 
       {/* 09 — Business Impact */}
       <section id="impact" className="border-b border-[var(--line)]">
-        <div className="mx-auto w-full max-w-3xl px-6 py-20 sm:px-10 sm:py-28">
+        <div className="mx-auto w-full max-w-[1200px] px-6 py-20 sm:px-10 sm:py-28">
           <Eyebrow>09 — business impact</Eyebrow>
           <Fade delay={0.05}>
             <h2 className="font-display mt-4 max-w-2xl text-3xl text-[var(--ink)] sm:text-5xl">
@@ -509,7 +515,7 @@ export default function ReimaginedPage() {
 
       {/* 10 — What Happened Next */}
       <section className="border-b border-[var(--line)]">
-        <div className="mx-auto w-full max-w-3xl px-6 py-20 sm:px-10 sm:py-28">
+        <div className="mx-auto w-full max-w-[1200px] px-6 py-20 sm:px-10 sm:py-28">
           <Eyebrow>10 — what happened next</Eyebrow>
           <Fade delay={0.05}>
             <h2 className="font-display mt-4 max-w-2xl text-3xl text-[var(--ink)] sm:text-5xl">
@@ -570,7 +576,7 @@ export default function ReimaginedPage() {
 
       {/* 11 — Lessons Learned */}
       <section className="border-b border-[var(--line)]">
-        <div className="mx-auto w-full max-w-3xl px-6 py-20 sm:px-10 sm:py-28">
+        <div className="mx-auto w-full max-w-[1200px] px-6 py-20 sm:px-10 sm:py-28">
           <Eyebrow>11 — lessons learned</Eyebrow>
           <Fade delay={0.05}>
             <h2 className="font-display mt-4 max-w-2xl text-3xl text-[var(--ink)] sm:text-5xl">
@@ -610,7 +616,7 @@ export default function ReimaginedPage() {
 
       {/* 12 — What's Next (+ AI demo) */}
       <section className="border-b border-[var(--line)]">
-        <div className="mx-auto w-full max-w-3xl px-6 py-20 sm:px-10 sm:py-28">
+        <div className="mx-auto w-full max-w-[1200px] px-6 py-20 sm:px-10 sm:py-28">
           <Eyebrow>12 — what&apos;s next</Eyebrow>
           <Fade delay={0.05}>
             <h2 className="font-display mt-4 max-w-2xl text-3xl text-[var(--ink)] sm:text-5xl">
@@ -653,7 +659,7 @@ export default function ReimaginedPage() {
 
       {/* Close */}
       <section>
-        <div className="mx-auto w-full max-w-3xl px-6 py-24 text-center sm:px-10 sm:py-32">
+        <div className="mx-auto w-full max-w-[1200px] px-6 py-24 text-center sm:px-10 sm:py-32">
           <p className="font-display text-2xl text-[var(--ink)] sm:text-3xl">
             Same story. Different instrument.
           </p>
