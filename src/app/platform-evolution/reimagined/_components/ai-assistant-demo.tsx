@@ -110,7 +110,7 @@ export function AIAssistantDemo() {
                   text={response}
                   as="p"
                   speed={14}
-                  className="mt-4 max-w-xl font-mono text-[13px] leading-relaxed text-[var(--ink)]"
+                  className="mt-4 font-mono text-[13px] leading-relaxed text-[var(--ink)]"
                   cursor={phase === "streaming"}
                 />
               ) : null}
@@ -165,7 +165,7 @@ export function AIAssistantDemo() {
                       Discard
                     </button>
                   </motion.div>
-                  <p className="mt-4 max-w-lg font-mono text-[11px] leading-relaxed text-[var(--ink-faint)]">
+                  <p className="mt-4 font-mono text-[11px] leading-relaxed text-[var(--ink-faint)]">
                     You stay in control of validation, anything
                     security-sensitive, and what actually ships. This is a
                     scripted demo of the concept — not a live model.

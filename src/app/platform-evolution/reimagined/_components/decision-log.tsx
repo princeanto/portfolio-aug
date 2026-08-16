@@ -36,7 +36,7 @@ export function DecisionLog() {
             <div className="font-mono text-[13px] tracking-tight text-[var(--ink)]">
               {d.id}
             </div>
-            <p className="mt-1 max-w-xl font-mono text-[12.5px] leading-relaxed text-[var(--ink-dim)]">
+            <p className="mt-1 font-mono text-[12.5px] leading-relaxed text-[var(--ink-dim)]">
               {d.body}
             </p>
           </div>
