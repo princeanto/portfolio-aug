@@ -134,9 +134,9 @@ export default function ReimaginedPage() {
               transition={{ delay: 0.4, duration: 0.6 }}
               className="mt-6 font-mono text-[13px] leading-relaxed text-[var(--ink-dim)]"
             >
-              An alternate, experimental treatment of the Platform Evolution
-              case study — built to demonstrate interface patterns for
-              AI-native products, not just describe them.
+              Every bank wanted a different set of verification services, in
+              a different order — so every bank got its own team and its own
+              build. I turned that into one API call.
             </motion.p>
           </div>
 
@@ -161,7 +161,7 @@ export default function ReimaginedPage() {
           <Eyebrow>01 — my role</Eyebrow>
           <Fade delay={0.05}>
             <h2 className="font-display mt-4 text-3xl text-[var(--ink)] sm:text-5xl">
-              Senior Lead Product Designer, all three generations.
+              Senior Lead Product Designer across IDFlow, M2P Connect, and Wand.
             </h2>
           </Fade>
           <Fade delay={0.1}>
