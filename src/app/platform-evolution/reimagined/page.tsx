@@ -472,27 +472,41 @@ export default function ReimaginedPage() {
               What actually changed.
             </h2>
           </Fade>
-          <div className="mt-6">
-            <TerminalStat
-              label="implementation impact"
-              value="80%"
-              caption="Faster client go-live, against the previous cross-functional baseline."
-            />
-            <TerminalStat
-              label="platform impact"
-              value="100+"
-              caption="Microservices orchestrated behind a single API call."
-            />
-            <TerminalStat
-              label="adoption"
-              value="20+"
-              caption="Enterprise clients supported on the platform."
-            />
-            <TerminalStat
-              label="team efficiency"
-              value="2–3 hrs"
-              caption="Per client, per supporting team — down from weeks each."
-            />
+          <div className="mt-10 grid grid-cols-2 gap-x-8 gap-y-10 border-t border-[var(--line)] pt-8 sm:grid-cols-4">
+            {[
+              {
+                label: "implementation impact",
+                value: "80%",
+                caption:
+                  "Faster client go-live, against the previous cross-functional baseline.",
+              },
+              {
+                label: "platform impact",
+                value: "100+",
+                caption: "Microservices orchestrated behind a single API call.",
+              },
+              {
+                label: "adoption",
+                value: "20+",
+                caption: "Enterprise clients supported on the platform.",
+              },
+              {
+                label: "team efficiency",
+                value: "2–3 hrs",
+                caption: "Per client, per supporting team — down from weeks each.",
+              },
+            ].map((stat, i) => (
+              <div
+                key={stat.label}
+                className={i > 0 ? "sm:border-l sm:border-[var(--line)] sm:pl-8" : ""}
+              >
+                <TerminalStat
+                  label={stat.label}
+                  value={stat.value}
+                  caption={stat.caption}
+                />
+              </div>
+            ))}
           </div>
           <Fade delay={0.1}>
             <p className="mt-8 font-mono text-[14px] leading-relaxed text-[var(--ink-dim)]">

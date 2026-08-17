@@ -34,14 +34,14 @@ export function TerminalStat({
   }, [isInView, target, prefersReducedMotion]);
 
   return (
-    <div ref={ref} className="border-t border-[var(--line)] py-6">
+    <div ref={ref}>
       <div className="font-mono text-[11px] uppercase tracking-[0.12em] text-[var(--ink-faint)]">
         [ {label} ]
       </div>
       <div className="mt-2 font-mono text-3xl text-[var(--signal)] sm:text-4xl">
         {target === null ? value : `${display}${suffix}`}
       </div>
-      <div className="mt-1.5 max-w-xs font-mono text-[12px] leading-relaxed text-[var(--ink-dim)]">
+      <div className="mt-1.5 font-mono text-[12px] leading-relaxed text-[var(--ink-dim)]">
         {caption}
       </div>
     </div>
