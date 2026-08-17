@@ -18,7 +18,7 @@ const jetbrainsMono = JetBrains_Mono({
 export const metadata: Metadata = {
   title: "Platform Evolution / reimagined — Prince",
   description:
-    "An alternate, experimental treatment of the Platform Evolution case study — built to demonstrate UI patterns for AI-native products.",
+    "How a hundred separate verification integrations became one API call — the Platform Evolution case study, IDFlow through Wand.",
   themeColor: "#06070a",
 };
 
