@@ -5,8 +5,8 @@ import { motion } from "framer-motion";
 function ImageIcon() {
   return (
     <svg
-      width="18"
-      height="18"
+      width="20"
+      height="20"
       viewBox="0 0 24 24"
       fill="none"
       stroke="currentColor"
@@ -41,11 +41,11 @@ export function TerminalPlaceholder({
       className="flex w-full flex-col items-center justify-center gap-2.5 rounded-xl border border-dashed border-[var(--line-strong)] bg-[var(--bg-elevated)]/60 px-6 py-8 text-center"
     >
       <ImageIcon />
-      <span className="font-mono text-[12px] uppercase tracking-[0.1em] text-[var(--ink-dim)]">
+      <span className="font-mono text-[13px] font-medium uppercase tracking-[0.06em] text-[var(--ink-dim)]">
         {label}
       </span>
       {note ? (
-        <span className="max-w-[40ch] font-mono text-[11px] leading-relaxed text-[var(--ink-faint)]">
+        <span className="max-w-[42ch] font-mono text-[12px] leading-relaxed text-[var(--ink-faint)]">
           {note}
         </span>
       ) : null}
