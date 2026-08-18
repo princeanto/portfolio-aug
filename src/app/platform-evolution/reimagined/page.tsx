@@ -134,9 +134,9 @@ export default function ReimaginedPage() {
               transition={{ delay: 0.4, duration: 0.6 }}
               className="mt-6 font-mono text-[13px] leading-relaxed text-[var(--ink-dim)]"
             >
-              Every bank wanted a different set of verification services, in
-              a different order — so every bank got its own team and its own
-              build. I turned that into one API call.
+              Every bank wanted different identity checks, in a different
+              order — so every bank got its own team and its own build. I
+              turned that into one API call.
             </motion.p>
           </div>
 
@@ -167,11 +167,12 @@ export default function ReimaginedPage() {
           <Fade delay={0.1}>
             <p className="mt-6 font-mono text-[14px] leading-relaxed text-[var(--ink-dim)]">
               <span className="text-[var(--ink)]">What I owned — </span>
-              Product design end to end, from the scoping workshop through a
-              shipped platform: research, information architecture,
-              interaction design, the design system, and the shipped UI for
-              IDFlow — then continued ownership through M2P Connect&apos;s
-              platform versions and Wand.
+              I owned this end to end — from the first workshop to what
+              shipped. That meant talking to the people who&apos;d use it,
+              mapping out how the whole thing should work, designing every
+              screen, and building the design system behind it. When IDFlow
+              became M2P Connect, and then Wand, I stayed on all the way
+              through.
             </p>
           </Fade>
           <Fade delay={0.15}>
@@ -180,8 +181,8 @@ export default function ReimaginedPage() {
                 Collaboration
               </span>
               <p className="mt-2.5 font-mono text-[13px] leading-relaxed text-[var(--ink-dim)]">
-                Cross-functional collaboration with Leadership, Product
-                Managers, Solution Engineering, QA and Sales Operations.
+                I worked closely with leadership, product managers,
+                engineers, QA, and the sales team.
               </p>
             </div>
           </Fade>
@@ -195,25 +196,26 @@ export default function ReimaginedPage() {
           <StreamingText
             as="h2"
             speed={10}
-            text="Every bank wanted a different set of verification services, in a different order."
+            text="Every bank wanted different identity checks, in a different order."
             className="font-display mt-4 text-3xl leading-[1.15] text-[var(--ink)] sm:text-5xl"
           />
           <Fade delay={0.1} className="mt-8 space-y-4">
             <p className="font-mono text-[14px] leading-relaxed text-[var(--ink-dim)]">
-              M2P had built over a hundred verification microservices — OTP,
-              PAN, Aadhaar, OCR, face match, penny-drop bank checks, dedupe.
-              Banks and NBFCs used them to verify and onboard customers.
+              M2P had built more than a hundred small services for checking
+              who someone is — a phone check, an ID check, a photo match, a
+              bank check, and more. Banks and lenders used these to confirm a
+              new customer&apos;s identity before letting them in.
             </p>
             <p className="font-mono text-[14px] leading-relaxed text-[var(--ink-dim)]">
-              The catch was that no two customers wanted the same ones, in
-              the same order. HDFC might want phone OTP, then PAN, then a
-              penny-drop check. The next client would want a different set
-              entirely, sequenced differently.
+              The catch was that no two customers wanted the same checks, in
+              the same order. One bank might want a phone check, then an ID
+              check, then a bank check. The next bank would want a
+              completely different combination, in a different order.
             </p>
             <p className="font-mono text-[14px] leading-relaxed text-[var(--ink-dim)]">
-              So every customer became a project. Assign a team. Integrate
-              one API call per microservice. Ship it. Do it again for the
-              next one.
+              So every customer became its own project: put a team on it,
+              wire up each check one by one, ship it, then start over for
+              the next customer.
             </p>
             <p className="font-mono text-[14px] leading-relaxed text-[var(--ink-dim)]">
               That worked while customers were large. It stopped working as
@@ -223,8 +225,8 @@ export default function ReimaginedPage() {
           </Fade>
           <Fade delay={0.2}>
             <p className="mt-6 border-l-2 border-[var(--signal)] py-1 pl-5 font-mono text-[15px] leading-relaxed text-[var(--signal)]">
-              Capacity, not demand, was setting how far down-market the
-              business could go.
+              Capacity, not demand, was deciding how small a customer we
+              could actually afford to take on.
             </p>
           </Fade>
         </div>
@@ -241,11 +243,12 @@ export default function ReimaginedPage() {
           </Fade>
           <Fade delay={0.1}>
             <p className="mt-6 font-mono text-[14px] leading-relaxed text-[var(--ink-dim)]">
-              My regional CEO turned it into a product question: what if the
-              flow could be composed in a portal instead of assembled by a
-              team? Scope wasn&apos;t handed down from there. It was set by a
-              recurring cross-functional group, plus a full-day workshop to
-              decide what was actually worth building.
+              My regional CEO turned it into a design question: what if the
+              flow could be built with a simple visual tool, instead of
+              hand-built by an engineering team every time? A small group —
+              one person from each team — met regularly to shape it, plus we
+              ran a full-day workshop to decide exactly what was worth
+              building.
             </p>
           </Fade>
 
@@ -283,22 +286,24 @@ export default function ReimaginedPage() {
           </Fade>
           <Fade delay={0.1}>
             <p className="mt-6 font-mono text-[14px] leading-relaxed text-[var(--ink-dim)]">
-              The original intent was customer self-service — banks would log
-              in and build their own verification flows. That died early,
-              and it died in the first stage rather than after launch.
-              Composing a KYC flow correctly means knowing what a dedupe
-              check is, when a penny drop is needed, and what happens when
-              face match returns a partial. That&apos;s M2P domain
-              knowledge, not customer knowledge.
+              The original idea was to let banks build their own verification
+              flows themselves. That idea didn&apos;t survive first contact
+              with the problem. Building one of these flows correctly means
+              knowing dozens of small rules — which check to run first, when
+              a customer needs an extra check, what to do when a result
+              comes back unclear. That&apos;s knowledge M2P had. The banks
+              didn&apos;t.
             </p>
           </Fade>
           <Fade delay={0.15}>
             <p className="mt-4 font-mono text-[14px] leading-relaxed text-[var(--ink-dim)]">
-              So the product changed shape: not no-code for customers, but{" "}
+              So the product changed shape. It wasn&apos;t a tool for
+              customers to build their own flows anymore —{" "}
               <span className="text-[var(--ink)]">
-                low-code for M2P&apos;s own implementation team.
+                it was a tool for M2P&apos;s own team to build them faster.
               </span>{" "}
-              Same architecture, honest about who could actually use it.
+              Same underlying system, just honest about who&apos;d actually
+              use it.
             </p>
           </Fade>
         </div>
@@ -315,11 +320,11 @@ export default function ReimaginedPage() {
           </Fade>
           <Fade delay={0.1}>
             <p className="mt-6 font-mono text-[14px] leading-relaxed text-[var(--ink-dim)]">
-              Drag microservices onto a canvas. Connect them into a flow.
-              Publish. The composed flow returns through a single API call —
-              the sequence lives in the flow, not in the client&apos;s
-              integration. Before, integrating a client meant hitting each
-              microservice separately and stitching the results together.
+              Drag the small services onto a canvas. Connect them into a
+              flow. Publish. From then on, the whole flow runs behind one
+              simple request — the bank sends one thing, and gets one thing
+              back. Before, a bank had to call each small service
+              separately and stitch the results together itself.
             </p>
           </Fade>
         </div>
@@ -387,7 +392,7 @@ export default function ReimaginedPage() {
 
           <Fade delay={0.25}>
             <p className="mt-5 font-mono text-[14px] leading-relaxed text-[var(--ink-dim)]">
-              Nobody disputed the taxonomy afterwards. That silence was the
+              Nobody disputed the grouping afterwards. That silence was the
               research paying for itself.
             </p>
           </Fade>
@@ -478,12 +483,12 @@ export default function ReimaginedPage() {
                 label: "implementation impact",
                 value: "80%",
                 caption:
-                  "Faster client go-live, against the previous cross-functional baseline.",
+                  "Faster client go-live, compared to how long it used to take with a full team.",
               },
               {
                 label: "platform impact",
                 value: "100+",
-                caption: "Microservices orchestrated behind a single API call.",
+                caption: "Small services running behind a single request.",
               },
               {
                 label: "adoption",
@@ -510,11 +515,10 @@ export default function ReimaginedPage() {
           </div>
           <Fade delay={0.1}>
             <p className="mt-8 font-mono text-[14px] leading-relaxed text-[var(--ink-dim)]">
-              Setting up a customer went from a full cross-functional team
-              over weeks to solution engineers owning the flow themselves.
-              For design that now means choosing type and colour on a layout
-              that&apos;s already fixed — the microservices are pre-built,
-              so the structure doesn&apos;t change per client.
+              Setting up a new customer used to take a whole team, over
+              weeks. Now one person can own the whole flow. For design, that
+              means the hard part — the structure — is already decided. All
+              that&apos;s left is picking type and colour for each client.
             </p>
           </Fade>
           <Fade delay={0.15}>
@@ -538,26 +542,28 @@ export default function ReimaginedPage() {
           </Fade>
           <Fade delay={0.1} className="mt-6 space-y-4">
             <p className="font-mono text-[14px] leading-relaxed text-[var(--ink-dim)]">
-              Flows now ran, but they produced data with nowhere to look at
-              it. So M2P started doing the familiar thing: assign a team per
-              customer, build them a back-end portal. The exact pattern the
-              platform had just removed, returning at the next layer.
+              Flows now ran, but there was nowhere to see the results. So
+              M2P started doing the familiar thing again: assign a team per
+              customer, build them a portal to see it in. The exact pattern
+              the platform had just removed, showing up again one layer
+              down.
             </p>
             <p className="font-mono text-[14px] leading-relaxed text-[var(--ink-dim)]">
-              <span className="text-[var(--ink)]">M2P Connect</span>{" "}
-              generalised the engine beyond identity into a company-wide
-              capability, and added what a platform needs at scale —
-              maker-checker approval, task assignment and SLA configuration,
-              version history, logs, post-API verification. It also
-              consolidated with a parallel low-code product from Finflux,
-              the lending startup M2P had acquired, whose loan-origination
-              builder was solving a version of the same problem.
+              <span className="text-[var(--ink)]">M2P Connect</span> took
+              the same engine and made it work for more than just identity
+              checks — any team at M2P could now use it. It also added what
+              a company-wide tool needs: a second person has to approve any
+              change before it goes live, work gets assigned and tracked,
+              every version is logged. And it absorbed a similar tool from
+              Finflux — a lending company M2P had bought — which had built
+              something almost identical for loan approvals.
             </p>
             <p className="font-mono text-[14px] leading-relaxed text-[var(--ink-dim)]">
               <span className="text-[var(--ink)]">Wand</span> closed the
-              last gap. Connect emits a unique ID per journey; Wand turns it
-              into a report a bank&apos;s own staff can log in and read.
-              Each product contains the one before it.
+              last gap. Every time a customer goes through a flow, Connect
+              gives that journey its own ID. Wand turns that into a report a
+              bank&apos;s own staff can log in and read. Each product
+              includes everything the one before it could do.
             </p>
           </Fade>
           <Fade delay={0.2}>
@@ -602,15 +608,15 @@ export default function ReimaginedPage() {
             {[
               {
                 title: "The failure state should ship with the happy path",
-                body: "We found the debugging problem by watching implementation staff struggle with real client work. That's the right way to find it — but I'd design the error experience alongside the success case next time, not after.",
+                body: "I found the problem by watching our own team struggle with real work — that's the right way to find it. But next time, I'd design what happens when something goes wrong at the same time as what happens when it goes right, not after.",
               },
               {
                 title: "I'd start where Wand ended",
-                body: "Extensibility, customer-owned APIs, treating the platform as something others build on — that thinking was available conceptually from the beginning. Approaching IDFlow that way would likely have produced a different architecture on day one.",
+                body: "The idea of letting other people build on top of the platform, and letting customers bring their own tools — that idea was possible from day one, I just didn't reach for it until Wand. If I'd started there, IDFlow probably would have been built differently from the very first day.",
               },
               {
                 title: "One concession I'd make again",
-                body: "I proposed version history and designed it on Figma's model. Engineering built something structurally different, and I took theirs — their domain, easier for them to maintain, and mine wasn't better enough to spend the capital on.",
+                body: "I designed version history to work the way Figma's does. Engineering built it differently, in a way that was easier for them to maintain — so I went with their version instead. It wasn't worth fighting for mine when theirs worked just as well.",
               },
             ].map((item, i) => (
               <Fade key={item.title} delay={i * 0.06}>
@@ -639,8 +645,8 @@ export default function ReimaginedPage() {
           </Fade>
           <Fade delay={0.1}>
             <p className="mt-6 font-mono text-[14px] leading-relaxed text-[var(--ink-dim)]">
-              Wand&apos;s architecture was built to keep going — this is the
-              natural next stage, not a shipped feature list:
+              Wand was built to keep growing. These are the natural next
+              steps — not things we&apos;ve already shipped:
             </p>
           </Fade>
 

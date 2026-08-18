@@ -17,7 +17,7 @@ const WALLS = [
 
 const FIX_ITEMS = [
   "Two error levels — field and node — because they fail for different reasons and need different fixes",
-  'Coded errors in plain English: not "404", but which API trigger has no handler for it',
+  "Coded errors in plain English: not a generic error code, but which step in the flow has no handler for it",
   "The failing node highlighted on canvas, so location is immediate",
   "A checklist of which cases are handled and which aren't",
   "Re-validate in place, so fixing doesn't mean starting over",

@@ -5,11 +5,11 @@ import { motion } from "framer-motion";
 const DECISIONS = [
   {
     id: "PROGRESSIVE_DISCLOSURE",
-    body: "Hover reveals a two-line explanation; configuration opens in a side panel. Expose everything at once and the builder becomes the form it was replacing.",
+    body: "Hovering shows a two-line explanation; settings open in a side panel. Show everything at once, and the builder becomes just another complicated form.",
   },
   {
     id: "CUSTOM_API_ESCAPE_HATCH",
-    body: "A space to add your own endpoint, merged into the same flow and returned through the same single call. Some requirements can never be pre-built services.",
+    body: "A place to plug in your own outside connection, folded into the same flow and returned through the same single call. Some things a customer needs can never be one of the pre-built checks.",
   },
   {
     id: "VERSION_HISTORY_UNASKED",

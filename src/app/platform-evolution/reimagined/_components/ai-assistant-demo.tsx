@@ -12,19 +12,19 @@ type Prompt = {
 
 const PROMPTS: Prompt[] = [
   {
-    label: "NBFC onboarding",
-    text: "Verify a new NBFC customer using PAN, Aadhaar, and a video KYC step.",
-    steps: ["PAN Match", "Aadhaar OCR", "Face Match", "Video KYC"],
+    label: "New customer check",
+    text: "Verify a new customer using an ID check, a photo match, and a live video check.",
+    steps: ["ID Check", "ID Scan", "Photo Match", "Video Check"],
   },
   {
     label: "Merchant activation",
-    text: "Verify a merchant with GST and PAN before activation.",
-    steps: ["GST Check", "PAN Match", "Dedupe", "Activate"],
+    text: "Verify a business using its tax ID and registration number before activating it.",
+    steps: ["Tax ID Check", "ID Check", "Duplicate Check", "Activate"],
   },
   {
-    label: "Loan disbursal",
-    text: "Add a penny-drop check before disbursing a loan.",
-    steps: ["Penny-Drop", "Bank Match", "Risk Score", "Disburse"],
+    label: "Loan payout",
+    text: "Add a bank-account check before paying out a loan.",
+    steps: ["Bank Check", "Bank Match", "Risk Score", "Pay Out"],
   },
 ];
 
