@@ -254,11 +254,11 @@ export default function PlatformEvolutionPage() {
               src="/images/platform-evolution/custom-api-node.png"
             />
             <ImagePlaceholder
-              aspect="900/1769"
+              aspect="1378/1292"
               label="Version history"
               note="Published and draft tracks, with author and timestamp on every version."
               delay={0.1}
-              src="/images/platform-evolution/version-history.png"
+              src="/images/platform-evolution/version-history.webp"
             />
           </div>
         </div>
