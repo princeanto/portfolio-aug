@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { Reveal } from "@/components/reveal";
 
 function ImageIcon() {
@@ -25,12 +26,45 @@ export function ImagePlaceholder({
   label,
   note,
   delay = 0,
+  src,
 }: {
   aspect?: "16/9" | "4/3" | "3/4" | "21/9";
   label: string;
   note?: string;
   delay?: number;
+  src?: string;
 }) {
+  if (src) {
+    return (
+      <Reveal delay={delay}>
+        <figure>
+          <div
+            style={{ aspectRatio: aspect.replace("/", " / ") }}
+            className="relative w-full overflow-hidden rounded-xl border border-border bg-surface"
+          >
+            <Image
+              src={src}
+              alt={label}
+              fill
+              className="object-contain"
+              sizes="(max-width: 640px) 100vw, 50vw"
+            />
+          </div>
+          <figcaption className="mt-2.5 flex flex-col gap-1">
+            <span className="text-[13px] font-medium uppercase tracking-[0.06em] text-muted-foreground">
+              {label}
+            </span>
+            {note ? (
+              <span className="max-w-[42ch] text-[12px] leading-relaxed text-muted-foreground/70">
+                {note}
+              </span>
+            ) : null}
+          </figcaption>
+        </figure>
+      </Reveal>
+    );
+  }
+
   return (
     <Reveal delay={delay}>
       <div

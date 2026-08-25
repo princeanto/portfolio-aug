@@ -407,6 +407,7 @@ export default function ReimaginedPage() {
               aspect="4/3"
               label="Node + config panel"
               note="A node selected with the right-side panel open."
+              src="/images/platform-evolution/node-config-panel.png"
             />
           </div>
         </div>
@@ -429,11 +430,13 @@ export default function ReimaginedPage() {
               aspect="4/3"
               label="Custom API node"
               note="Code editor, frontend/backend toggle, variables."
+              src="/images/platform-evolution/custom-api-node.png"
             />
             <TerminalPlaceholder
               aspect="4/3"
               label="Version history"
               note="Published and draft tracks, author and timestamp."
+              src="/images/platform-evolution/version-history.png"
             />
           </div>
         </div>
@@ -579,16 +582,19 @@ export default function ReimaginedPage() {
               aspect="3/4"
               label="Maker-checker"
               note="Approve or reject with a stated reason."
+              src="/images/platform-evolution/maker-checker.png"
             />
             <TerminalPlaceholder
               aspect="3/4"
               label="Case management"
               note="Applicant data against OCR, with match confidence."
+              src="/images/platform-evolution/case-management.png"
             />
             <TerminalPlaceholder
               aspect="3/4"
               label="Reporting"
               note="The report a bank's own staff reads."
+              src="/images/platform-evolution/reporting.png"
             />
           </div>
         </div>

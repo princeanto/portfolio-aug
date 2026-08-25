@@ -71,6 +71,7 @@ export default function PlatformEvolutionPage() {
             label="Product screenshot"
             note="The composition layer — services on the left, flow on the canvas, configuration on the right."
             delay={0.28}
+            src="/images/platform-evolution/hero-builder-canvas.png"
           />
         </div>
       </section>
@@ -218,6 +219,7 @@ export default function PlatformEvolutionPage() {
               label="Node + config panel"
               note="A node selected with the right-side panel open."
               delay={0.34}
+              src="/images/platform-evolution/node-config-panel.png"
             />
           </div>
         </div>
@@ -249,12 +251,14 @@ export default function PlatformEvolutionPage() {
               label="Custom API node"
               note="Code editor, frontend/backend toggle, variables."
               delay={0.06}
+              src="/images/platform-evolution/custom-api-node.png"
             />
             <ImagePlaceholder
               aspect="4/3"
               label="Version history"
               note="Published and draft tracks, with author and timestamp on every version."
               delay={0.1}
+              src="/images/platform-evolution/version-history.png"
             />
           </div>
         </div>
@@ -459,18 +463,21 @@ export default function PlatformEvolutionPage() {
                 label="Maker-checker"
                 note="Approve or reject with a stated reason."
                 delay={0.32}
+                src="/images/platform-evolution/maker-checker.png"
               />
               <ImagePlaceholder
                 aspect="3/4"
                 label="Case management"
                 note="Applicant data against OCR, with match confidence."
                 delay={0.36}
+                src="/images/platform-evolution/case-management.png"
               />
               <ImagePlaceholder
                 aspect="3/4"
                 label="Reporting"
                 note="The report a bank's own staff reads."
                 delay={0.4}
+                src="/images/platform-evolution/reporting.png"
               />
             </div>
           </div>
