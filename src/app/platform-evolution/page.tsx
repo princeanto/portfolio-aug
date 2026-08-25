@@ -21,7 +21,7 @@ export const metadata: Metadata = {
 export default function PlatformEvolutionPage() {
   return (
     <>
-      {/* 1. Hero */}
+      {/* Hero */}
       <section className="relative isolate overflow-hidden border-b border-border bg-background">
         <GridBackground />
         <div className="relative z-10 mx-auto w-full max-w-6xl px-6 py-24 sm:px-8 sm:py-28 lg:px-10 lg:py-32">
@@ -75,13 +75,13 @@ export default function PlatformEvolutionPage() {
         </div>
       </section>
 
-      {/* 2. My Role */}
+      {/* 01 — My Role */}
       <section className="border-b border-border bg-background">
         <div className="mx-auto w-full max-w-6xl px-6 py-20 sm:px-8 lg:px-10">
           <NumberedEyebrow number="01">My Role</NumberedEyebrow>
           <Reveal delay={0.05}>
             <h2 className="max-w-2xl text-balance text-3xl font-medium leading-[1.15] tracking-tight text-foreground sm:text-4xl">
-              Senior Lead Product Designer, all three generations.
+              Senior Lead Product Designer across IDFlow, M2P Connect, and Wand.
             </h2>
           </Reveal>
           <Reveal delay={0.1}>
@@ -110,13 +110,13 @@ export default function PlatformEvolutionPage() {
         </div>
       </section>
 
-      {/* 3. The Situation */}
+      {/* 02 — The Problem */}
       <section className="border-b border-border bg-surface">
         <div className="mx-auto w-full max-w-6xl px-6 py-20 sm:px-8 lg:px-10">
-          <NumberedEyebrow number="02">The Situation</NumberedEyebrow>
+          <NumberedEyebrow number="02">The Problem</NumberedEyebrow>
           <Reveal delay={0.05}>
             <h2 className="max-w-2xl text-balance text-3xl font-medium leading-[1.15] tracking-tight text-foreground sm:text-4xl">
-              Every customer was a project.
+              Every customer needed a custom-built verification flow.
             </h2>
           </Reveal>
           <div className="mt-6 max-w-2xl space-y-4">
@@ -160,118 +160,14 @@ export default function PlatformEvolutionPage() {
         </div>
       </section>
 
-      {/* 4. The Spark */}
+      {/* 03 — Research */}
       <section className="border-b border-border bg-background">
         <div className="mx-auto w-full max-w-6xl px-6 py-20 sm:px-8 lg:px-10">
-          <NumberedEyebrow number="03">The Spark</NumberedEyebrow>
+          <NumberedEyebrow number="03">Research</NumberedEyebrow>
           <Reveal delay={0.05}>
             <h2 className="max-w-2xl text-balance text-3xl font-medium leading-[1.15] tracking-tight text-foreground sm:text-4xl">
-              A room, not a brief.
-            </h2>
-          </Reveal>
-          <Reveal delay={0.1}>
-            <p className="mt-5 max-w-2xl text-[15px] leading-relaxed text-muted-foreground">
-              My regional CEO turned it into a product question: what if the
-              flow could be composed in a portal instead of assembled by a
-              team? Scope wasn&apos;t handed down from there. It was set by a
-              recurring cross-functional group, plus a full-day workshop to
-              decide what was actually worth building.
-            </p>
-          </Reveal>
-
-          <ScopingRoom />
-
-          <Reveal delay={0.2}>
-            <p className="mt-6 max-w-2xl text-[15px] leading-relaxed text-muted-foreground">
-              My job in that room wasn&apos;t to take requirements. It was to
-              hear what each expert described and push it further than
-              they&apos;d framed it.
-            </p>
-          </Reveal>
-          <Reveal delay={0.24}>
-            <p className="mt-4 max-w-2xl text-[15px] leading-relaxed text-muted-foreground">
-              <span className="font-medium text-foreground">
-                Version history came out of that.
-              </span>{" "}
-              Nobody asked for it. In regulated finance, knowing who changed
-              what, when and why isn&apos;t a convenience — it&apos;s the
-              difference between a platform an auditor accepts and one they
-              don&apos;t.
-            </p>
-          </Reveal>
-        </div>
-      </section>
-
-      {/* 5. The First Correction */}
-      <section className="border-b border-border bg-surface">
-        <div className="mx-auto w-full max-w-6xl px-6 py-20 sm:px-8 lg:px-10">
-          <NumberedEyebrow number="04">The First Correction</NumberedEyebrow>
-          <Reveal delay={0.05}>
-            <h2 className="max-w-2xl text-balance text-3xl font-medium leading-[1.15] tracking-tight text-foreground sm:text-4xl">
-              No-code was the wrong ambition.
-            </h2>
-          </Reveal>
-          <Reveal delay={0.1}>
-            <p className="mt-5 max-w-2xl text-[15px] leading-relaxed text-muted-foreground">
-              The original intent was customer self-service — banks would log
-              in and build their own verification flows. That died early, and
-              it died in the first stage rather than after launch. Composing
-              a KYC flow correctly means knowing what a dedupe check is, when
-              a penny drop is needed, and what happens when face match
-              returns a partial. That&apos;s M2P domain knowledge, not
-              customer knowledge.
-            </p>
-          </Reveal>
-          <Reveal delay={0.16}>
-            <p className="mt-4 max-w-2xl text-[15px] leading-relaxed text-muted-foreground">
-              So the product changed shape: not no-code for customers, but{" "}
-              <span className="font-medium text-foreground">
-                low-code for M2P&apos;s own implementation team.
-              </span>{" "}
-              Same architecture, honest about who could actually use it.
-            </p>
-          </Reveal>
-        </div>
-      </section>
-
-      {/* 6. The Change That Mattered */}
-      <section className="border-b border-border bg-background">
-        <div className="mx-auto w-full max-w-6xl px-6 py-20 sm:px-8 lg:px-10">
-          <NumberedEyebrow number="05">The Change That Mattered</NumberedEyebrow>
-          <Reveal delay={0.05}>
-            <h2 className="max-w-2xl text-balance text-3xl font-medium leading-[1.15] tracking-tight text-foreground sm:text-4xl">
-              A hundred calls became one.
-            </h2>
-          </Reveal>
-          <Reveal delay={0.1}>
-            <p className="mt-5 max-w-2xl text-[15px] leading-relaxed text-muted-foreground">
-              Drag microservices onto a canvas. Connect them into a flow.
-              Publish. The change that mattered most sits underneath: the
-              composed flow returns through one API call.
-            </p>
-          </Reveal>
-          <Reveal delay={0.14}>
-            <p className="mt-4 max-w-2xl text-[15px] leading-relaxed text-muted-foreground">
-              Before, integrating a client meant hitting each microservice
-              separately and stitching the results. After, the whole
-              verification journey is a single endpoint. That&apos;s what
-              collapsed the work — and it made the product simpler on the
-              client&apos;s side too, which was never the stated goal but
-              turned out to matter in sales conversations.
-            </p>
-          </Reveal>
-
-          <ChangeDiagram />
-        </div>
-      </section>
-
-      {/* 7. Research */}
-      <section className="border-b border-border bg-surface">
-        <div className="mx-auto w-full max-w-6xl px-6 py-20 sm:px-8 lg:px-10">
-          <NumberedEyebrow number="06">Research</NumberedEyebrow>
-          <Reveal delay={0.05}>
-            <h2 className="max-w-2xl text-balance text-3xl font-medium leading-[1.15] tracking-tight text-foreground sm:text-4xl">
-              How the structure got decided.
+              Structuring 100+ services around how people think, not how
+              they&apos;re built.
             </h2>
           </Reveal>
 
@@ -310,40 +206,41 @@ export default function PlatformEvolutionPage() {
             ))}
           </div>
 
-          <Reveal delay={0.3}>
-            <p className="mt-6 max-w-2xl text-[15px] leading-relaxed text-muted-foreground">
-              Nobody disputed the taxonomy afterwards. In a company where
-              every service has an owner with a view on where it belongs,
-              that silence was the research paying for itself.
-            </p>
-          </Reveal>
-
           <div className="mt-10 grid grid-cols-1 gap-4 sm:grid-cols-2">
             <ImagePlaceholder
               aspect="4/3"
               label="Card sort"
               note="Sort board or clustered results."
-              delay={0.34}
+              delay={0.3}
             />
             <ImagePlaceholder
               aspect="4/3"
               label="Node + config panel"
               note="A node selected with the right-side panel open."
-              delay={0.38}
+              delay={0.34}
             />
           </div>
         </div>
       </section>
 
-      {/* 8. Key Decisions */}
-      <section className="border-b border-border bg-background">
+      {/* 04 — Insights & Design */}
+      <section className="border-b border-border bg-surface">
         <div className="mx-auto w-full max-w-6xl px-6 py-20 sm:px-8 lg:px-10">
-          <NumberedEyebrow number="07">Key Decisions</NumberedEyebrow>
+          <NumberedEyebrow number="04">Insights &amp; Design</NumberedEyebrow>
           <Reveal delay={0.05}>
             <h2 className="max-w-2xl text-balance text-3xl font-medium leading-[1.15] tracking-tight text-foreground sm:text-4xl">
-              Three calls that shaped the builder.
+              Three decisions that shaped the builder.
             </h2>
           </Reveal>
+          <Reveal delay={0.1}>
+            <p className="mt-5 max-w-2xl text-[15px] leading-relaxed text-muted-foreground">
+              Nobody disputed the taxonomy afterwards. In a company where
+              every service has an owner with a view on where it belongs,
+              that silence was the research paying for itself. These are the
+              three decisions that followed.
+            </p>
+          </Reveal>
+
           <DecisionList />
 
           <div className="mt-4 grid grid-cols-1 gap-4 sm:grid-cols-2">
@@ -363,13 +260,122 @@ export default function PlatformEvolutionPage() {
         </div>
       </section>
 
-      {/* 9. Where It Broke */}
+      {/* Evolution intro */}
+      <section className="border-b border-border bg-background">
+        <div className="mx-auto w-full max-w-6xl px-6 py-10 sm:px-8 lg:px-10">
+          <Reveal delay={0.05}>
+            <span className="text-[12px] font-medium uppercase tracking-[0.12em] text-muted-foreground">
+              The Evolution
+            </span>
+            <p className="mt-2 max-w-2xl text-[15px] leading-relaxed text-muted-foreground">
+              How IDFlow became M2P Connect, then Wand — why it started,
+              what changed, how it worked, and what happened next.
+            </p>
+          </Reveal>
+        </div>
+      </section>
+
+      {/* 05 — Evolution — Why */}
       <section className="border-b border-border bg-surface">
         <div className="mx-auto w-full max-w-6xl px-6 py-20 sm:px-8 lg:px-10">
-          <NumberedEyebrow number="08">Where It Broke</NumberedEyebrow>
+          <NumberedEyebrow number="05">Evolution — Why</NumberedEyebrow>
           <Reveal delay={0.05}>
             <h2 className="max-w-2xl text-balance text-3xl font-medium leading-[1.15] tracking-tight text-foreground sm:text-4xl">
-              We gave it to our own team, and watched.
+              Scoped by a working group, not handed down as a spec.
+            </h2>
+          </Reveal>
+          <Reveal delay={0.1}>
+            <p className="mt-5 max-w-2xl text-[15px] leading-relaxed text-muted-foreground">
+              My regional CEO turned it into a product question: what if the
+              flow could be composed in a portal instead of assembled by a
+              team? Scope wasn&apos;t handed down from there. It was set by a
+              recurring cross-functional group, plus a full-day workshop to
+              decide what was actually worth building.
+            </p>
+          </Reveal>
+
+          <ScopingRoom />
+
+          <Reveal delay={0.2}>
+            <p className="mt-6 max-w-2xl text-[15px] leading-relaxed text-muted-foreground">
+              My job in that room wasn&apos;t to take requirements. It was to
+              hear what each expert described and push it further than
+              they&apos;d framed it.
+            </p>
+          </Reveal>
+        </div>
+      </section>
+
+      {/* 06 — Evolution — What */}
+      <section className="border-b border-border bg-background">
+        <div className="mx-auto w-full max-w-6xl px-6 py-20 sm:px-8 lg:px-10">
+          <NumberedEyebrow number="06">Evolution — What</NumberedEyebrow>
+          <Reveal delay={0.05}>
+            <h2 className="max-w-2xl text-balance text-3xl font-medium leading-[1.15] tracking-tight text-foreground sm:text-4xl">
+              From self-service for banks to an internal tool for M2P.
+            </h2>
+          </Reveal>
+          <Reveal delay={0.1}>
+            <p className="mt-5 max-w-2xl text-[15px] leading-relaxed text-muted-foreground">
+              The original intent was customer self-service — banks would log
+              in and build their own verification flows. That died early, and
+              it died in the first stage rather than after launch. Composing
+              a KYC flow correctly means knowing what a dedupe check is, when
+              a penny drop is needed, and what happens when face match
+              returns a partial. That&apos;s M2P domain knowledge, not
+              customer knowledge.
+            </p>
+          </Reveal>
+          <Reveal delay={0.16}>
+            <p className="mt-4 max-w-2xl text-[15px] leading-relaxed text-muted-foreground">
+              So the product changed shape: not no-code for customers, but{" "}
+              <span className="font-medium text-foreground">
+                low-code for M2P&apos;s own implementation team.
+              </span>{" "}
+              Same architecture, honest about who could actually use it.
+            </p>
+          </Reveal>
+        </div>
+      </section>
+
+      {/* 07 — Evolution — How */}
+      <section className="border-b border-border bg-surface">
+        <div className="mx-auto w-full max-w-6xl px-6 py-20 sm:px-8 lg:px-10">
+          <NumberedEyebrow number="07">Evolution — How</NumberedEyebrow>
+          <Reveal delay={0.05}>
+            <h2 className="max-w-2xl text-balance text-3xl font-medium leading-[1.15] tracking-tight text-foreground sm:text-4xl">
+              100+ services collapsed into a single API call.
+            </h2>
+          </Reveal>
+          <Reveal delay={0.1}>
+            <p className="mt-5 max-w-2xl text-[15px] leading-relaxed text-muted-foreground">
+              Drag microservices onto a canvas. Connect them into a flow.
+              Publish. The change that mattered most sits underneath: the
+              composed flow returns through one API call.
+            </p>
+          </Reveal>
+          <Reveal delay={0.14}>
+            <p className="mt-4 max-w-2xl text-[15px] leading-relaxed text-muted-foreground">
+              Before, integrating a client meant hitting each microservice
+              separately and stitching the results. After, the whole
+              verification journey is a single endpoint. That&apos;s what
+              collapsed the work — and it made the product simpler on the
+              client&apos;s side too, which was never the stated goal but
+              turned out to matter in sales conversations.
+            </p>
+          </Reveal>
+
+          <ChangeDiagram />
+        </div>
+      </section>
+
+      {/* 08 — Evolution — When */}
+      <section id="evolution-when" className="border-b border-border bg-background">
+        <div className="mx-auto w-full max-w-6xl px-6 py-20 sm:px-8 lg:px-10">
+          <NumberedEyebrow number="08">Evolution — When</NumberedEyebrow>
+          <Reveal delay={0.05}>
+            <h2 className="max-w-2xl text-balance text-3xl font-medium leading-[1.15] tracking-tight text-foreground sm:text-4xl">
+              Internal rollout exposed two gaps in IDFlow.
             </h2>
           </Reveal>
           <Reveal delay={0.1}>
@@ -390,11 +396,89 @@ export default function PlatformEvolutionPage() {
               delay={0.2}
             />
           </div>
+
+          <div className="mt-16 border-t border-border pt-16">
+            <Reveal delay={0.05}>
+              <h3 className="max-w-2xl text-balance text-3xl font-medium leading-[1.15] tracking-tight text-foreground sm:text-4xl">
+                M2P Connect and Wand extended the fix company-wide.
+              </h3>
+            </Reveal>
+            <div className="mt-6 max-w-2xl space-y-4">
+              <Reveal delay={0.1}>
+                <p className="text-[15px] leading-relaxed text-muted-foreground">
+                  Flows now ran, but they produced data with nowhere to look at
+                  it. So M2P started doing the familiar thing: assign a team
+                  per customer, build them a back-end portal. The exact pattern
+                  the platform had just removed, returning at the next layer.
+                </p>
+              </Reveal>
+              <Reveal delay={0.14}>
+                <p className="text-[15px] leading-relaxed text-muted-foreground">
+                  <span className="font-medium text-foreground">
+                    M2P Connect
+                  </span>{" "}
+                  generalised the engine beyond identity into a company-wide
+                  capability, and added what a platform needs at scale —
+                  maker-checker approval so the person who builds a flow
+                  isn&apos;t the person who approves it, task assignment and
+                  SLA configuration, version history, logs, post-API
+                  verification. It also consolidated with a parallel low-code
+                  product from Finflux, the lending startup M2P had acquired,
+                  whose loan-origination builder was solving a version of the
+                  same problem.
+                </p>
+              </Reveal>
+              <Reveal delay={0.18}>
+                <p className="text-[15px] leading-relaxed text-muted-foreground">
+                  <span className="font-medium text-foreground">Wand</span>{" "}
+                  closed the last gap. Connect emits a unique ID per journey;
+                  Wand turns it into a report a bank&apos;s own staff can log
+                  in and read. When a customer completes an onboarding journey
+                  at HDFC, someone at HDFC can open Wand and see it — without
+                  anyone at M2P building them a portal.
+                </p>
+              </Reveal>
+              <Reveal delay={0.22}>
+                <p className="text-[15px] leading-relaxed text-muted-foreground">
+                  Each product contains the one before it. Wand has everything
+                  IDFlow and Connect could do, plus case management on top.
+                </p>
+              </Reveal>
+            </div>
+            <Reveal delay={0.28}>
+              <p className="mt-8 max-w-2xl border-l-2 border-[var(--accent-a)] py-1 pl-6 text-xl font-medium leading-snug text-foreground sm:text-2xl">
+                The same reflex — assign a team, build it custom, per customer
+                — kept reappearing at each layer. Each product removed one more
+                instance of it.
+              </p>
+            </Reveal>
+
+            <div className="mt-10 grid grid-cols-1 gap-4 sm:grid-cols-3">
+              <ImagePlaceholder
+                aspect="3/4"
+                label="Maker-checker"
+                note="Approve or reject with a stated reason."
+                delay={0.32}
+              />
+              <ImagePlaceholder
+                aspect="3/4"
+                label="Case management"
+                note="Applicant data against OCR, with match confidence."
+                delay={0.36}
+              />
+              <ImagePlaceholder
+                aspect="3/4"
+                label="Reporting"
+                note="The report a bank's own staff reads."
+                delay={0.4}
+              />
+            </div>
+          </div>
         </div>
       </section>
 
-      {/* 10. Business Impact */}
-      <section id="impact" className="border-b border-border bg-background">
+      {/* 09 — Business Impact */}
+      <section id="impact" className="border-b border-border bg-surface">
         <div className="mx-auto w-full max-w-6xl px-6 py-20 sm:px-8 lg:px-10">
           <NumberedEyebrow number="09">Business Impact</NumberedEyebrow>
           <Reveal delay={0.05}>
@@ -422,92 +506,10 @@ export default function PlatformEvolutionPage() {
         </div>
       </section>
 
-      {/* 11. What Happened Next */}
-      <section className="border-b border-border bg-surface">
-        <div className="mx-auto w-full max-w-6xl px-6 py-20 sm:px-8 lg:px-10">
-          <NumberedEyebrow number="10">What Happened Next</NumberedEyebrow>
-          <Reveal delay={0.05}>
-            <h2 className="max-w-2xl text-balance text-3xl font-medium leading-[1.15] tracking-tight text-foreground sm:text-4xl">
-              The same habit, one layer down.
-            </h2>
-          </Reveal>
-          <div className="mt-6 max-w-2xl space-y-4">
-            <Reveal delay={0.1}>
-              <p className="text-[15px] leading-relaxed text-muted-foreground">
-                Flows now ran, but they produced data with nowhere to look at
-                it. So M2P started doing the familiar thing: assign a team
-                per customer, build them a back-end portal. The exact pattern
-                the platform had just removed, returning at the next layer.
-              </p>
-            </Reveal>
-            <Reveal delay={0.14}>
-              <p className="text-[15px] leading-relaxed text-muted-foreground">
-                <span className="font-medium text-foreground">
-                  M2P Connect
-                </span>{" "}
-                generalised the engine beyond identity into a company-wide
-                capability, and added what a platform needs at scale —
-                maker-checker approval so the person who builds a flow
-                isn&apos;t the person who approves it, task assignment and
-                SLA configuration, version history, logs, post-API
-                verification. It also consolidated with a parallel low-code
-                product from Finflux, the lending startup M2P had acquired,
-                whose loan-origination builder was solving a version of the
-                same problem.
-              </p>
-            </Reveal>
-            <Reveal delay={0.18}>
-              <p className="text-[15px] leading-relaxed text-muted-foreground">
-                <span className="font-medium text-foreground">Wand</span>{" "}
-                closed the last gap. Connect emits a unique ID per journey;
-                Wand turns it into a report a bank&apos;s own staff can log
-                in and read. When a customer completes an onboarding journey
-                at HDFC, someone at HDFC can open Wand and see it — without
-                anyone at M2P building them a portal.
-              </p>
-            </Reveal>
-            <Reveal delay={0.22}>
-              <p className="text-[15px] leading-relaxed text-muted-foreground">
-                Each product contains the one before it. Wand has everything
-                IDFlow and Connect could do, plus case management on top.
-              </p>
-            </Reveal>
-          </div>
-          <Reveal delay={0.28}>
-            <p className="mt-8 max-w-2xl border-l-2 border-[var(--accent-a)] py-1 pl-6 text-xl font-medium leading-snug text-foreground sm:text-2xl">
-              The same reflex — assign a team, build it custom, per customer
-              — kept reappearing at each layer. Each product removed one more
-              instance of it.
-            </p>
-          </Reveal>
-
-          <div className="mt-10 grid grid-cols-1 gap-4 sm:grid-cols-3">
-            <ImagePlaceholder
-              aspect="3/4"
-              label="Maker-checker"
-              note="Approve or reject with a stated reason."
-              delay={0.32}
-            />
-            <ImagePlaceholder
-              aspect="3/4"
-              label="Case management"
-              note="Applicant data against OCR, with match confidence."
-              delay={0.36}
-            />
-            <ImagePlaceholder
-              aspect="3/4"
-              label="Reporting"
-              note="The report a bank's own staff reads."
-              delay={0.4}
-            />
-          </div>
-        </div>
-      </section>
-
-      {/* 12. Lessons Learned */}
+      {/* 10 — Lessons Learned */}
       <section className="border-b border-border bg-background">
         <div className="mx-auto w-full max-w-6xl px-6 py-20 sm:px-8 lg:px-10">
-          <NumberedEyebrow number="11">Lessons Learned</NumberedEyebrow>
+          <NumberedEyebrow number="10">Lessons Learned</NumberedEyebrow>
           <Reveal delay={0.05}>
             <h2 className="max-w-2xl text-balance text-3xl font-medium leading-[1.15] tracking-tight text-foreground sm:text-4xl">
               What I&apos;d do differently.
@@ -560,10 +562,10 @@ export default function PlatformEvolutionPage() {
         </div>
       </section>
 
-      {/* 13. What's Next */}
+      {/* 11 — What's Next */}
       <section className="bg-surface">
         <div className="mx-auto w-full max-w-6xl px-6 py-20 sm:px-8 lg:px-10">
-          <NumberedEyebrow number="12">What&apos;s Next</NumberedEyebrow>
+          <NumberedEyebrow number="11">What&apos;s Next</NumberedEyebrow>
           <Reveal delay={0.05}>
             <h2 className="max-w-2xl text-balance text-3xl font-medium leading-[1.15] tracking-tight text-foreground sm:text-4xl">
               Where the platform goes from here.
