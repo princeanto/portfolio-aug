@@ -597,10 +597,10 @@ export default function ReimaginedPage() {
       {/* 11 — Lessons Learned */}
       <section className="border-b border-[var(--line)]">
         <div className="mx-auto w-full max-w-[1200px] px-6 py-20 sm:px-10 sm:py-28">
-          <Eyebrow>11 — lessons learned</Eyebrow>
+          <Eyebrow>11 — insights from the build</Eyebrow>
           <Fade delay={0.05}>
             <h2 className="font-display mt-4 text-3xl text-[var(--ink)] sm:text-5xl">
-              What I&apos;d do differently.
+              What building it revealed.
             </h2>
           </Fade>
 
@@ -615,7 +615,7 @@ export default function ReimaginedPage() {
                 body: "The idea of letting other people build on top of the platform, and letting customers bring their own tools — that idea was possible from day one, I just didn't reach for it until Lumen. If I'd started there, Meridian probably would have been built differently from the very first day.",
               },
               {
-                title: "One concession I'd make again",
+                title: "Backing the team's model over mine",
                 body: "I designed version history to work the way Figma's does. Engineering built it differently, in a way that was easier for them to maintain — so I went with their version instead. It wasn't worth fighting for mine when theirs worked just as well.",
               },
             ].map((item, i) => (

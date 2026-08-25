@@ -509,10 +509,10 @@ export default function PlatformEvolutionPage() {
       {/* 10 — Lessons Learned */}
       <section className="border-b border-border bg-background">
         <div className="mx-auto w-full max-w-6xl px-6 py-20 sm:px-8 lg:px-10">
-          <NumberedEyebrow number="10">Lessons Learned</NumberedEyebrow>
+          <NumberedEyebrow number="10">Insights From the Build</NumberedEyebrow>
           <Reveal delay={0.05}>
             <h2 className="max-w-2xl text-balance text-3xl font-medium leading-[1.15] tracking-tight text-foreground sm:text-4xl">
-              What I&apos;d do differently.
+              What building it revealed.
             </h2>
           </Reveal>
 
@@ -547,7 +547,7 @@ export default function PlatformEvolutionPage() {
             <Reveal delay={0.22}>
               <div className="py-6 last:pb-0">
                 <h3 className="text-[17px] font-medium text-foreground">
-                  One concession I&apos;d make again
+                  Backing the team&apos;s model over mine
                 </h3>
                 <p className="mt-2.5 text-[15px] leading-relaxed text-muted-foreground">
                   I proposed version history and designed it on Figma&apos;s
