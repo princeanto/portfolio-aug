@@ -67,7 +67,7 @@ export default function PlatformEvolutionPage() {
         </div>
         <div className="relative z-10 mx-auto w-full max-w-6xl px-6 pb-24 sm:px-8 sm:pb-28 lg:px-10 lg:pb-32">
           <ImagePlaceholder
-            aspect="21/9"
+            aspect="1366/768"
             label="Product screenshot"
             note="The composition layer — services on the left, flow on the canvas, configuration on the right."
             delay={0.28}
@@ -215,7 +215,7 @@ export default function PlatformEvolutionPage() {
               delay={0.3}
             />
             <ImagePlaceholder
-              aspect="4/3"
+              aspect="1366/768"
               label="Node + config panel"
               note="A node selected with the right-side panel open."
               delay={0.34}
@@ -247,14 +247,14 @@ export default function PlatformEvolutionPage() {
 
           <div className="mt-4 grid grid-cols-1 gap-4 sm:grid-cols-2">
             <ImagePlaceholder
-              aspect="4/3"
+              aspect="1366/768"
               label="Custom API node"
               note="Code editor, frontend/backend toggle, variables."
               delay={0.06}
               src="/images/platform-evolution/custom-api-node.png"
             />
             <ImagePlaceholder
-              aspect="4/3"
+              aspect="266/678"
               label="Version history"
               note="Published and draft tracks, with author and timestamp on every version."
               delay={0.1}
@@ -459,21 +459,21 @@ export default function PlatformEvolutionPage() {
 
             <div className="mt-10 grid grid-cols-1 gap-4 sm:grid-cols-3">
               <ImagePlaceholder
-                aspect="3/4"
+                aspect="1366/768"
                 label="Maker-checker"
                 note="Approve or reject with a stated reason."
                 delay={0.32}
                 src="/images/platform-evolution/maker-checker.png"
               />
               <ImagePlaceholder
-                aspect="3/4"
+                aspect="1366/768"
                 label="Case management"
                 note="Applicant data against OCR, with match confidence."
                 delay={0.36}
                 src="/images/platform-evolution/case-management.png"
               />
               <ImagePlaceholder
-                aspect="3/4"
+                aspect="1366/768"
                 label="Reporting"
                 note="The report a bank's own staff reads."
                 delay={0.4}

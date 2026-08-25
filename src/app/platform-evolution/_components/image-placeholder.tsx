@@ -28,7 +28,7 @@ export function ImagePlaceholder({
   delay = 0,
   src,
 }: {
-  aspect?: "16/9" | "4/3" | "3/4" | "21/9";
+  aspect?: "16/9" | "4/3" | "3/4" | "21/9" | (string & {});
   label: string;
   note?: string;
   delay?: number;
@@ -46,7 +46,7 @@ export function ImagePlaceholder({
               src={src}
               alt={label}
               fill
-              className="object-contain"
+              className="object-cover"
               sizes="(max-width: 640px) 100vw, 50vw"
             />
           </div>

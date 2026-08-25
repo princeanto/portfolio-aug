@@ -404,7 +404,7 @@ export default function ReimaginedPage() {
               note="Sort board or clustered results."
             />
             <TerminalPlaceholder
-              aspect="4/3"
+              aspect="1366/768"
               label="Node + config panel"
               note="A node selected with the right-side panel open."
               src="/images/platform-evolution/node-config-panel.png"
@@ -427,13 +427,13 @@ export default function ReimaginedPage() {
           </div>
           <div className="mt-4 grid grid-cols-1 gap-4 sm:grid-cols-2">
             <TerminalPlaceholder
-              aspect="4/3"
+              aspect="1366/768"
               label="Custom API node"
               note="Code editor, frontend/backend toggle, variables."
               src="/images/platform-evolution/custom-api-node.png"
             />
             <TerminalPlaceholder
-              aspect="4/3"
+              aspect="266/678"
               label="Version history"
               note="Published and draft tracks, author and timestamp."
               src="/images/platform-evolution/version-history.png"
@@ -579,19 +579,19 @@ export default function ReimaginedPage() {
 
           <div className="mt-8 grid grid-cols-1 gap-4 sm:grid-cols-3">
             <TerminalPlaceholder
-              aspect="3/4"
+              aspect="1366/768"
               label="Maker-checker"
               note="Approve or reject with a stated reason."
               src="/images/platform-evolution/maker-checker.png"
             />
             <TerminalPlaceholder
-              aspect="3/4"
+              aspect="1366/768"
               label="Case management"
               note="Applicant data against OCR, with match confidence."
               src="/images/platform-evolution/case-management.png"
             />
             <TerminalPlaceholder
-              aspect="3/4"
+              aspect="1366/768"
               label="Reporting"
               note="The report a bank's own staff reads."
               src="/images/platform-evolution/reporting.png"
