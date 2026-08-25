@@ -433,7 +433,7 @@ export default function ReimaginedPage() {
               src="/images/platform-evolution/custom-api-node.png"
             />
             <TerminalPlaceholder
-              aspect="1378/1292"
+              aspect="1100/1441"
               label="Version history"
               note="Published and draft tracks, author and timestamp."
               src="/images/platform-evolution/version-history.webp"
