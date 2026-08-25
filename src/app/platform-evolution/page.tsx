@@ -15,7 +15,7 @@ import { RESEARCH_METHODS, RESEARCH_CATEGORIES, WHATS_NEXT } from "./_components
 export const metadata: Metadata = {
   title: "Platform Evolution — Prince",
   description:
-    "One API instead of a hundred: how an identity verification product evolved into an enterprise workflow platform. IDFlow, M2P Connect, and Wand.",
+    "One API instead of a hundred: how an identity verification product evolved into an enterprise workflow platform. Meridian, Relay, and Lumen.",
 };
 
 export default function PlatformEvolutionPage() {
@@ -25,7 +25,7 @@ export default function PlatformEvolutionPage() {
       <section className="relative isolate overflow-hidden border-b border-border bg-background">
         <GridBackground />
         <div className="relative z-10 mx-auto w-full max-w-6xl px-6 py-24 sm:px-8 sm:py-28 lg:px-10 lg:py-32">
-          <SectionEyebrow>M2P Fintech · Enterprise Platform · 2021–2026</SectionEyebrow>
+          <SectionEyebrow>Enterprise Fintech Platform · 2021–2026</SectionEyebrow>
           <Reveal delay={0.05}>
             <h1 className="text-balance text-[2.75rem] font-medium leading-[1.08] tracking-tight text-foreground sm:text-6xl lg:text-[4rem]">
               One API instead of a hundred.
@@ -81,7 +81,7 @@ export default function PlatformEvolutionPage() {
           <NumberedEyebrow number="01">My Role</NumberedEyebrow>
           <Reveal delay={0.05}>
             <h2 className="max-w-2xl text-balance text-3xl font-medium leading-[1.15] tracking-tight text-foreground sm:text-4xl">
-              Senior Lead Product Designer across IDFlow, M2P Connect, and Wand.
+              Senior Lead Product Designer across Meridian, Relay, and Lumen.
             </h2>
           </Reveal>
           <Reveal delay={0.1}>
@@ -92,8 +92,8 @@ export default function PlatformEvolutionPage() {
               Product design end to end, from the scoping workshop through a
               shipped platform: research, information architecture,
               interaction design, the design system, and the shipped UI for
-              IDFlow — then continued ownership through M2P Connect&apos;s
-              platform versions and Wand.
+              Meridian — then continued ownership through Relay&apos;s
+              platform versions and Lumen.
             </p>
           </Reveal>
           <Reveal delay={0.14}>
@@ -122,10 +122,10 @@ export default function PlatformEvolutionPage() {
           <div className="mt-6 max-w-2xl space-y-4">
             <Reveal delay={0.1}>
               <p className="text-pretty text-lg leading-relaxed text-foreground/80">
-                M2P had built over a hundred verification microservices —
-                OTP, PAN, Aadhaar, OCR, face match, penny-drop bank checks,
-                dedupe. Banks and NBFCs used them to verify and onboard
-                customers.
+                The company had built over a hundred verification
+                microservices — OTP, PAN, Aadhaar, OCR, face match,
+                penny-drop bank checks, dedupe. Banks and NBFCs used them to
+                verify and onboard customers.
               </p>
             </Reveal>
             <Reveal delay={0.14}>
@@ -189,8 +189,8 @@ export default function PlatformEvolutionPage() {
           <Reveal delay={0.16}>
             <p className="mt-8 max-w-2xl text-[15px] leading-relaxed text-muted-foreground">
               A hundred services on one page is a list, not a system. Search
-              only helps people who already know what M2P calls the thing
-              they need — which excludes every new user. So I grouped
+              only helps people who already know what the platform calls the
+              thing they need — which excludes every new user. So I grouped
               services by the job they do, then ran a card sort to test
               whether that grouping matched how people actually think.
             </p>
@@ -268,7 +268,7 @@ export default function PlatformEvolutionPage() {
               The Evolution
             </span>
             <p className="mt-2 max-w-2xl text-[15px] leading-relaxed text-muted-foreground">
-              How IDFlow became M2P Connect, then Wand — why it started,
+              How Meridian became Relay, then Lumen — why it started,
               what changed, how it worked, and what happened next.
             </p>
           </Reveal>
@@ -312,7 +312,7 @@ export default function PlatformEvolutionPage() {
           <NumberedEyebrow number="06">Evolution — What</NumberedEyebrow>
           <Reveal delay={0.05}>
             <h2 className="max-w-2xl text-balance text-3xl font-medium leading-[1.15] tracking-tight text-foreground sm:text-4xl">
-              From self-service for banks to an internal tool for M2P.
+              From self-service for banks to an internal tool for the company.
             </h2>
           </Reveal>
           <Reveal delay={0.1}>
@@ -322,7 +322,7 @@ export default function PlatformEvolutionPage() {
               it died in the first stage rather than after launch. Composing
               a KYC flow correctly means knowing what a dedupe check is, when
               a penny drop is needed, and what happens when face match
-              returns a partial. That&apos;s M2P domain knowledge, not
+              returns a partial. That&apos;s internal domain knowledge, not
               customer knowledge.
             </p>
           </Reveal>
@@ -330,7 +330,7 @@ export default function PlatformEvolutionPage() {
             <p className="mt-4 max-w-2xl text-[15px] leading-relaxed text-muted-foreground">
               So the product changed shape: not no-code for customers, but{" "}
               <span className="font-medium text-foreground">
-                low-code for M2P&apos;s own implementation team.
+                low-code for our own implementation team.
               </span>{" "}
               Same architecture, honest about who could actually use it.
             </p>
@@ -375,12 +375,12 @@ export default function PlatformEvolutionPage() {
           <NumberedEyebrow number="08">Evolution — When</NumberedEyebrow>
           <Reveal delay={0.05}>
             <h2 className="max-w-2xl text-balance text-3xl font-medium leading-[1.15] tracking-tight text-foreground sm:text-4xl">
-              Internal rollout exposed two gaps in IDFlow.
+              Internal rollout exposed two gaps in Meridian.
             </h2>
           </Reveal>
           <Reveal delay={0.1}>
             <p className="mt-5 max-w-2xl text-[15px] leading-relaxed text-muted-foreground">
-              IDFlow shipped. We showed it to leadership and it landed well.
+              Meridian shipped. We showed it to leadership and it landed well.
               Then we gave it to our own implementation team and put them on
               real work with smaller clients. They hit two walls.
             </p>
@@ -400,14 +400,14 @@ export default function PlatformEvolutionPage() {
           <div className="mt-16 border-t border-border pt-16">
             <Reveal delay={0.05}>
               <h3 className="max-w-2xl text-balance text-3xl font-medium leading-[1.15] tracking-tight text-foreground sm:text-4xl">
-                M2P Connect and Wand extended the fix company-wide.
+                Relay and Lumen extended the fix company-wide.
               </h3>
             </Reveal>
             <div className="mt-6 max-w-2xl space-y-4">
               <Reveal delay={0.1}>
                 <p className="text-[15px] leading-relaxed text-muted-foreground">
                   Flows now ran, but they produced data with nowhere to look at
-                  it. So M2P started doing the familiar thing: assign a team
+                  it. So we started doing the familiar thing: assign a team
                   per customer, build them a back-end portal. The exact pattern
                   the platform had just removed, returning at the next layer.
                 </p>
@@ -415,7 +415,7 @@ export default function PlatformEvolutionPage() {
               <Reveal delay={0.14}>
                 <p className="text-[15px] leading-relaxed text-muted-foreground">
                   <span className="font-medium text-foreground">
-                    M2P Connect
+                    Relay
                   </span>{" "}
                   generalised the engine beyond identity into a company-wide
                   capability, and added what a platform needs at scale —
@@ -423,25 +423,25 @@ export default function PlatformEvolutionPage() {
                   isn&apos;t the person who approves it, task assignment and
                   SLA configuration, version history, logs, post-API
                   verification. It also consolidated with a parallel low-code
-                  product from Finflux, the lending startup M2P had acquired,
+                  product from Finflux, the lending startup we had acquired,
                   whose loan-origination builder was solving a version of the
                   same problem.
                 </p>
               </Reveal>
               <Reveal delay={0.18}>
                 <p className="text-[15px] leading-relaxed text-muted-foreground">
-                  <span className="font-medium text-foreground">Wand</span>{" "}
-                  closed the last gap. Connect emits a unique ID per journey;
-                  Wand turns it into a report a bank&apos;s own staff can log
+                  <span className="font-medium text-foreground">Lumen</span>{" "}
+                  closed the last gap. Relay emits a unique ID per journey;
+                  Lumen turns it into a report a bank&apos;s own staff can log
                   in and read. When a customer completes an onboarding journey
-                  at HDFC, someone at HDFC can open Wand and see it — without
-                  anyone at M2P building them a portal.
+                  at HDFC, someone at HDFC can open Lumen and see it — without
+                  anyone at the company building them a portal.
                 </p>
               </Reveal>
               <Reveal delay={0.22}>
                 <p className="text-[15px] leading-relaxed text-muted-foreground">
-                  Each product contains the one before it. Wand has everything
-                  IDFlow and Connect could do, plus case management on top.
+                  Each product contains the one before it. Lumen has everything
+                  Meridian and Relay could do, plus case management on top.
                 </p>
               </Reveal>
             </div>
@@ -533,12 +533,12 @@ export default function PlatformEvolutionPage() {
             <Reveal delay={0.16}>
               <div className="py-6">
                 <h3 className="text-[17px] font-medium text-foreground">
-                  I&apos;d start where Wand ended
+                  I&apos;d start where Lumen ended
                 </h3>
                 <p className="mt-2.5 text-[15px] leading-relaxed text-muted-foreground">
                   Extensibility, customer-owned APIs, treating the platform
                   as something others build on — that thinking was available
-                  conceptually from the beginning. Approaching IDFlow that
+                  conceptually from the beginning. Approaching Meridian that
                   way would likely have produced a different architecture on
                   day one rather than across three products.
                 </p>
@@ -573,7 +573,7 @@ export default function PlatformEvolutionPage() {
           </Reveal>
           <Reveal delay={0.1}>
             <p className="mt-5 max-w-2xl text-[15px] leading-relaxed text-muted-foreground">
-              Wand&apos;s architecture was built to keep going — this is the
+              Lumen&apos;s architecture was built to keep going — this is the
               natural next stage, not a shipped feature list:
             </p>
           </Reveal>

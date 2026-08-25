@@ -118,7 +118,7 @@ export default function ReimaginedPage() {
               transition={{ delay: 0.1, duration: 0.6 }}
               className="font-mono text-[12px] uppercase tracking-[0.16em] text-[var(--signal)]"
             >
-              platform_evolution — M2P Fintech
+              platform_evolution — enterprise_fintech
             </motion.p>
             <motion.h1
               initial={{ opacity: 0, y: 16 }}
@@ -161,7 +161,7 @@ export default function ReimaginedPage() {
           <Eyebrow>01 — my role</Eyebrow>
           <Fade delay={0.05}>
             <h2 className="font-display mt-4 text-3xl text-[var(--ink)] sm:text-5xl">
-              Senior Lead Product Designer across IDFlow, M2P Connect, and Wand.
+              Senior Lead Product Designer across Meridian, Relay, and Lumen.
             </h2>
           </Fade>
           <Fade delay={0.1}>
@@ -170,8 +170,8 @@ export default function ReimaginedPage() {
               I owned this end to end — from the first workshop to what
               shipped. That meant talking to the people who&apos;d use it,
               mapping out how the whole thing should work, designing every
-              screen, and building the design system behind it. When IDFlow
-              became M2P Connect, and then Wand, I stayed on all the way
+              screen, and building the design system behind it. When Meridian
+              became Relay, and then Lumen, I stayed on all the way
               through.
             </p>
           </Fade>
@@ -201,7 +201,7 @@ export default function ReimaginedPage() {
           />
           <Fade delay={0.1} className="mt-8 space-y-4">
             <p className="font-mono text-[14px] leading-relaxed text-[var(--ink-dim)]">
-              M2P had built more than a hundred small services for checking
+              The company had built more than a hundred small services for checking
               who someone is — a phone check, an ID check, a photo match, a
               bank check, and more. Banks and lenders used these to confirm a
               new customer&apos;s identity before letting them in.
@@ -291,8 +291,8 @@ export default function ReimaginedPage() {
               with the problem. Building one of these flows correctly means
               knowing dozens of small rules — which check to run first, when
               a customer needs an extra check, what to do when a result
-              comes back unclear. That&apos;s knowledge M2P had. The banks
-              didn&apos;t.
+              comes back unclear. That&apos;s knowledge the company had. The
+              banks didn&apos;t.
             </p>
           </Fade>
           <Fade delay={0.15}>
@@ -300,7 +300,7 @@ export default function ReimaginedPage() {
               So the product changed shape. It wasn&apos;t a tool for
               customers to build their own flows anymore —{" "}
               <span className="text-[var(--ink)]">
-                it was a tool for M2P&apos;s own team to build them faster.
+                it was a tool for our own team to build them faster.
               </span>{" "}
               Same underlying system, just honest about who&apos;d actually
               use it.
@@ -450,7 +450,7 @@ export default function ReimaginedPage() {
           </Fade>
           <Fade delay={0.1}>
             <p className="mt-6 font-mono text-[14px] leading-relaxed text-[var(--ink-dim)]">
-              IDFlow shipped. We showed it to leadership and it landed well.
+              Meridian shipped. We showed it to leadership and it landed well.
               Then we gave it to our own implementation team and put them on
               real work with smaller clients. They hit two walls.
             </p>
@@ -543,25 +543,25 @@ export default function ReimaginedPage() {
           <Fade delay={0.1} className="mt-6 space-y-4">
             <p className="font-mono text-[14px] leading-relaxed text-[var(--ink-dim)]">
               Flows now ran, but there was nowhere to see the results. So
-              M2P started doing the familiar thing again: assign a team per
+              we started doing the familiar thing again: assign a team per
               customer, build them a portal to see it in. The exact pattern
               the platform had just removed, showing up again one layer
               down.
             </p>
             <p className="font-mono text-[14px] leading-relaxed text-[var(--ink-dim)]">
-              <span className="text-[var(--ink)]">M2P Connect</span> took
+              <span className="text-[var(--ink)]">Relay</span> took
               the same engine and made it work for more than just identity
-              checks — any team at M2P could now use it. It also added what
-              a company-wide tool needs: a second person has to approve any
-              change before it goes live, work gets assigned and tracked,
-              every version is logged. And it absorbed a similar tool from
-              Finflux — a lending company M2P had bought — which had built
-              something almost identical for loan approvals.
+              checks — any team at the company could now use it. It also
+              added what a company-wide tool needs: a second person has to
+              approve any change before it goes live, work gets assigned and
+              tracked, every version is logged. And it absorbed a similar
+              tool from Finflux — a lending company we had bought — which
+              had built something almost identical for loan approvals.
             </p>
             <p className="font-mono text-[14px] leading-relaxed text-[var(--ink-dim)]">
-              <span className="text-[var(--ink)]">Wand</span> closed the
-              last gap. Every time a customer goes through a flow, Connect
-              gives that journey its own ID. Wand turns that into a report a
+              <span className="text-[var(--ink)]">Lumen</span> closed the
+              last gap. Every time a customer goes through a flow, Relay
+              gives that journey its own ID. Lumen turns that into a report a
               bank&apos;s own staff can log in and read. Each product
               includes everything the one before it could do.
             </p>
@@ -611,8 +611,8 @@ export default function ReimaginedPage() {
                 body: "I found the problem by watching our own team struggle with real work — that's the right way to find it. But next time, I'd design what happens when something goes wrong at the same time as what happens when it goes right, not after.",
               },
               {
-                title: "I'd start where Wand ended",
-                body: "The idea of letting other people build on top of the platform, and letting customers bring their own tools — that idea was possible from day one, I just didn't reach for it until Wand. If I'd started there, IDFlow probably would have been built differently from the very first day.",
+                title: "I'd start where Lumen ended",
+                body: "The idea of letting other people build on top of the platform, and letting customers bring their own tools — that idea was possible from day one, I just didn't reach for it until Lumen. If I'd started there, Meridian probably would have been built differently from the very first day.",
               },
               {
                 title: "One concession I'd make again",
@@ -645,7 +645,7 @@ export default function ReimaginedPage() {
           </Fade>
           <Fade delay={0.1}>
             <p className="mt-6 font-mono text-[14px] leading-relaxed text-[var(--ink-dim)]">
-              Wand was built to keep growing. These are the natural next
+              Lumen was built to keep growing. These are the natural next
               steps — not things we&apos;ve already shipped:
             </p>
           </Fade>

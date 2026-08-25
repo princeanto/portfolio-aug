@@ -1,7 +1,7 @@
 export const STAGE_CHAIN = [
-  { name: "IDFlow", desc: "Compose verification flows visually" },
-  { name: "M2P Connect", desc: "The engine, generalised and governed" },
-  { name: "Wand", desc: "Where the data finally became readable" },
+  { name: "Meridian", desc: "Compose verification flows visually" },
+  { name: "Relay", desc: "The engine, generalised and governed" },
+  { name: "Lumen", desc: "Where the data finally became readable" },
 ] as const;
 
 export const SCOPING_ROOM = [

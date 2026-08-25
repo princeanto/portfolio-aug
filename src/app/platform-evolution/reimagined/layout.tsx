@@ -18,7 +18,7 @@ const jetbrainsMono = JetBrains_Mono({
 export const metadata: Metadata = {
   title: "Platform Evolution / reimagined — Prince",
   description:
-    "How a hundred separate verification integrations became one API call — the Platform Evolution case study, IDFlow through Wand.",
+    "How a hundred separate verification integrations became one API call — the Platform Evolution case study, Meridian through Lumen.",
   themeColor: "#06070a",
 };
 
