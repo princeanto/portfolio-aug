@@ -577,15 +577,20 @@ export default function PlatformEvolutionPage() {
               natural next stage, not a shipped feature list:
             </p>
           </Reveal>
-          <ul className="mt-6 flex flex-wrap gap-3">
+          <div className="mt-8 max-w-2xl divide-y divide-border">
             {WHATS_NEXT.map((item, i) => (
-              <Reveal key={item} delay={0.14 + i * 0.05}>
-                <li className="rounded-full border border-border px-4 py-2 text-[14px] font-medium text-foreground transition-colors duration-300 hover:border-[var(--accent-a)] hover:text-[var(--accent-a)]">
-                  {item}
-                </li>
+              <Reveal key={item.title} delay={0.14 + i * 0.05}>
+                <div className="py-6 first:pt-0">
+                  <h3 className="text-[17px] font-medium text-foreground">
+                    {item.title}
+                  </h3>
+                  <p className="mt-2.5 text-[15px] leading-relaxed text-muted-foreground">
+                    {item.body}
+                  </p>
+                </div>
               </Reveal>
             ))}
-          </ul>
+          </div>
         </div>
       </section>
     </>

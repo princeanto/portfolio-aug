@@ -650,18 +650,33 @@ export default function ReimaginedPage() {
             </p>
           </Fade>
 
-          <Fade delay={0.15} className="mt-5 flex flex-wrap gap-2">
-            {["Bring Your Own APIs", "Marketplace", "AI Workflow Assistant"].map(
-              (item) => (
-                <span
-                  key={item}
-                  className="rounded-full border border-[var(--line-strong)] px-3.5 py-1.5 font-mono text-[12px] text-[var(--ink)]"
-                >
-                  {item}
-                </span>
-              ),
-            )}
-          </Fade>
+          <div className="mt-8 divide-y divide-[var(--line)]">
+            {[
+              {
+                title: "Bring Your Own APIs",
+                body: "Lumen already lets customers plug in their own endpoint inside a flow. Extending that from one endpoint to full ownership of their own APIs is the same idea, taken further.",
+              },
+              {
+                title: "Marketplace",
+                body: "Every product so far concentrated capability inside the platform team. A marketplace inverts that: partners contribute the next hundred services instead of us building all of them.",
+              },
+              {
+                title: "AI Workflow Assistant",
+                body: "The same problem Meridian solved with a visual builder — composing verification logic without writing code — is one step further from being solved with plain language instead of a canvas.",
+              },
+            ].map((item, i) => (
+              <Fade key={item.title} delay={i * 0.06}>
+                <div className="py-5 first:pt-0">
+                  <h3 className="font-display text-lg text-[var(--ink)]">
+                    {item.title}
+                  </h3>
+                  <p className="mt-2 font-mono text-[13px] leading-relaxed text-[var(--ink-dim)]">
+                    {item.body}
+                  </p>
+                </div>
+              </Fade>
+            ))}
+          </div>
 
           <Fade delay={0.2}>
             <p className="mt-6 font-mono text-[14px] leading-relaxed text-[var(--ink-dim)]">

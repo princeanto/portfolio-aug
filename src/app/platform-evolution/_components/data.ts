@@ -81,4 +81,17 @@ export const IMPACT_METRICS = [
   { label: "Team Efficiency", value: "2–3 hrs", caption: "Per client, per supporting team — down from weeks each" },
 ] as const;
 
-export const WHATS_NEXT = ["Bring Your Own APIs", "Marketplace", "AI Workflow Assistant"] as const;
+export const WHATS_NEXT = [
+  {
+    title: "Bring Your Own APIs",
+    body: "Lumen already lets customers plug in their own endpoint inside a flow. Extending that from one endpoint to full ownership of their own APIs is the same idea, taken further.",
+  },
+  {
+    title: "Marketplace",
+    body: "Every product so far concentrated capability inside the platform team. A marketplace inverts that: partners contribute the next hundred services instead of us building all of them.",
+  },
+  {
+    title: "AI Workflow Assistant",
+    body: "The same problem Meridian solved with a visual builder — composing verification logic without writing code — is one step further from being solved with plain language instead of a canvas.",
+  },
+] as const;
