@@ -74,8 +74,8 @@ export function TerminalPlaceholder({
             src={src}
             alt={label}
             fill
+            unoptimized
             className="object-cover"
-            sizes="(max-width: 640px) 100vw, 50vw"
           />
           <span className="pointer-events-none absolute inset-0 flex items-center justify-center bg-black/0 opacity-0 transition-all duration-200 group-hover:bg-black/30 group-hover:opacity-100">
             <span className="flex h-9 w-9 items-center justify-center rounded-full bg-[var(--signal)] text-[#06070a]">

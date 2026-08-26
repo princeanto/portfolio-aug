@@ -160,8 +160,8 @@ export function GalleryProvider({
                 alt={activeImage.alt}
                 width={dims.width}
                 height={dims.height}
+                unoptimized
                 className="h-auto max-h-[85vh] w-auto max-w-[90vw] rounded-lg object-contain"
-                sizes="90vw"
               />
             </motion.div>
 
