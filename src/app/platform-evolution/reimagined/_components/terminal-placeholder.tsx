@@ -4,23 +4,6 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 import { useGalleryOpen } from "@/components/gallery-lightbox";
 
-function ExpandIcon() {
-  return (
-    <svg
-      width="16"
-      height="16"
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth="2"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-    >
-      <path d="M8 3H5a2 2 0 0 0-2 2v3m18 0V5a2 2 0 0 0-2-2h-3m0 18h3a2 2 0 0 0 2-2v-3M3 16v3a2 2 0 0 0 2 2h3" />
-    </svg>
-  );
-}
-
 function ImageIcon() {
   return (
     <svg
@@ -68,20 +51,15 @@ export function TerminalPlaceholder({
           disabled={!openImage}
           aria-label={`View ${label} full size`}
           style={{ aspectRatio: aspect.replace("/", " / ") }}
-          className="group relative block w-full cursor-zoom-in overflow-hidden rounded-xl border border-[var(--line-strong)] bg-[var(--bg-elevated)] text-left disabled:cursor-default"
+          className="group relative block w-full cursor-zoom-in overflow-hidden rounded-xl border border-[var(--line-strong)] bg-[var(--bg-elevated)] text-left transition-colors duration-300 hover:border-[var(--signal)] disabled:cursor-default disabled:hover:border-[var(--line-strong)]"
         >
           <Image
             src={src}
             alt={label}
             fill
             unoptimized
-            className="object-cover"
+            className="object-cover transition-transform duration-300 group-hover:scale-[1.03]"
           />
-          <span className="pointer-events-none absolute inset-0 flex items-center justify-center bg-black/0 opacity-0 transition-all duration-200 group-hover:bg-black/30 group-hover:opacity-100">
-            <span className="flex h-9 w-9 items-center justify-center rounded-full bg-[var(--signal)] text-[#06070a]">
-              <ExpandIcon />
-            </span>
-          </span>
         </button>
         <figcaption className="mt-2.5 flex flex-col gap-1">
           <span className="font-mono text-[13px] font-medium uppercase tracking-[0.06em] text-[var(--ink-dim)]">
