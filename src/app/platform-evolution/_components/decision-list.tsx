@@ -3,7 +3,7 @@ import { DECISIONS } from "./data";
 
 export function DecisionList() {
   return (
-    <div className="mt-6 max-w-2xl">
+    <div className="mt-6">
       {DECISIONS.map((decision, i) => (
         <Reveal key={decision.index} delay={i * 0.06}>
           <div

@@ -58,7 +58,7 @@ function FlowArrow() {
 
 export function ChangeDiagram() {
   return (
-    <div className="mt-10 max-w-2xl rounded-2xl border border-border bg-surface/50 p-6 sm:p-8">
+    <div className="mt-10 rounded-2xl border border-border bg-surface/50 p-6 sm:p-8">
       <div>
         <span className="text-[11px] font-medium uppercase tracking-[0.12em] text-muted-foreground">
           Before

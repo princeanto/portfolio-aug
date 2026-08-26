@@ -45,7 +45,7 @@ export default function PlatformEvolutionPage() {
             </h1>
           </Reveal>
           <Reveal delay={0.1}>
-            <p className="mt-6 max-w-2xl text-pretty text-lg leading-relaxed text-muted-foreground sm:text-xl">
+            <p className="mt-6 text-pretty text-lg leading-relaxed text-muted-foreground sm:text-xl">
               Every bank wanted a different set of verification services in a
               different order, so every bank got its own team and its own
               build. I designed the platform that turned that into something
@@ -94,12 +94,12 @@ export default function PlatformEvolutionPage() {
         <div className="mx-auto w-full max-w-6xl px-6 py-20 sm:px-8 lg:px-10">
           <NumberedEyebrow number="01">My Role</NumberedEyebrow>
           <Reveal delay={0.05}>
-            <h2 className="max-w-2xl text-balance text-3xl font-medium leading-[1.15] tracking-tight text-foreground sm:text-4xl">
+            <h2 className="text-balance text-3xl font-medium leading-[1.15] tracking-tight text-foreground sm:text-4xl">
               Senior Lead Product Designer across Meridian, Relay, and Lumen.
             </h2>
           </Reveal>
           <Reveal delay={0.1}>
-            <p className="mt-5 max-w-2xl text-[15px] leading-relaxed text-muted-foreground">
+            <p className="mt-5 text-[15px] leading-relaxed text-muted-foreground">
               <span className="font-medium text-foreground">
                 What I owned —{" "}
               </span>
@@ -111,7 +111,7 @@ export default function PlatformEvolutionPage() {
             </p>
           </Reveal>
           <Reveal delay={0.14}>
-            <div className="mt-8 max-w-2xl rounded-2xl border border-border bg-surface p-6 transition-colors duration-300 hover:border-border-strong">
+            <div className="mt-8 rounded-2xl border border-border bg-surface p-6 transition-colors duration-300 hover:border-border-strong">
               <span className="text-[12px] font-medium uppercase tracking-[0.12em] text-muted-foreground">
                 Collaboration
               </span>
@@ -129,11 +129,11 @@ export default function PlatformEvolutionPage() {
         <div className="mx-auto w-full max-w-6xl px-6 py-20 sm:px-8 lg:px-10">
           <NumberedEyebrow number="02">The Problem</NumberedEyebrow>
           <Reveal delay={0.05}>
-            <h2 className="max-w-2xl text-balance text-3xl font-medium leading-[1.15] tracking-tight text-foreground sm:text-4xl">
+            <h2 className="text-balance text-3xl font-medium leading-[1.15] tracking-tight text-foreground sm:text-4xl">
               Every customer needed a custom-built verification flow.
             </h2>
           </Reveal>
-          <div className="mt-6 max-w-2xl space-y-4">
+          <div className="mt-6 space-y-4">
             <Reveal delay={0.1}>
               <p className="text-pretty text-lg leading-relaxed text-foreground/80">
                 The company had built over a hundred verification
@@ -166,7 +166,7 @@ export default function PlatformEvolutionPage() {
             </Reveal>
           </div>
           <Reveal delay={0.26}>
-            <p className="mt-8 max-w-2xl border-l-2 border-[var(--accent-a)] py-1 pl-6 text-xl font-medium leading-snug text-foreground sm:text-2xl">
+            <p className="mt-8 border-l-2 border-[var(--accent-a)] py-1 pl-6 text-xl font-medium leading-snug text-foreground sm:text-2xl">
               Capacity, not demand, was setting how far down-market the
               business could go.
             </p>
@@ -179,7 +179,7 @@ export default function PlatformEvolutionPage() {
         <div className="mx-auto w-full max-w-6xl px-6 py-20 sm:px-8 lg:px-10">
           <NumberedEyebrow number="03">Research</NumberedEyebrow>
           <Reveal delay={0.05}>
-            <h2 className="max-w-2xl text-balance text-3xl font-medium leading-[1.15] tracking-tight text-foreground sm:text-4xl">
+            <h2 className="text-balance text-3xl font-medium leading-[1.15] tracking-tight text-foreground sm:text-4xl">
               Structuring 100+ services around how people think, not how
               they&apos;re built.
             </h2>
@@ -201,7 +201,7 @@ export default function PlatformEvolutionPage() {
           </Reveal>
 
           <Reveal delay={0.16}>
-            <p className="mt-8 max-w-2xl text-[15px] leading-relaxed text-muted-foreground">
+            <p className="mt-8 text-[15px] leading-relaxed text-muted-foreground">
               A hundred services on one page is a list, not a system. Search
               only helps people who already know what the platform calls the
               thing they need — which excludes every new user. So I grouped
@@ -244,12 +244,12 @@ export default function PlatformEvolutionPage() {
         <div className="mx-auto w-full max-w-6xl px-6 py-20 sm:px-8 lg:px-10">
           <NumberedEyebrow number="04">Insights &amp; Design</NumberedEyebrow>
           <Reveal delay={0.05}>
-            <h2 className="max-w-2xl text-balance text-3xl font-medium leading-[1.15] tracking-tight text-foreground sm:text-4xl">
+            <h2 className="text-balance text-3xl font-medium leading-[1.15] tracking-tight text-foreground sm:text-4xl">
               Three decisions that shaped the builder.
             </h2>
           </Reveal>
           <Reveal delay={0.1}>
-            <p className="mt-5 max-w-2xl text-[15px] leading-relaxed text-muted-foreground">
+            <p className="mt-5 text-[15px] leading-relaxed text-muted-foreground">
               Nobody disputed the taxonomy afterwards. In a company where
               every service has an owner with a view on where it belongs,
               that silence was the research paying for itself. These are the
@@ -285,7 +285,7 @@ export default function PlatformEvolutionPage() {
             <span className="text-[12px] font-medium uppercase tracking-[0.12em] text-muted-foreground">
               The Evolution
             </span>
-            <p className="mt-2 max-w-2xl text-[15px] leading-relaxed text-muted-foreground">
+            <p className="mt-2 text-[15px] leading-relaxed text-muted-foreground">
               How Meridian became Relay, then Lumen — why it started,
               what changed, how it worked, and what happened next.
             </p>
@@ -298,12 +298,12 @@ export default function PlatformEvolutionPage() {
         <div className="mx-auto w-full max-w-6xl px-6 py-20 sm:px-8 lg:px-10">
           <NumberedEyebrow number="05">Evolution — Why</NumberedEyebrow>
           <Reveal delay={0.05}>
-            <h2 className="max-w-2xl text-balance text-3xl font-medium leading-[1.15] tracking-tight text-foreground sm:text-4xl">
+            <h2 className="text-balance text-3xl font-medium leading-[1.15] tracking-tight text-foreground sm:text-4xl">
               Scoped by a working group, not handed down as a spec.
             </h2>
           </Reveal>
           <Reveal delay={0.1}>
-            <p className="mt-5 max-w-2xl text-[15px] leading-relaxed text-muted-foreground">
+            <p className="mt-5 text-[15px] leading-relaxed text-muted-foreground">
               My regional CEO turned it into a product question: what if the
               flow could be composed in a portal instead of assembled by a
               team? Scope wasn&apos;t handed down from there. It was set by a
@@ -315,7 +315,7 @@ export default function PlatformEvolutionPage() {
           <ScopingRoom />
 
           <Reveal delay={0.2}>
-            <p className="mt-6 max-w-2xl text-[15px] leading-relaxed text-muted-foreground">
+            <p className="mt-6 text-[15px] leading-relaxed text-muted-foreground">
               My job in that room wasn&apos;t to take requirements. It was to
               hear what each expert described and push it further than
               they&apos;d framed it.
@@ -329,12 +329,12 @@ export default function PlatformEvolutionPage() {
         <div className="mx-auto w-full max-w-6xl px-6 py-20 sm:px-8 lg:px-10">
           <NumberedEyebrow number="06">Evolution — What</NumberedEyebrow>
           <Reveal delay={0.05}>
-            <h2 className="max-w-2xl text-balance text-3xl font-medium leading-[1.15] tracking-tight text-foreground sm:text-4xl">
+            <h2 className="text-balance text-3xl font-medium leading-[1.15] tracking-tight text-foreground sm:text-4xl">
               From self-service for banks to an internal tool for the company.
             </h2>
           </Reveal>
           <Reveal delay={0.1}>
-            <p className="mt-5 max-w-2xl text-[15px] leading-relaxed text-muted-foreground">
+            <p className="mt-5 text-[15px] leading-relaxed text-muted-foreground">
               The original intent was customer self-service — banks would log
               in and build their own verification flows. That died early, and
               it died in the first stage rather than after launch. Composing
@@ -345,7 +345,7 @@ export default function PlatformEvolutionPage() {
             </p>
           </Reveal>
           <Reveal delay={0.16}>
-            <p className="mt-4 max-w-2xl text-[15px] leading-relaxed text-muted-foreground">
+            <p className="mt-4 text-[15px] leading-relaxed text-muted-foreground">
               So the product changed shape: not no-code for customers, but{" "}
               <span className="font-medium text-foreground">
                 low-code for our own implementation team.
@@ -361,19 +361,19 @@ export default function PlatformEvolutionPage() {
         <div className="mx-auto w-full max-w-6xl px-6 py-20 sm:px-8 lg:px-10">
           <NumberedEyebrow number="07">Evolution — How</NumberedEyebrow>
           <Reveal delay={0.05}>
-            <h2 className="max-w-2xl text-balance text-3xl font-medium leading-[1.15] tracking-tight text-foreground sm:text-4xl">
+            <h2 className="text-balance text-3xl font-medium leading-[1.15] tracking-tight text-foreground sm:text-4xl">
               100+ services collapsed into a single API call.
             </h2>
           </Reveal>
           <Reveal delay={0.1}>
-            <p className="mt-5 max-w-2xl text-[15px] leading-relaxed text-muted-foreground">
+            <p className="mt-5 text-[15px] leading-relaxed text-muted-foreground">
               Drag microservices onto a canvas. Connect them into a flow.
               Publish. The change that mattered most sits underneath: the
               composed flow returns through one API call.
             </p>
           </Reveal>
           <Reveal delay={0.14}>
-            <p className="mt-4 max-w-2xl text-[15px] leading-relaxed text-muted-foreground">
+            <p className="mt-4 text-[15px] leading-relaxed text-muted-foreground">
               Before, integrating a client meant hitting each microservice
               separately and stitching the results. After, the whole
               verification journey is a single endpoint. That&apos;s what
@@ -392,12 +392,12 @@ export default function PlatformEvolutionPage() {
         <div className="mx-auto w-full max-w-6xl px-6 py-20 sm:px-8 lg:px-10">
           <NumberedEyebrow number="08">Evolution — When</NumberedEyebrow>
           <Reveal delay={0.05}>
-            <h2 className="max-w-2xl text-balance text-3xl font-medium leading-[1.15] tracking-tight text-foreground sm:text-4xl">
+            <h2 className="text-balance text-3xl font-medium leading-[1.15] tracking-tight text-foreground sm:text-4xl">
               Internal rollout exposed two gaps in Meridian.
             </h2>
           </Reveal>
           <Reveal delay={0.1}>
-            <p className="mt-5 max-w-2xl text-[15px] leading-relaxed text-muted-foreground">
+            <p className="mt-5 text-[15px] leading-relaxed text-muted-foreground">
               Meridian shipped. We showed it to leadership and it landed well.
               Then we gave it to our own implementation team and put them on
               real work with smaller clients. They hit two walls.
@@ -418,11 +418,11 @@ export default function PlatformEvolutionPage() {
 
           <div className="mt-16 border-t border-border pt-16">
             <Reveal delay={0.05}>
-              <h3 className="max-w-2xl text-balance text-3xl font-medium leading-[1.15] tracking-tight text-foreground sm:text-4xl">
+              <h3 className="text-balance text-3xl font-medium leading-[1.15] tracking-tight text-foreground sm:text-4xl">
                 Relay and Lumen extended the fix company-wide.
               </h3>
             </Reveal>
-            <div className="mt-6 max-w-2xl space-y-4">
+            <div className="mt-6 space-y-4">
               <Reveal delay={0.1}>
                 <p className="text-[15px] leading-relaxed text-muted-foreground">
                   Flows now ran, but they produced data with nowhere to look at
@@ -465,7 +465,7 @@ export default function PlatformEvolutionPage() {
               </Reveal>
             </div>
             <Reveal delay={0.28}>
-              <p className="mt-8 max-w-2xl border-l-2 border-[var(--accent-a)] py-1 pl-6 text-xl font-medium leading-snug text-foreground sm:text-2xl">
+              <p className="mt-8 border-l-2 border-[var(--accent-a)] py-1 pl-6 text-xl font-medium leading-snug text-foreground sm:text-2xl">
                 The same reflex — assign a team, build it custom, per customer
                 — kept reappearing at each layer. Each product removed one more
                 instance of it.
@@ -504,13 +504,13 @@ export default function PlatformEvolutionPage() {
         <div className="mx-auto w-full max-w-6xl px-6 py-20 sm:px-8 lg:px-10">
           <NumberedEyebrow number="09">Business Impact</NumberedEyebrow>
           <Reveal delay={0.05}>
-            <h2 className="max-w-2xl text-balance text-3xl font-medium leading-[1.15] tracking-tight text-foreground sm:text-4xl">
+            <h2 className="text-balance text-3xl font-medium leading-[1.15] tracking-tight text-foreground sm:text-4xl">
               What actually changed, not just what shipped.
             </h2>
           </Reveal>
           <ImpactMetrics />
           <Reveal delay={0.3}>
-            <p className="mt-10 max-w-2xl text-[15px] leading-relaxed text-muted-foreground">
+            <p className="mt-10 text-[15px] leading-relaxed text-muted-foreground">
               Setting up a customer went from a full cross-functional team
               over weeks to solution engineers owning the flow themselves.
               For design that now means choosing type and colour on a layout
@@ -519,7 +519,7 @@ export default function PlatformEvolutionPage() {
             </p>
           </Reveal>
           <Reveal delay={0.35}>
-            <p className="mt-6 max-w-2xl border-l-2 border-[var(--accent-a)] py-1 pl-6 text-xl font-medium leading-snug text-foreground sm:text-2xl">
+            <p className="mt-6 border-l-2 border-[var(--accent-a)] py-1 pl-6 text-xl font-medium leading-snug text-foreground sm:text-2xl">
               New products get adopted because they&apos;re new. Teams only
               migrate flows that already work when the new thing is
               genuinely better.
@@ -533,12 +533,12 @@ export default function PlatformEvolutionPage() {
         <div className="mx-auto w-full max-w-6xl px-6 py-20 sm:px-8 lg:px-10">
           <NumberedEyebrow number="10">Insights From the Build</NumberedEyebrow>
           <Reveal delay={0.05}>
-            <h2 className="max-w-2xl text-balance text-3xl font-medium leading-[1.15] tracking-tight text-foreground sm:text-4xl">
+            <h2 className="text-balance text-3xl font-medium leading-[1.15] tracking-tight text-foreground sm:text-4xl">
               What building it revealed.
             </h2>
           </Reveal>
 
-          <div className="mt-8 max-w-2xl divide-y divide-border">
+          <div className="mt-8 divide-y divide-border">
             <Reveal delay={0.1}>
               <div className="py-6 first:pt-0">
                 <h3 className="text-[17px] font-medium text-foreground">
@@ -589,17 +589,17 @@ export default function PlatformEvolutionPage() {
         <div className="mx-auto w-full max-w-6xl px-6 py-20 sm:px-8 lg:px-10">
           <NumberedEyebrow number="11">What&apos;s Next</NumberedEyebrow>
           <Reveal delay={0.05}>
-            <h2 className="max-w-2xl text-balance text-3xl font-medium leading-[1.15] tracking-tight text-foreground sm:text-4xl">
+            <h2 className="text-balance text-3xl font-medium leading-[1.15] tracking-tight text-foreground sm:text-4xl">
               Where the platform goes from here.
             </h2>
           </Reveal>
           <Reveal delay={0.1}>
-            <p className="mt-5 max-w-2xl text-[15px] leading-relaxed text-muted-foreground">
+            <p className="mt-5 text-[15px] leading-relaxed text-muted-foreground">
               Lumen&apos;s architecture was built to keep going — this is the
               natural next stage, not a shipped feature list:
             </p>
           </Reveal>
-          <div className="mt-8 max-w-2xl divide-y divide-border">
+          <div className="mt-8 divide-y divide-border">
             {WHATS_NEXT.map((item, i) => (
               <Reveal key={item.title} delay={0.14 + i * 0.05}>
                 <div className="py-6 first:pt-0">
