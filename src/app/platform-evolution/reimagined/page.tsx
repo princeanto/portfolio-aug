@@ -12,6 +12,16 @@ import { DecisionLog } from "./_components/decision-log";
 import { TerminalPlaceholder } from "./_components/terminal-placeholder";
 import { ScopingRoomDark } from "./_components/scoping-room-dark";
 import { WhereItBrokeDark } from "./_components/where-it-broke-dark";
+import { GalleryProvider, type GalleryImageEntry } from "@/components/gallery-lightbox";
+
+const GALLERY_IMAGES: GalleryImageEntry[] = [
+  { src: "/images/platform-evolution/node-config-panel.png", alt: "Node + config panel", aspect: "1366/768" },
+  { src: "/images/platform-evolution/custom-api-node.png", alt: "Custom API node", aspect: "1366/768" },
+  { src: "/images/platform-evolution/version-history.webp", alt: "Version history", aspect: "1600/905" },
+  { src: "/images/platform-evolution/maker-checker.png", alt: "Maker-checker", aspect: "1366/768" },
+  { src: "/images/platform-evolution/case-management.png", alt: "Case management", aspect: "1366/768" },
+  { src: "/images/platform-evolution/reporting.png", alt: "Reporting", aspect: "1366/768" },
+];
 
 function Fade({
   children,
@@ -92,7 +102,7 @@ function CollapseMoment() {
 
 export default function ReimaginedPage() {
   return (
-    <>
+    <GalleryProvider images={GALLERY_IMAGES}>
       <CustomCursor />
 
       {/* Hero */}
@@ -716,6 +726,6 @@ export default function ReimaginedPage() {
           </Link>
         </div>
       </section>
-    </>
+    </GalleryProvider>
   );
 }

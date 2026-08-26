@@ -1,5 +1,16 @@
 import type { Metadata } from "next";
 import { Reveal } from "@/components/reveal";
+import { GalleryProvider, type GalleryImageEntry } from "@/components/gallery-lightbox";
+
+const GALLERY_IMAGES: GalleryImageEntry[] = [
+  { src: "/images/platform-evolution/hero-builder-canvas.png", alt: "Product screenshot", aspect: "1366/768" },
+  { src: "/images/platform-evolution/node-config-panel.png", alt: "Node + config panel", aspect: "1366/768" },
+  { src: "/images/platform-evolution/custom-api-node.png", alt: "Custom API node", aspect: "1366/768" },
+  { src: "/images/platform-evolution/version-history.webp", alt: "Version history", aspect: "1600/905" },
+  { src: "/images/platform-evolution/maker-checker.png", alt: "Maker-checker", aspect: "1366/768" },
+  { src: "/images/platform-evolution/case-management.png", alt: "Case management", aspect: "1366/768" },
+  { src: "/images/platform-evolution/reporting.png", alt: "Reporting", aspect: "1366/768" },
+];
 import { SectionEyebrow } from "@/components/section-heading";
 import { GridBackground } from "@/components/grid-background";
 import { HeroChain } from "./_components/hero-chain";
@@ -20,7 +31,7 @@ export const metadata: Metadata = {
 
 export default function PlatformEvolutionPage() {
   return (
-    <>
+    <GalleryProvider images={GALLERY_IMAGES}>
       {/* Hero */}
       <section className="relative isolate overflow-hidden border-b border-border bg-background">
         <GridBackground />
@@ -600,6 +611,6 @@ export default function PlatformEvolutionPage() {
           </div>
         </div>
       </section>
-    </>
+    </GalleryProvider>
   );
 }

@@ -2,6 +2,24 @@
 
 import Image from "next/image";
 import { motion } from "framer-motion";
+import { useGalleryOpen } from "@/components/gallery-lightbox";
+
+function ExpandIcon() {
+  return (
+    <svg
+      width="16"
+      height="16"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    >
+      <path d="M8 3H5a2 2 0 0 0-2 2v3m18 0V5a2 2 0 0 0-2-2h-3m0 18h3a2 2 0 0 0 2-2v-3M3 16v3a2 2 0 0 0 2 2h3" />
+    </svg>
+  );
+}
 
 function ImageIcon() {
   return (
@@ -34,6 +52,8 @@ export function TerminalPlaceholder({
   note?: string;
   src?: string;
 }) {
+  const openImage = useGalleryOpen(src);
+
   if (src) {
     return (
       <motion.figure
@@ -42,9 +62,13 @@ export function TerminalPlaceholder({
         viewport={{ once: true, margin: "-60px" }}
         transition={{ duration: 0.5 }}
       >
-        <div
+        <button
+          type="button"
+          onClick={openImage ?? undefined}
+          disabled={!openImage}
+          aria-label={`View ${label} full size`}
           style={{ aspectRatio: aspect.replace("/", " / ") }}
-          className="relative w-full overflow-hidden rounded-xl border border-[var(--line-strong)] bg-[var(--bg-elevated)]"
+          className="group relative block w-full cursor-zoom-in overflow-hidden rounded-xl border border-[var(--line-strong)] bg-[var(--bg-elevated)] text-left disabled:cursor-default"
         >
           <Image
             src={src}
@@ -53,7 +77,12 @@ export function TerminalPlaceholder({
             className="object-cover"
             sizes="(max-width: 640px) 100vw, 50vw"
           />
-        </div>
+          <span className="pointer-events-none absolute inset-0 flex items-center justify-center bg-black/0 opacity-0 transition-all duration-200 group-hover:bg-black/30 group-hover:opacity-100">
+            <span className="flex h-9 w-9 items-center justify-center rounded-full bg-[var(--signal)] text-[#06070a]">
+              <ExpandIcon />
+            </span>
+          </span>
+        </button>
         <figcaption className="mt-2.5 flex flex-col gap-1">
           <span className="font-mono text-[13px] font-medium uppercase tracking-[0.06em] text-[var(--ink-dim)]">
             {label}
