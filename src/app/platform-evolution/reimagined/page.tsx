@@ -15,9 +15,11 @@ import { WhereItBrokeDark } from "./_components/where-it-broke-dark";
 import { GalleryProvider, type GalleryImageEntry } from "@/components/gallery-lightbox";
 
 const GALLERY_IMAGES: GalleryImageEntry[] = [
+  { src: "/images/platform-evolution/card-sort.webp", alt: "Card sort", aspect: "1800/1018" },
   { src: "/images/platform-evolution/node-config-panel.png", alt: "Node + config panel", aspect: "1366/768" },
-  { src: "/images/platform-evolution/custom-api-node.png", alt: "Custom API node", aspect: "1366/768" },
-  { src: "/images/platform-evolution/version-history.webp", alt: "Version history", aspect: "1600/905" },
+  { src: "/images/platform-evolution/custom-api-node.webp", alt: "Custom API node", aspect: "1800/1018" },
+  { src: "/images/platform-evolution/version-history.webp", alt: "Version history", aspect: "1800/1018" },
+  { src: "/images/platform-evolution/validation-panel.webp", alt: "Validation panel", aspect: "1800/1018" },
   { src: "/images/platform-evolution/maker-checker.png", alt: "Maker-checker", aspect: "1366/768" },
   { src: "/images/platform-evolution/case-management.png", alt: "Case management", aspect: "1366/768" },
   { src: "/images/platform-evolution/reporting.png", alt: "Reporting", aspect: "1366/768" },
@@ -409,9 +411,10 @@ export default function ReimaginedPage() {
 
           <div className="mt-8 grid grid-cols-1 gap-4 sm:grid-cols-2">
             <TerminalPlaceholder
-              aspect="4/3"
+              aspect="1800/1018"
               label="Card sort"
               note="Sort board or clustered results."
+              src="/images/platform-evolution/card-sort.webp"
             />
             <TerminalPlaceholder
               aspect="1366/768"
@@ -437,13 +440,13 @@ export default function ReimaginedPage() {
           </div>
           <div className="mt-4 grid grid-cols-1 gap-4 sm:grid-cols-2">
             <TerminalPlaceholder
-              aspect="1366/768"
+              aspect="1800/1018"
               label="Custom API node"
               note="Code editor, frontend/backend toggle, variables."
-              src="/images/platform-evolution/custom-api-node.png"
+              src="/images/platform-evolution/custom-api-node.webp"
             />
             <TerminalPlaceholder
-              aspect="1600/905"
+              aspect="1800/1018"
               label="Version history"
               note="Published and draft tracks, author and timestamp."
               src="/images/platform-evolution/version-history.webp"
@@ -473,9 +476,10 @@ export default function ReimaginedPage() {
 
           <div className="mt-6">
             <TerminalPlaceholder
-              aspect="21/9"
+              aspect="1800/1018"
               label="Validation panel"
               note="Error taxonomy, plain-English codes, failing node highlighted, re-validate."
+              src="/images/platform-evolution/validation-panel.webp"
             />
           </div>
         </div>

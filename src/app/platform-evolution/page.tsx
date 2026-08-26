@@ -3,10 +3,12 @@ import { Reveal } from "@/components/reveal";
 import { GalleryProvider, type GalleryImageEntry } from "@/components/gallery-lightbox";
 
 const GALLERY_IMAGES: GalleryImageEntry[] = [
-  { src: "/images/platform-evolution/hero-builder-canvas.png", alt: "Product screenshot", aspect: "1366/768" },
+  { src: "/images/platform-evolution/hero-builder-canvas.webp", alt: "Product screenshot", aspect: "1800/1043" },
+  { src: "/images/platform-evolution/card-sort.webp", alt: "Card sort", aspect: "1800/1018" },
   { src: "/images/platform-evolution/node-config-panel.png", alt: "Node + config panel", aspect: "1366/768" },
-  { src: "/images/platform-evolution/custom-api-node.png", alt: "Custom API node", aspect: "1366/768" },
-  { src: "/images/platform-evolution/version-history.webp", alt: "Version history", aspect: "1600/905" },
+  { src: "/images/platform-evolution/custom-api-node.webp", alt: "Custom API node", aspect: "1800/1018" },
+  { src: "/images/platform-evolution/version-history.webp", alt: "Version history", aspect: "1800/1018" },
+  { src: "/images/platform-evolution/validation-panel.webp", alt: "Validation panel", aspect: "1800/1018" },
   { src: "/images/platform-evolution/maker-checker.png", alt: "Maker-checker", aspect: "1366/768" },
   { src: "/images/platform-evolution/case-management.png", alt: "Case management", aspect: "1366/768" },
   { src: "/images/platform-evolution/reporting.png", alt: "Reporting", aspect: "1366/768" },
@@ -78,11 +80,11 @@ export default function PlatformEvolutionPage() {
         </div>
         <div className="relative z-10 mx-auto w-full max-w-6xl px-6 pb-24 sm:px-8 sm:pb-28 lg:px-10 lg:pb-32">
           <ImagePlaceholder
-            aspect="1366/768"
+            aspect="1800/1043"
             label="Product screenshot"
             note="The composition layer — services on the left, flow on the canvas, configuration on the right."
             delay={0.28}
-            src="/images/platform-evolution/hero-builder-canvas.png"
+            src="/images/platform-evolution/hero-builder-canvas.webp"
           />
         </div>
       </section>
@@ -220,10 +222,11 @@ export default function PlatformEvolutionPage() {
 
           <div className="mt-10 grid grid-cols-1 gap-4 sm:grid-cols-2">
             <ImagePlaceholder
-              aspect="4/3"
+              aspect="1800/1018"
               label="Card sort"
               note="Sort board or clustered results."
               delay={0.3}
+              src="/images/platform-evolution/card-sort.webp"
             />
             <ImagePlaceholder
               aspect="1366/768"
@@ -258,14 +261,14 @@ export default function PlatformEvolutionPage() {
 
           <div className="mt-4 grid grid-cols-1 gap-4 sm:grid-cols-2">
             <ImagePlaceholder
-              aspect="1366/768"
+              aspect="1800/1018"
               label="Custom API node"
               note="Code editor, frontend/backend toggle, variables."
               delay={0.06}
-              src="/images/platform-evolution/custom-api-node.png"
+              src="/images/platform-evolution/custom-api-node.webp"
             />
             <ImagePlaceholder
-              aspect="1600/905"
+              aspect="1800/1018"
               label="Version history"
               note="Published and draft tracks, with author and timestamp on every version."
               delay={0.1}
@@ -405,10 +408,11 @@ export default function PlatformEvolutionPage() {
 
           <div className="mt-10">
             <ImagePlaceholder
-              aspect="21/9"
+              aspect="1800/1018"
               label="Validation panel"
               note="Error taxonomy, plain-English codes, failing node highlighted, re-validate."
               delay={0.2}
+              src="/images/platform-evolution/validation-panel.webp"
             />
           </div>
 
