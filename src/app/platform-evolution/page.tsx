@@ -41,14 +41,16 @@ export default function PlatformEvolutionPage() {
           <SectionEyebrow>Enterprise Fintech Platform · 2021–2026</SectionEyebrow>
           <Reveal delay={0.05}>
             <h1 className="text-balance text-[2.75rem] font-medium leading-[1.08] tracking-tight text-foreground sm:text-6xl lg:text-[4rem]">
-              One API instead of a hundred.
+              One API instead of a hundred identity checks.
             </h1>
           </Reveal>
           <Reveal delay={0.1}>
             <p className="mt-6 text-pretty text-lg leading-relaxed text-muted-foreground sm:text-xl">
-              Every bank wanted a different set of verification services in a
-              different order, so every bank got its own team and its own
-              build. I designed the platform that turned that into something
+              We had built 100+ APIs for identity verification — things like
+              PAN and Aadhaar checks — used to onboard new customers. Every
+              bank wanted a different combination, in a different order, so
+              every bank ended up with its own custom build, done by them or
+              by us. I designed the platform that turned that into something
               one person composes on a canvas — and returns through a single
               API call.
             </p>
@@ -95,7 +97,8 @@ export default function PlatformEvolutionPage() {
           <NumberedEyebrow number="01">My Role</NumberedEyebrow>
           <Reveal delay={0.05}>
             <h2 className="text-balance text-3xl font-medium leading-[1.15] tracking-tight text-foreground sm:text-4xl">
-              Senior Lead Product Designer across Meridian, Relay, and Lumen.
+              Senior Lead Product Designer across three versions of one
+              platform: Meridian, then Relay, then Lumen.
             </h2>
           </Reveal>
           <Reveal delay={0.1}>
@@ -103,11 +106,12 @@ export default function PlatformEvolutionPage() {
               <span className="font-medium text-foreground">
                 What I owned —{" "}
               </span>
-              Product design end to end, from the scoping workshop through a
-              shipped platform: research, information architecture,
-              interaction design, the design system, and the shipped UI for
-              Meridian — then continued ownership through Relay&apos;s
-              platform versions and Lumen.
+              I owned this end to end — from the first workshop to what
+              shipped. That meant talking to the people who&apos;d use it,
+              mapping out how the whole thing should work, designing every
+              screen, and building the design system behind it. When
+              Meridian became Relay, and then Lumen, I stayed on all the way
+              through.
             </p>
           </Reveal>
           <Reveal delay={0.14}>
@@ -136,25 +140,26 @@ export default function PlatformEvolutionPage() {
           <div className="mt-6 space-y-4">
             <Reveal delay={0.1}>
               <p className="text-pretty text-lg leading-relaxed text-foreground/80">
-                The company had built over a hundred verification
-                microservices — OTP, PAN, Aadhaar, OCR, face match,
-                penny-drop bank checks, dedupe. Banks and NBFCs used them to
-                verify and onboard customers.
+                Those 100+ services covered everything from OTP checks to
+                face match and bank verification. Banks and NBFCs —
+                non-bank lenders — used them to confirm a new customer&apos;s
+                identity before onboarding them.
               </p>
             </Reveal>
             <Reveal delay={0.14}>
               <p className="text-[15px] leading-relaxed text-muted-foreground">
                 The catch was that no two customers wanted the same ones, in
-                the same order. HDFC might want phone OTP, then PAN, then a
-                penny-drop check to confirm the bank account. The next client
-                would want a different set entirely, sequenced differently.
+                the same order. Vertex Bank might want a phone OTP, then a
+                PAN check, then a penny-drop check to confirm the bank
+                account. The next bank would want a completely different
+                combination, sequenced differently.
               </p>
             </Reveal>
             <Reveal delay={0.18}>
               <p className="text-[15px] leading-relaxed text-muted-foreground">
-                So every customer became a project. Assign a team. Integrate
-                one API call per microservice. Ship it. Do it again for the
-                next one.
+                So every customer became its own project: assign a team,
+                integrate one API call per service, ship it, then start
+                over for the next one.
               </p>
             </Reveal>
             <Reveal delay={0.22}>
@@ -250,7 +255,7 @@ export default function PlatformEvolutionPage() {
           </Reveal>
           <Reveal delay={0.1}>
             <p className="mt-5 text-[15px] leading-relaxed text-muted-foreground">
-              Nobody disputed the taxonomy afterwards. In a company where
+              Nobody disputed the grouping afterwards. In a company where
               every service has an owner with a view on where it belongs,
               that silence was the research paying for itself. These are the
               three decisions that followed.
@@ -335,13 +340,13 @@ export default function PlatformEvolutionPage() {
           </Reveal>
           <Reveal delay={0.1}>
             <p className="mt-5 text-[15px] leading-relaxed text-muted-foreground">
-              The original intent was customer self-service — banks would log
-              in and build their own verification flows. That died early, and
-              it died in the first stage rather than after launch. Composing
-              a KYC flow correctly means knowing what a dedupe check is, when
-              a penny drop is needed, and what happens when face match
-              returns a partial. That&apos;s internal domain knowledge, not
-              customer knowledge.
+              The original idea was to let banks build their own
+              verification flows themselves. That idea didn&apos;t survive
+              first contact with the problem. Composing a flow correctly
+              means knowing dozens of small rules — like when a dedupe check
+              (catching duplicate applicants) is needed, or what to do when
+              a face match comes back uncertain. That&apos;s knowledge the
+              company had. The banks didn&apos;t.
             </p>
           </Reveal>
           <Reveal delay={0.16}>
@@ -367,19 +372,19 @@ export default function PlatformEvolutionPage() {
           </Reveal>
           <Reveal delay={0.1}>
             <p className="mt-5 text-[15px] leading-relaxed text-muted-foreground">
-              Drag microservices onto a canvas. Connect them into a flow.
+              Drag services onto a canvas. Connect them into a flow.
               Publish. The change that mattered most sits underneath: the
               composed flow returns through one API call.
             </p>
           </Reveal>
           <Reveal delay={0.14}>
             <p className="mt-4 text-[15px] leading-relaxed text-muted-foreground">
-              Before, integrating a client meant hitting each microservice
+              Before, integrating a client meant hitting each service
               separately and stitching the results. After, the whole
-              verification journey is a single endpoint. That&apos;s what
-              collapsed the work — and it made the product simpler on the
-              client&apos;s side too, which was never the stated goal but
-              turned out to matter in sales conversations.
+              verification journey happens through one API call. That&apos;s
+              what collapsed the work — and it made the product simpler on
+              the client&apos;s side too, which was never the stated goal
+              but turned out to matter in sales conversations.
             </p>
           </Reveal>
 
@@ -433,28 +438,26 @@ export default function PlatformEvolutionPage() {
               </Reveal>
               <Reveal delay={0.14}>
                 <p className="text-[15px] leading-relaxed text-muted-foreground">
-                  <span className="font-medium text-foreground">
-                    Relay
-                  </span>{" "}
-                  generalised the engine beyond identity into a company-wide
-                  capability, and added what a platform needs at scale —
-                  maker-checker approval so the person who builds a flow
-                  isn&apos;t the person who approves it, task assignment and
-                  SLA configuration, version history, logs, post-API
-                  verification. It also consolidated with a parallel low-code
-                  product from Finflux, the lending startup we had acquired,
-                  whose loan-origination builder was solving a version of the
-                  same problem.
+                  The next version took the same engine and made it work for
+                  more than just identity checks — any team at the company
+                  could now use it. It also added what a company-wide tool
+                  needs: maker-checker approval, so the person who builds a
+                  flow isn&apos;t the person who approves it, plus task
+                  assignment, version history, and logs. It also absorbed a
+                  similar low-code tool from Finflux, a lending startup the
+                  company had acquired, which had built something almost
+                  identical for approving loans.
                 </p>
               </Reveal>
               <Reveal delay={0.18}>
                 <p className="text-[15px] leading-relaxed text-muted-foreground">
-                  <span className="font-medium text-foreground">Lumen</span>{" "}
-                  closed the last gap. Relay emits a unique ID per journey;
-                  Lumen turns it into a report a bank&apos;s own staff can log
-                  in and read. When a customer completes an onboarding journey
-                  at HDFC, someone at HDFC can open Lumen and see it — without
-                  anyone at the company building them a portal.
+                  This final version closed the last gap. Every time a
+                  customer goes through a flow, our product gives it its own
+                  ID and turns that into a report a bank&apos;s own staff can
+                  log in and read. When a customer completes onboarding at
+                  Vertex Bank, someone at Vertex Bank can open it and see the
+                  report — without anyone at the company building them a
+                  portal.
                 </p>
               </Reveal>
               <Reveal delay={0.22}>
@@ -511,11 +514,10 @@ export default function PlatformEvolutionPage() {
           <ImpactMetrics />
           <Reveal delay={0.3}>
             <p className="mt-10 text-[15px] leading-relaxed text-muted-foreground">
-              Setting up a customer went from a full cross-functional team
-              over weeks to solution engineers owning the flow themselves.
-              For design that now means choosing type and colour on a layout
-              that&apos;s already fixed — the microservices are pre-built, so
-              the structure doesn&apos;t change per client.
+              Setting up a new customer used to take a whole team, over
+              weeks. Now one person can own the whole flow. For design, that
+              means the hard part — the structure — is already decided. All
+              that&apos;s left is picking type and colour for each client.
             </p>
           </Reveal>
           <Reveal delay={0.35}>
@@ -545,10 +547,11 @@ export default function PlatformEvolutionPage() {
                   The failure state should ship with the happy path
                 </h3>
                 <p className="mt-2.5 text-[15px] leading-relaxed text-muted-foreground">
-                  We found the debugging problem by watching implementation
-                  staff struggle with real client work. That&apos;s the right
-                  way to find it — but I&apos;d design the error experience
-                  alongside the success case next time, not after.
+                  We found the debugging problem by watching our own team
+                  struggle with real client work — that&apos;s the right way
+                  to find it. But next time, I&apos;d design what happens
+                  when something goes wrong at the same time as what happens
+                  when it goes right, not after.
                 </p>
               </div>
             </Reveal>
@@ -558,11 +561,12 @@ export default function PlatformEvolutionPage() {
                   I&apos;d start where Lumen ended
                 </h3>
                 <p className="mt-2.5 text-[15px] leading-relaxed text-muted-foreground">
-                  Extensibility, customer-owned APIs, treating the platform
-                  as something others build on — that thinking was available
-                  conceptually from the beginning. Approaching Meridian that
-                  way would likely have produced a different architecture on
-                  day one rather than across three products.
+                  The idea of letting other people build on top of the
+                  platform, and letting customers bring their own tools —
+                  that idea was possible from day one, I just didn&apos;t
+                  reach for it until Lumen. If I&apos;d started there,
+                  Meridian probably would have been built differently from
+                  the very first day.
                 </p>
               </div>
             </Reveal>
@@ -572,11 +576,11 @@ export default function PlatformEvolutionPage() {
                   Backing the team&apos;s model over mine
                 </h3>
                 <p className="mt-2.5 text-[15px] leading-relaxed text-muted-foreground">
-                  I proposed version history and designed it on Figma&apos;s
-                  model. Engineering built something structurally different
-                  based on how they understood the system, and I took theirs
-                  — their domain, easier for them to maintain, and mine
-                  wasn&apos;t better enough to spend the capital on.
+                  I designed version history to work the way Figma&apos;s
+                  does. Engineering built it differently, in a way that was
+                  easier for them to maintain — so I went with their version
+                  instead. It wasn&apos;t worth fighting for mine when
+                  theirs worked just as well.
                 </p>
               </div>
             </Reveal>
@@ -595,8 +599,8 @@ export default function PlatformEvolutionPage() {
           </Reveal>
           <Reveal delay={0.1}>
             <p className="mt-5 text-[15px] leading-relaxed text-muted-foreground">
-              Lumen&apos;s architecture was built to keep going — this is the
-              natural next stage, not a shipped feature list:
+              Lumen was built to keep growing. These are the natural next
+              steps — not things we&apos;ve already shipped:
             </p>
           </Reveal>
           <div className="mt-8 divide-y divide-border">

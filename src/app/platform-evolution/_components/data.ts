@@ -43,7 +43,7 @@ export const DECISIONS: Decision[] = [
   {
     index: "02",
     title: "Custom APIs — leave a door open",
-    body: "A space to add your own endpoint with its keys and credentials, merged into the same flow and returned through the same single call. Some client requirements can never be expressed as pre-built microservices. Rather than stretch the node system to cover them, I left a door open.",
+    body: "A place to plug in your own outside connection — with its own keys and credentials — folded into the same flow and returned through the same single call. Some things a customer needs can never be one of the pre-built services. Rather than force-fit those into the existing system, I left a door open.",
   },
   {
     index: "03",
@@ -75,8 +75,8 @@ export const FIX_ITEMS = [
 ];
 
 export const IMPACT_METRICS = [
-  { label: "Implementation Impact", value: "80%", caption: "Faster client go-live, against the previous cross-functional baseline" },
-  { label: "Platform Impact", value: "100+", caption: "Microservices orchestrated behind a single API call" },
+  { label: "Implementation Impact", value: "80%", caption: "Faster client go-live, compared to how long it used to take with a full team" },
+  { label: "Platform Impact", value: "100+", caption: "Services running behind a single API call" },
   { label: "Adoption", value: "20+", caption: "Enterprise clients supported on the platform" },
   { label: "Team Efficiency", value: "2–3 hrs", caption: "Per client, per supporting team — down from weeks each" },
 ] as const;
