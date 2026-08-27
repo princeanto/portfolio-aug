@@ -1,6 +1,3 @@
-"use client";
-
-import { usePathname } from "next/navigation";
 import { ThemeToggle } from "@/components/theme-toggle";
 
 const NAV_LINKS = [
@@ -10,16 +7,7 @@ const NAV_LINKS = [
   { href: "#contact", label: "Contact" },
 ];
 
-// The "reimagined" showcase page is a full-bleed, immersive experiment
-// with its own chrome -- it opts out of the shared site header.
-const HEADERLESS_ROUTES = ["/platform-evolution/reimagined"];
-
 export function SiteHeader() {
-  const pathname = usePathname();
-  if (HEADERLESS_ROUTES.some((route) => pathname?.startsWith(route))) {
-    return null;
-  }
-
   return (
     <header className="sticky top-0 z-50 border-b border-border bg-background/85 backdrop-blur-sm">
       <div className="mx-auto flex h-16 w-full max-w-6xl items-center justify-between px-6 sm:px-8 lg:px-10">
