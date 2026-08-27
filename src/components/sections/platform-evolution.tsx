@@ -17,7 +17,7 @@ type EvolutionNode = {
 const NODES: EvolutionNode[] = [
   {
     index: "01",
-    name: "Meridian",
+    name: "Connect v1",
     tagline:
       "A workflow platform that orchestrated identity verification APIs through configurable workflows instead of custom implementations.",
     problem: [
@@ -30,22 +30,22 @@ const NODES: EvolutionNode[] = [
     tradeoff:
       "A visual builder is less expressive than code, by definition. I was trading raw flexibility — anything an engineer could hand-build — for something implementation teams could operate on their own. That only pays off if the builder actually covers the common cases well, because it will never cover all of them.",
     impact:
-      "Meridian proved the model worked. That's what made the next question possible: was this actually about identity verification, or was identity verification just the first place we'd used it?",
+      "Connect v1 proved the model worked. That's what made the next question possible: was this actually about identity verification, or was identity verification just the first place we'd used it?",
   },
   {
     index: "02",
-    name: "Relay",
+    name: "Connect v2",
     tagline:
-      "The evolution of Meridian from an identity verification product into an enterprise workflow orchestration platform.",
+      "The evolution of Connect v1 from an identity verification product into an enterprise workflow orchestration platform.",
     problem: [
-      "Meridian worked, which created a different risk: if the orchestration model only ever solved identity verification, it stayed a feature of one product instead of becoming a capability the rest of the company could use.",
+      "Connect v1 worked, which created a different risk: if the orchestration model only ever solved identity verification, it stayed a feature of one product instead of becoming a capability the rest of the company could use.",
     ],
     reasoning:
-      "The model underneath Meridian wasn't actually about KYC. It was a generic shape — a sequence of API calls with conditional logic — that identity verification happened to be the first use of. Treating it as identity-specific would have meant rebuilding the same idea from scratch the next time some other team hit the same problem.",
+      "The model underneath Connect v1 wasn't actually about KYC. It was a generic shape — a sequence of API calls with conditional logic — that identity verification happened to be the first use of. Treating it as identity-specific would have meant rebuilding the same idea from scratch the next time some other team hit the same problem.",
     decision:
       "I stopped designing for one team's problem and redesigned the platform as a company-wide capability — any enterprise product or API could be orchestrated through the same engine, not just KYC services.",
     tradeoff:
-      "Generalising meant giving up the identity-specific shortcuts Meridian could safely assume. Defaults that made sense when every workflow was KYC-shaped stopped being safe once any API could be plugged in — the platform had to get more abstract to get more useful, and abstraction has a real comprehension cost for anyone new to it.",
+      "Generalising meant giving up the identity-specific shortcuts Connect v1 could safely assume. Defaults that made sense when every workflow was KYC-shaped stopped being safe once any API could be plugged in — the platform had to get more abstract to get more useful, and abstraction has a real comprehension cost for anyone new to it.",
     impact: "",
     impactStat: {
       stat: "75%",
@@ -55,7 +55,7 @@ const NODES: EvolutionNode[] = [
   },
   {
     index: "03",
-    name: "Lumen",
+    name: "Connect v3",
     tagline: "A low-code platform built on top of the workflow orchestration engine.",
     problem: [
       "Customers wanted more range than the platform gave them. Some wanted to use the company's own APIs, others wanted to combine them with their own — which meant the platform itself had to become extensible, not just configurable.",
@@ -63,11 +63,11 @@ const NODES: EvolutionNode[] = [
     reasoning:
       "Configurable and extensible aren't the same thing. A configurable system — choose from options we built — eventually hits a ceiling: the moment a customer needs something outside that set, they're back to filing a custom engineering request, which is exactly what the platform existed to avoid. Adding more configuration options doesn't fix that. Changing what kind of system it is does.",
     decision:
-      "I designed Lumen as a low-code layer on the orchestration engine — customers build workflows visually, reuse platform components, and integrate their own APIs without an engineering dependency. I also pushed hard for one design system across the whole platform, so whatever came next could scale on top of it instead of starting over.",
+      "I designed Connect v3 as a low-code layer on the orchestration engine — customers build workflows visually, reuse platform components, and integrate their own APIs without an engineering dependency. I also pushed hard for one design system across the whole platform, so whatever came next could scale on top of it instead of starting over.",
     tradeoff:
       "Extensibility costs control. Once customers can bring their own APIs and assemble their own logic, the platform team can no longer guarantee every workflow in production is well-formed the way a fully configured system could. That's the trade I made deliberately: more range for the customer, less certainty for us.",
     impact:
-      "Lumen's architecture is what makes the next stage possible at all — bring-your-own-APIs, a marketplace, AI-assisted generation. None of that works on a platform that only knows how to run its own components.",
+      "Connect v3's architecture is what makes the next stage possible at all — bring-your-own-APIs, a marketplace, AI-assisted generation. None of that works on a platform that only knows how to run its own components.",
   },
 ];
 

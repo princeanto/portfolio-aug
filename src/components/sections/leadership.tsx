@@ -12,7 +12,7 @@ const PILLARS = [
   },
   {
     title: "Cross-functional collaboration",
-    body: "On Relay, design sat between regional leadership, product management, solution engineering, sales operations, and QA. The job wasn't the screens — it was translating business strategy into something an implementation team could actually use.",
+    body: "On Connect v2, design sat between regional leadership, product management, solution engineering, sales operations, and QA. The job wasn't the screens — it was translating business strategy into something an implementation team could actually use.",
   },
   {
     title: "Community — Madrasters",

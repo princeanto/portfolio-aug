@@ -1,7 +1,7 @@
 export const STAGE_CHAIN = [
-  { name: "Meridian", desc: "Compose verification flows visually" },
-  { name: "Relay", desc: "The engine, generalised and governed" },
-  { name: "Lumen", desc: "Where the data finally became readable" },
+  { name: "Connect v1", desc: "Compose verification flows visually" },
+  { name: "Connect v2", desc: "The engine, generalised and governed" },
+  { name: "Connect v3", desc: "Where the data finally became readable" },
 ] as const;
 
 export const SCOPING_ROOM = [
@@ -84,7 +84,7 @@ export const IMPACT_METRICS = [
 export const WHATS_NEXT = [
   {
     title: "Bring Your Own APIs",
-    body: "Lumen already lets customers plug in their own endpoint inside a flow. Extending that from one endpoint to full ownership of their own APIs is the same idea, taken further.",
+    body: "Connect v3 already lets customers plug in their own endpoint inside a flow. Extending that from one endpoint to full ownership of their own APIs is the same idea, taken further.",
   },
   {
     title: "Marketplace",
@@ -92,6 +92,6 @@ export const WHATS_NEXT = [
   },
   {
     title: "AI Workflow Assistant",
-    body: "The same problem Meridian solved with a visual builder — composing verification logic without writing code — is one step further from being solved with plain language instead of a canvas.",
+    body: "The same problem Connect v1 solved with a visual builder — composing verification logic without writing code — is one step further from being solved with plain language instead of a canvas.",
   },
 ] as const;

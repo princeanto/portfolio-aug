@@ -20,7 +20,7 @@ export function Vision() {
         <div className="mt-10 max-w-2xl">
           <Reveal>
             <p className="text-[15px] leading-relaxed text-muted-foreground">
-              Even while we were building Lumen, the platform&apos;s
+              Even while we were building Connect v3, the platform&apos;s
               architecture was already answering a bigger question. It was
               designed to support:
             </p>

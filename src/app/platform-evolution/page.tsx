@@ -28,7 +28,7 @@ import { RESEARCH_METHODS, RESEARCH_CATEGORIES, WHATS_NEXT } from "./_components
 export const metadata: Metadata = {
   title: "Platform Evolution — Prince",
   description:
-    "One API instead of a hundred: how an identity verification product evolved into an enterprise workflow platform. Meridian, Relay, and Lumen.",
+    "One API instead of a hundred: how an identity verification product evolved into an enterprise workflow platform. Connect v1, v2, and v3.",
 };
 
 export default function PlatformEvolutionPage() {
@@ -97,8 +97,8 @@ export default function PlatformEvolutionPage() {
           <NumberedEyebrow number="01">My Role</NumberedEyebrow>
           <Reveal delay={0.05}>
             <h2 className="text-balance text-3xl font-medium leading-[1.15] tracking-tight text-foreground sm:text-4xl">
-              Senior Lead Product Designer across three versions of one
-              platform: Meridian, then Relay, then Lumen.
+              Senior Lead Product Designer across Connect v1, then v2, then
+              v3.
             </h2>
           </Reveal>
           <Reveal delay={0.1}>
@@ -110,7 +110,7 @@ export default function PlatformEvolutionPage() {
               shipped. That meant talking to the people who&apos;d use it,
               mapping out how the whole thing should work, designing every
               screen, and building the design system behind it. When
-              Meridian became Relay, and then Lumen, I stayed on all the way
+              Connect v1 became v2, and then v3, I stayed on all the way
               through.
             </p>
           </Reveal>
@@ -291,7 +291,7 @@ export default function PlatformEvolutionPage() {
               The Evolution
             </span>
             <p className="mt-2 text-[15px] leading-relaxed text-muted-foreground">
-              How Meridian became Relay, then Lumen — why it started,
+              How Connect v1 became v2, then v3 — why it started,
               what changed, how it worked, and what happened next.
             </p>
           </Reveal>
@@ -398,12 +398,12 @@ export default function PlatformEvolutionPage() {
           <NumberedEyebrow number="08">Evolution — When</NumberedEyebrow>
           <Reveal delay={0.05}>
             <h2 className="text-balance text-3xl font-medium leading-[1.15] tracking-tight text-foreground sm:text-4xl">
-              Internal rollout exposed two gaps in Meridian.
+              Internal rollout exposed two gaps in Connect v1.
             </h2>
           </Reveal>
           <Reveal delay={0.1}>
             <p className="mt-5 text-[15px] leading-relaxed text-muted-foreground">
-              Meridian shipped. We showed it to leadership and it landed well.
+              Connect v1 shipped. We showed it to leadership and it landed well.
               Then we gave it to our own implementation team and put them on
               real work with smaller clients. They hit two walls.
             </p>
@@ -424,7 +424,7 @@ export default function PlatformEvolutionPage() {
           <div className="mt-16 border-t border-border pt-16">
             <Reveal delay={0.05}>
               <h3 className="text-balance text-3xl font-medium leading-[1.15] tracking-tight text-foreground sm:text-4xl">
-                Relay and Lumen extended the fix company-wide.
+                Connect v2 and v3 extended the fix company-wide.
               </h3>
             </Reveal>
             <div className="mt-6 space-y-4">
@@ -462,8 +462,8 @@ export default function PlatformEvolutionPage() {
               </Reveal>
               <Reveal delay={0.22}>
                 <p className="text-[15px] leading-relaxed text-muted-foreground">
-                  Each product contains the one before it. Lumen has everything
-                  Meridian and Relay could do, plus case management on top.
+                  Each version contains the one before it. Connect v3 has
+                  everything v1 and v2 could do, plus case management on top.
                 </p>
               </Reveal>
             </div>
@@ -558,14 +558,14 @@ export default function PlatformEvolutionPage() {
             <Reveal delay={0.16}>
               <div className="py-6">
                 <h3 className="text-[17px] font-medium text-foreground">
-                  I&apos;d start where Lumen ended
+                  I&apos;d start where Connect v3 ended
                 </h3>
                 <p className="mt-2.5 text-[15px] leading-relaxed text-muted-foreground">
                   The idea of letting other people build on top of the
                   platform, and letting customers bring their own tools —
                   that idea was possible from day one, I just didn&apos;t
-                  reach for it until Lumen. If I&apos;d started there,
-                  Meridian probably would have been built differently from
+                  reach for it until v3. If I&apos;d started there, v1
+                  probably would have been built differently from
                   the very first day.
                 </p>
               </div>
@@ -599,7 +599,7 @@ export default function PlatformEvolutionPage() {
           </Reveal>
           <Reveal delay={0.1}>
             <p className="mt-5 text-[15px] leading-relaxed text-muted-foreground">
-              Lumen was built to keep growing. These are the natural next
+              Connect v3 was built to keep growing. These are the natural next
               steps — not things we&apos;ve already shipped:
             </p>
           </Reveal>
